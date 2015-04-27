@@ -162,7 +162,7 @@ cocos2d::__Array *MuffinRushAssets::getCategories() {
 
 ```
 
-After you’ve implemented your version of `CCStoreAssets`, you’ll need to initialize `CCSoomlaStore` with the implementation you just created (also explained in the [Getting Started](/cocos2dx/store/Store_GettingStarted) tutorial).
+After you’ve implemented your version of `CCStoreAssets`, you’ll need to initialize `CCSoomlaStore` with the implementation you just created (also explained in the [Getting Started](/cocos2dx/cpp/store/Store_GettingStarted) tutorial).
 
 ``` cpp
 ExampleAssets *assets = ExampleAssets::create();
@@ -170,7 +170,7 @@ soomla::CCSoomlaStore::initialize(assets, storeParams);  // storeParams is expla
                                                          // Getting Started tutorial
 ```
 
-`CCStoreAssets` is transformed into metadata in JSON format and saved in a local SQLite database on the device. After that, the economy is always loaded from the database. More about this in [Storage](/cocos2dx/store/Store_Storage).
+`CCStoreAssets` is transformed into metadata in JSON format and saved in a local SQLite database on the device. After that, the economy is always loaded from the database. More about this in [Storage](/cocos2dx/cpp/store/Store_Storage).
 
 ## Functions
 

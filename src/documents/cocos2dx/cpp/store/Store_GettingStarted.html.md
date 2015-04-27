@@ -32,7 +32,7 @@ platform: 'cocos2dx'
 	$ git clone git@github.com:soomla/jansson.git external/jansson
 	```
 
-3. Create your own implementation of `CCStoreAssets` that will represent the assets in your specific game. For a brief example, refer to the example below. For a complete example refer to [cocos2dx-store-example](https://github.com/soomla/cocos2dx-store-example/blob/master/Classes/MuffinRushAssets.cpp).
+3. Create your own implementation of `CCStoreAssets` that will represent the assets in your specific game. For a complete example refer to [cocos2dx-store-example](https://github.com/soomla/cocos2dx-store-example/blob/master/Classes/MuffinRushAssets.cpp).
 
 4. Make sure to include the `Cocos2dxStore.h` header whenever you use any of the *cocos2dx-store* functions:
 
@@ -66,7 +66,7 @@ platform: 'cocos2dx'
 	<div class="warning-box">Choose the secret wisely. You can't change it after you launch your game!
 	Initialize `CCSoomlaStore` ONLY ONCE when your application loads.</div>
 
-6. You'll need to subscribe to store events to get notified about in-app purchasing related events. refer to the [Event Handling](/cocos2dx/store/Store_Events) section for more information.
+6. You'll need to subscribe to store events to get notified about in-app purchasing related events. refer to the [Event Handling](/cocos2dx/cpp/store/Store_Events) section for more information.
 
 **The next steps are different according to which platform you're using.**
 
@@ -104,7 +104,7 @@ In your XCode project, perform the following steps:
 
 4. Add `-ObjC` to your project **Build Settings->Other Linker Flags**.
 
-	![alt text](/img/tutorial_img/cocos2dx_getting_started/objc.png "Pther Linker Flags")
+	![alt text](/img/tutorial_img/cocos2dx_getting_started/objc.png "Other Linker Flags")
 
 5. Make sure you have these 3 Frameworks linked to your XCode project: **Security, libsqlite3.0.dylib, StoreKit**.
 
@@ -156,7 +156,7 @@ To integrate cocos2dx-store into your game, follow these steps.
 1. **Recursively** clone cocos2dx-core and cocos2dx-store.
 
     ```
-    $ git clone --recursivegit@github.com:soomla/soomla-cocos2dx-core.git extensions/soomla-cocos2dx-core
+    $ git clone --recursive git@github.com:soomla/soomla-cocos2dx-core.git extensions/soomla-cocos2dx-core
 
     $ git clone --recursive git@github.com:soomla/cocos2dx-store.git extensions/cocos2dx-store
     ```
@@ -277,4 +277,4 @@ bool AppDelegate::applicationDidFinishLaunching() {
 }
 ```
 
-And that's it! cocos2dx-store knows how to contact Google Play or the App Store for you and will redirect your users to the purchasing system to complete the transaction. Don't forget to subscribe to store events in order to get notified of successful or failed purchases - See [Event Handling](/cocos2dx/store/Store_Events).
+And that's it! cocos2dx-store knows how to contact Google Play or the App Store for you and will redirect your users to the purchasing system to complete the transaction. Don't forget to subscribe to store events in order to get notified of successful or failed purchases - See [Event Handling](/cocos2dx/cpp/store/Store_Events).

@@ -150,11 +150,11 @@ In your XCode project, perform the following steps:
 
 7. Connect the Profile module to a social network provider:
 
-  - [Facebook](/cocos2dx/profile/Profile_GettingStarted#facebook-for-ios)
+  - [Facebook](/cocos2dx/cpp/profile/Profile_GettingStarted#facebook-for-ios)
 
-  - [Google+](/cocos2dx/profile/Profile_GettingStarted#google-for-ios)
+  - [Google+](/cocos2dx/cpp/profile/Profile_GettingStarted#google-for-ios)
 
-  - [Twitter](/cocos2dx/profile/Profile_GettingStarted#twitter-for-ios)
+  - [Twitter](/cocos2dx/cpp/profile/Profile_GettingStarted#twitter-for-ios)
 
 That's it! Now all you have to do is build your XCode project and run your game.
 
@@ -242,17 +242,17 @@ That's it! Now all you have to do is build your XCode project and run your game.
 
 5. Connect the Store module to your desired billing service:
 
-  - [Google Play](/cocos2dx/store/Store_GettingStarted#google-play)
+  - [Google Play](/cocos2dx/cpp/store/Store_GettingStarted#google-play)
 
-  - [Amazon Appstore](/cocos2dx/store/Store_GettingStarted#amazon)
+  - [Amazon Appstore](/cocos2dx/cpp/store/Store_GettingStarted#amazon)
 
 6. Connect the Profile module to a social network provider:
 
-  - [Facebook](/cocos2dx/profile/Profile_GettingStarted#facebook-for-android)
+  - [Facebook](/cocos2dx/cpp/profile/Profile_GettingStarted#facebook-for-android)
 
-  - [Google+](/cocos2dx/profile/Profile_GettingStarted#google-for-android)
+  - [Google+](/cocos2dx/cpp/profile/Profile_GettingStarted#google-for-android)
 
-  - [Twitter](/cocos2dx/profile/Profile_GettingStarted#twitter-for-android)
+  - [Twitter](/cocos2dx/cpp/profile/Profile_GettingStarted#twitter-for-android)
 
 That's it! Don't forget to run the **build_native.py** script so that SOOMLA sources will be built with cocos2d-x.
 
@@ -269,7 +269,7 @@ And that's it! You have in-app purchasing, social engagement, and game architect
 
 ##Example
 
-Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and their entities in SOOMLA's Knowledge Base: [Store](/cocos2dx/store/Store_Model), [Profile](/cocos2dx/profile/Profile_MainClasses), and [LevelUp](/cocos2dx/levelup/Levelup_Model).
+Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and their entities in SOOMLA's Knowledge Base: [Store](/cocos2dx/cpp/store/Store_Model), [Profile](/cocos2dx/cpp/profile/Profile_MainClasses), and [LevelUp](/cocos2dx/cpp/levelup/Levelup_Model).
 
 ###CCStoreAssets
 

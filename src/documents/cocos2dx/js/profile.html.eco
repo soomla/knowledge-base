@@ -1,0 +1,8 @@
+---
+title: 'Cocos2dx'
+layout: 'l2-main'
+theme: 'platforms'
+collection: 'cocos2djs_profile'
+platform: 'cocos2dx'
+module: 'profile'
+---

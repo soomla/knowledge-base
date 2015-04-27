@@ -75,7 +75,7 @@ platform: 'cocos2dx'
   profileParams->setObject(twitterParams, soomla::CCUserProfileUtils::providerEnumToString(soomla::TWITTER)->getCString());
   ```
 
-7. You'll need to subscribe to profile events to get notified about social network related events. refer to the [Event Handling](/cocos2dx/profile/Profile_Events) section for more information.
+7. You'll need to subscribe to profile events to get notified about social network related events. refer to the [Event Handling](/cocos2dx/cpp/profile/Profile_Events) section for more information.
 
 <br>
 <div class="info-box">The next steps are different according to which platform you're using.</div>
@@ -408,7 +408,7 @@ The callback to this process is `openURL` which should be defined in your `AppCo
 
 ##Example
 
-Below is an example of initializing Profile, logging the user into Facebook, and sharing a story on the user's Facebook wall. To see a full example, please see [cocos2dx-profile-example](https://github.com/soomla/cocos2dx-profile-example). To learn about the different entities and functionality of Profile, see [Main Classes & Operations](/cocos2dx/profile/Profile_MainClasses).
+Below is an example of initializing Profile, logging the user into Facebook, and sharing a story on the user's Facebook wall. To see a full example, please see [cocos2dx-profile-example](https://github.com/soomla/cocos2dx-profile-example). To learn about the different entities and functionality of Profile, see [Main Classes & Operations](/cocos2dx/cpp/profile/Profile_MainClasses).
 
 <br>
 

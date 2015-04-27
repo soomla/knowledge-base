@@ -1,0 +1,24 @@
+---
+layout: 'knowledge-base'
+title: 'Soomla'
+theme: 'platforms'
+---
+
+<div class="jumbotron" id="know-soomla">
+    <div id="jumbo-main-text">
+        <div id="hierarchy-nav"><%- @partial('nav-menu-l1', {current:'cocos2dx'}) %></div>
+        CHOOSE YOUR MODULE
+    </div>
+    <div id="jumbo-small-text">
+        SOOMLA provides several open-source products.
+    </div>
+</div>
+
+<div class="nav-options">
+    <div class="container">
+        <%- @partial('grid-option', {image:"/img/Level2-Store.png",link:"/cocos2dx/js/store",title: "STORE",text: "SOOMLA provides the building blocks for all free-to-play games. Read about them here."}) %>
+        <%- @partial('grid-option', {image:"/img/Level2-LevelUp.png",link:"/cocos2dx/js/levelup",title: "LEVELUP",text: "SOOMLA's game progression framework includes levels, worlds, missions, and scores, that can easily be implemented into your game."}) %>
+        <%- @partial('grid-option', {image:"/img/Level2-Grow.png",link:"/cocos2dx/js/grow",title: "GROW",text: "SOOMLA Grow is an advanced community driven analytics platform. Connect your game to our dashboard and compare your game's performance to the industry benchmarks."}) %>
+        <%- @partial('grid-option', {image:"/img/Level2-Profile.png",link:"/cocos2dx/js/profile",title: "PROFILE",text: "SOOMLA offers a complete social-based solution to integrate with your in-game economy."}) %>
+    </div>
+</div>

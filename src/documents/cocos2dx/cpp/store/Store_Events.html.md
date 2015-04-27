@@ -134,9 +134,9 @@ Director::getInstance()->getEventDispatcher()->addCustomEventListener(CCStoreCon
 
 void Example::onGoodBalanceChanged(EventCustom *event) {
   // DICT_ELEMENT_GOOD          - the virtual good whose balance was changed
-  // DICT_ELEMENT_BALANCE       - the balance of the currency after the change
-  // DICT_ELEMENT_AMOUNT_ADDED  - the amount that was added to the currency balance
-  //    (in case the number of currencies was removed this will be a negative value)
+  // DICT_ELEMENT_BALANCE       - the balance of the good after the change
+  // DICT_ELEMENT_AMOUNT_ADDED  - the amount that was added to the good balance
+  //    (in case the number of goods was removed this will be a negative value)
 
   __Dictionary *eventData = (__Dictionary *)event->getUserData();
   CCVirtualGood *good = dynamic_cast<CCVirtualGood *>(eventData->objectForKey(CCStoreConsts::DICT_ELEMENT_GOOD));

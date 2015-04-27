@@ -14,7 +14,7 @@ platform: 'cocos2dx'
 
 ##Getting Started
 
-<div class="info-box">LevelUp depends on SOOMLA's other modules: [Core & Store](/cocos2dx/store), and [Profile](/cocos2dx/profile). This document assumes that you are new to SOOMLA and have not worked with any of the other SOOMLA modules. If this is not the case, and you already have some or all of the other modules, please follow these directions only for the modules you are missing and, of course, for the LevelUp module.</div>
+<div class="info-box">LevelUp depends on SOOMLA's other modules: [Core & Store](/cocos2dx/cpp/store), and [Profile](/cocos2dx/cpp/profile). This document assumes that you are new to SOOMLA and have not worked with any of the other SOOMLA modules. If this is not the case, and you already have some or all of the other modules, please follow these directions only for the modules you are missing and, of course, for the LevelUp module.</div>
 
 <br>
 
@@ -65,14 +65,14 @@ platform: 'cocos2dx'
   ```
   - *Custom Secret* is an encryption secret you provide that will be used to secure your data.
 
-  - *Store Params* see the [Store Getting Started](/cocos2dx/store/Store_GettingStarted) for more information about initializing Store
+  - *Store Params* see the [Store Getting Started](/cocos2dx/cpp/store/Store_GettingStarted) for more information about initializing Store
 
-  - *Profile Params* see the [Profile Getting Started](/cocos2dx/profile/Profile_GettingStarted) for more information about initializing Profile
+  - *Profile Params* see the [Profile Getting Started](/cocos2dx/cpp/profile/Profile_GettingStarted) for more information about initializing Profile
 
   <div class="warning-box">Choose this secret wisely, you can't change it after you launch your game!
   <br>Initialize `CCSoomlaLevelUp` ONLY ONCE when your application loads.</div>
 
-6. You'll need to subscribe to levelup events to get notified about Level-Up related events. refer to the [Event Handling](/cocos2dx/levelup/Levelup_Events) section for more information.
+6. You'll need to subscribe to levelup events to get notified about Level-Up related events. refer to the [Event Handling](/cocos2dx/cpp/levelup/Levelup_Events) section for more information.
 
 <div class="info-box">The next steps are different according to which platform you are using.</div>
 
@@ -117,15 +117,15 @@ In your XCode project, perform the following steps:
 
 4. Make sure you have these 3 Frameworks linked to your XCode project: **Security**, **libsqlite3.0.dylib**, and **StoreKit**.
 
-5. Follow our [tutorial](/cocos2dx/store/Store_GettingStarted#apple-app-store) on how to connect the Store module to the App Store billing service.
+5. Follow our [tutorial](/cocos2dx/cpp/store/Store_GettingStarted#apple-app-store) on how to connect the Store module to the App Store billing service.
 
 6. See the following links in order to connect the Profile module to a social network provider:
 
-  - [Facebook for iOS](/cocos2dx/profile/Profile_GettingStarted#facebook-for-ios)
+  - [Facebook for iOS](/cocos2dx/cpp/profile/Profile_GettingStarted#facebook-for-ios)
 
-  - [Google+ for iOS](/cocos2dx/profile/Profile_GettingStarted#google-for-ios)
+  - [Google+ for iOS](/cocos2dx/cpp/profile/Profile_GettingStarted#google-for-ios)
 
-  - [Twitter for iOS](/cocos2dx/profile/Profile_GettingStarted#twitter-for-ios)
+  - [Twitter for iOS](/cocos2dx/cpp/profile/Profile_GettingStarted#twitter-for-ios)
 
 That's it! Now all you have to do is build your XCode project and run your game with cocos2dx-levelup.
 
@@ -195,17 +195,17 @@ That's it! Now all you have to do is build your XCode project and run your game 
 
 4. See the following links in order to connect the Store module to a billing service:
 
-  - [Google Play](/cocos2dx/store/Store_GettingStarted#google-play)
+  - [Google Play](/cocos2dx/cpp/store/Store_GettingStarted#google-play)
 
-  - [Amazon App Store](/cocos2dx/store/Store_GettingStarted#amazon)
+  - [Amazon App Store](/cocos2dx/cpp/store/Store_GettingStarted#amazon)
 
 5. See the following links in order to connect the Profile module to a social network provider:
 
-  - [Facebook for Android](/cocos2dx/profile/Profile_GettingStarted#facebook-for-android)
+  - [Facebook for Android](/cocos2dx/cpp/profile/Profile_GettingStarted#facebook-for-android)
 
-  - [Google+ for Android](/cocos2dx/profile/Profile_GettingStarted#google-for-android)
+  - [Google+ for Android](/cocos2dx/cpp/profile/Profile_GettingStarted#google-for-android)
 
-  - [Twitter for Android](/cocos2dx/profile/Profile_GettingStarted#twitter-for-android)
+  - [Twitter for Android](/cocos2dx/cpp/profile/Profile_GettingStarted#twitter-for-android)
 
 That's it! Don't forget to run the **build_native.py** script so cocos2dx-levelup sources will be built with cocos2d-x.
 

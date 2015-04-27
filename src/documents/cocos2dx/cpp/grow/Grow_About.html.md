@@ -16,9 +16,9 @@ platform: 'cocos2dx'
 
 Soomla GROW is our flagship community-driven analytics dashboard. Developers using GROW can gain valuable insights about their games' performance and compare the data to benchmarks of other games in the GROW community.
 
-GROW analytics uses all of Soomla's modules: [Store](/cocos2dx/store/), [Profile](/cocos2dx/profile/) and [LevelUp](/cocos2dx/levelup/). You may choose to use only specific modules, however, to benefit from the full power of GROW analytics we recommend that you integrate all three.
+GROW analytics uses all of Soomla's modules: [Store](/cocos2dx/cpp/store/), [Profile](/cocos2dx/cpp/profile/) and [LevelUp](/cocos2dx/cpp/levelup/). You may choose to use only specific modules, however, to benefit from the full power of GROW analytics we recommend that you integrate all three.
 
-To get started with GROW, please follow our [Getting Started tutorial](/cocos2dx/grow/Grow_GettingStarted) for Cocos2d-x.
+To get started with GROW, please follow our [Getting Started tutorial](/cocos2dx/cpp/grow/Grow_GettingStarted) for Cocos2d-x.
 
 ### Why use GROW?
 

@@ -28,7 +28,7 @@ Get started with SOOMLA's Grow. Go to the [GROW dashboard](http://dashboard.soom
 
   ![](/img/tutorial_img/cocos_grow/folder_structure.png "Folder Structure")
 
-3. Create your own implementation of `CCStoreAssets` that will represent the assets in your specific game. For a brief example, refer to the example below. For more details refer to the cocos2dx-store [Getting Started](/cocos2dx/store/Store_GettingStarted).
+3. Create your own implementation of `CCStoreAssets` that will represent the assets in your specific game. For a brief example, refer to the example below. For more details refer to the cocos2dx-store [Getting Started](/cocos2dx/cpp/store/Store_GettingStarted).
 
 4. Make sure to include the `Cocos2dxStore.h` header whenever you use any of the *cocos2dx-store* functions:
 
@@ -36,7 +36,7 @@ Get started with SOOMLA's Grow. Go to the [GROW dashboard](http://dashboard.soom
     #include "Cocos2dxStore.h"
     ```
 
-5. Initialize `CCSoomla` and `CCSoomlaStore`. Subscribe to any store events, refer to the [Event Handling](/cocos2dx/store/Store_Events) section for more information:
+5. Initialize `CCSoomla` and `CCSoomlaStore`. Subscribe to any store events, refer to the [Event Handling](/cocos2dx/cpp/store/Store_Events) section for more information:
 
     ``` cpp
     soomla::CCSoomla::initialize("ExampleCustomSecret");
@@ -199,9 +199,9 @@ That's it! Now all you have to do is build your XCode project and run your game.
 
 4. Connect the Store module to your desired billing service:
 
-  - [Google Play](/cocos2dx/store/Store_GettingStarted#google-play)
+  - [Google Play](/cocos2dx/cpp/store/Store_GettingStarted#google-play)
 
-  - [Amazon Appstore](/cocos2dx/store/Store_GettingStarted#amazon-appstore)
+  - [Amazon Appstore](/cocos2dx/cpp/store/Store_GettingStarted#amazon-appstore)
 
 That's it! Don't forget to run the **build_native.py** script so that SOOMLA sources will be built with cocos2d-x.
 

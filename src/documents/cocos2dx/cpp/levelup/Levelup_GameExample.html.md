@@ -16,7 +16,7 @@ LevelUp models out worlds, levels, scores, missions, and more, all in one framew
 
 In this document, you will find a game example that demonstrates the use of LevelUp's entities. There are detailed explanations following the example code, as well as gameplay examples. Use this document as a reference to create your game with LevelUp.
 
-<div class="info-box">**NOTE:** If you haven't already, we suggest reading about the [LevelUp Model](/cocos2dx/levelup/Levelup_Model) and [LevelUp Event Handling](/cocos2dx/levelup/Levelup_Events).</div>
+<div class="info-box">**NOTE:** If you haven't already, we suggest reading about the [LevelUp Model](/cocos2dx/cpp/levelup/Levelup_Model) and [LevelUp Event Handling](/cocos2dx/cpp/levelup/Levelup_Events).</div>
 
 ##The Game Example
 
@@ -385,7 +385,7 @@ void MainScene::onMissionCompleted(EventCustom *event) {
 
 ###**Initialization Code**
 
-Read more in our [Getting Started](/cocos2dx/levelup/Levelup_GettingStarted) tutorial.
+Read more in our [Getting Started](/cocos2dx/cpp/levelup/Levelup_GettingStarted) tutorial.
 
 **`AppDelegate.cpp`**
 

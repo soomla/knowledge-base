@@ -237,16 +237,28 @@ docpadConfig = {
 			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('android','levelup')},[position:1])
 
 		cocos2dx_store: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','store')},[position:1])
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','cpp','store')},[position:1])
 
 		cocos2dx_profile: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','profile')},[position:1])
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','cpp','profile')},[position:1])
 
 		cocos2dx_levelup: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','levelup')},[position:1])
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','cpp','levelup')},[position:1])
 
 		cocos2dx_grow: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','grow')},[position:1])
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','cpp','grow')},[position:1])
+
+		cocos2djs_store: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','js','store')},[position:1])
+
+		cocos2djs_profile: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','js','profile')},[position:1])
+
+		cocos2djs_levelup: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','js','levelup')},[position:1])
+
+		cocos2djs_grow: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','js','grow')},[position:1])
 
 		unity_store: ->
 			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('unity','store')},[position:1])
