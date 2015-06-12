@@ -14,7 +14,7 @@ platform: 'unity'
 
 Here you can find descriptions of some of the main classes and interfaces of unity3d-store. These classes contain functionality for store-related operations such as purchasing, billing, inventory querying and storage.
 
-To see more usage examples of the functions of these classes see [Economy Model](/unity/store/Store_EconomyModel).
+To see more usage examples of the functions of these classes see [Economy Model](/unity/store/Store_Model).
 
 ##SoomlaStore <a href="https://github.com/soomla/unity3d-store/blob/master/Soomla/Assets/Plugins/Soomla/Store/SoomlaStore.cs" target="_blank"><img class="link-icon" src="/img/tutorial_img/linkImg.png"></a>
 

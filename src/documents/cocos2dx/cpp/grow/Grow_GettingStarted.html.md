@@ -106,7 +106,7 @@ In your XCode project, perform the following steps:
   - `Cocos2dXHighway.xcodeproj` (**extensions/cocos2dx-highway/**)
   - `Cocos2dXCore.xcodeproj` (**extensions/soomla-cocos2dx-core/**)  
   - `Cocos2dXStore.xcodeproj` (**extensions/cocos2dx-store/**)
-  - `Cocos2dXProfile.xcodeproj` (**extensions/soomla-cocos2dx-profile/**)  
+  - `Cocos2dXProfile.xcodeproj` (**extensions/cocos2dx-profile/**)  
   - `Cocos2dXLevelUp.xcodeproj` (**extensions/cocos2dx-levelup/**)
 
   perform the following:

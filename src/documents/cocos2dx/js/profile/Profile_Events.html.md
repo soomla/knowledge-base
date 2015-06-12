@@ -29,7 +29,7 @@ For example, when a user performs a social action such as uploading a status, an
 ## Observing & Handling Events
 
 SOOMLA uses the common way of dispatching events used in Cocos2d-x.
-The names of such events are defined in `Soomla.StoreConsts`, the data of the event are passes as arguments to the handlers. You can subscribe to any event from anywhere in your code.
+The names of such events are defined in `Soomla.ProfileConsts`, the data of the event are passes as arguments to the handlers. You can subscribe to any event from anywhere in your code.
 
 ** Subscribing **
 
@@ -37,7 +37,7 @@ Subscribe to events calling `Soomla.addHandler(eventName, handler, target)`,
 where `handler` - is a function that will be called when event is fired, and `target` - is "thisArg" used in that call. 
 
 ```js
-Soomla.addHandler(Soomla.StoreConsts.EVENT_LOGIN_FINISHED, this.onLoginFinished, this);
+Soomla.addHandler(Soomla.ProfileConsts.EVENT_LOGIN_FINISHED, this.onLoginFinished, this);
 ```
 
 ** Handling **

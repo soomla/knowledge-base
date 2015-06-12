@@ -19,9 +19,11 @@ platform: 'cocos2dx'
 
 <br>
 
-1. If you didn't already, clone the Cocos2d-x framework from [here](https://github.com/cocos2d/cocos2d-x), or download it from the [Cocos2d-x website](http://www.cocos2d-x.org/download). Make sure the version you clone is supported by cocos2dx-levelup (the tag is the version).
+*If you want to develop with C++ sources, refer to the "Working with Sources" section below.*
 
-  <div class="info-box">If you would like to develop with sources, refer to the [Working with sources](#working-with-sources) section below.</div>
+<div class="info-box">If you didn't already, clone the Cocos2d-js framework from [here](https://github.com/cocos2d/cocos2d-js), 
+or download it from the [Cocos2d-x website](http://www.cocos2d-x.org/download). Make sure the version you clone is 
+supported by SOOMLA's cocos2dx-store (the tag is the version).</div>
 
 2. Clone [soomla-cocos2dx-core](https://github.com/soomla/soomla-cocos2dx-core), [cocos2dx-store](https://github.com/soomla/cocos2dx-store), [cocos2dx-profile](https://github.com/soomla/cocos2dx-profile), and **cocos2dx-levelup** into the `extensions` directory located at the root of your Cocos2d-x framework:
 
@@ -89,7 +91,7 @@ In your XCode project, perform the following steps:
 
 	- `Cocos2dXStore.xcodeproj` (**extensions/cocos2dx-store/**)
 
-	- `Cocos2dXProfile.xcodeproj` (**extensions/soomla-cocos2dx-profile/**)
+	- `Cocos2dXProfile.xcodeproj` (**extensions/cocos2dx-profile/**)
 
 	- `Cocos2dXLevelUp.xcodeproj` (**extensions/cocos2dx-levelup/**)
 

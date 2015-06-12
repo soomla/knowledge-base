@@ -136,27 +136,27 @@ bool ExampleAssets::init() {
     return true;
 }
 
-MuffinRushAssets::~MuffinRushAssets() {
+ExampleAssets::~ExampleAssets() {
     CC_SAFE_RELEASE(mGoods);
 }
 
-int MuffinRushAssets::getVersion() {
+int ExampleAssets::getVersion() {
     return 0;
 }
 
-cocos2d::__Array *MuffinRushAssets::getCurrencies() {
+cocos2d::__Array *ExampleAssets::getCurrencies() {
     return mCurrencies;
 }
 
-cocos2d::__Array *MuffinRushAssets::getGoods() {
+cocos2d::__Array *ExampleAssets::getGoods() {
     return mGoods;
 }
 
-cocos2d::__Array *MuffinRushAssets::getCurrencyPacks() {
+cocos2d::__Array *ExampleAssets::getCurrencyPacks() {
     return mCurrencyPacks;
 }
 
-cocos2d::__Array *MuffinRushAssets::getCategories() {
+cocos2d::__Array *ExampleAssets::getCategories() {
     return NULL;
 }
 ```
@@ -466,7 +466,7 @@ Each level has 2 scores, a point score and a banana score:
 
 This score can be based on any function you choose. In our example, `pointScore` (relevant only to the first level of the game) is calculated based on how long it took the player to complete the level. Our example score-calculation function is as follows:
 
-``` cs
+``` cpp
 pointScore->setTempScore(3);
 
 if the level hasn't been finished yet and 30 seconds have past {
@@ -684,7 +684,7 @@ The user successfully escapes all predators and reaches the exit on the screen.
 
 If the exit `isOpen` (meaning that Chimpo collected the 2 bananas), we'll end the level successfully! Here, we should also render the relevant UI, such as a screen that congratulates the user and offers him/her to continue to the next level or go back to the main menu.
 
-Notice that once we call `End(true)`, the next level's `CCWorldCompletionGate` will open.
+Notice that once we call `end(true)`, the next level's `CCWorldCompletionGate` will open.
 
 ``` cpp
 // If Chimpo tries to walk through the exit, we need to check that

@@ -182,7 +182,7 @@ worldA->decScore("someScore", 100); // decrease score by 50
 ``` cpp
 worldA->assignReward(coinReward); // assign a reward to this world
 
-cocos2d::__String rewardID = worldA->getAssignedRewardID(); // get reward ID
+cocos2d::__String *rewardID = worldA->getAssignedRewardID(); // get reward ID
 ```
 
 <br>
