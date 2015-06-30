@@ -140,7 +140,8 @@ public class SoomlaGameUpBehaviour : MonoBehaviour
 
     // We can only trigger achievements if we have a session.
     if (session != null) {
-      session.Achievements ((AchievementList list) => {
+      session.Achievement("gameup-achievement-id", () => {
+        session.Achievements ((AchievementList list) => {
         foreach (Achievement achievement : list) {
           if (achievement.PublicId.Equals("gameup-public-achievement-id")) {
             if (achievement.IsCompleted()) {
@@ -151,6 +152,9 @@ public class SoomlaGameUpBehaviour : MonoBehaviour
         }
       }, (int statusCode, string reason) => {
         //handle achievement retrieve error
+      }
+      }, , (int statusCode, string reason) => {
+        //handle achievement submit error
       });
     }
   }
