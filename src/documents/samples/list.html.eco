@@ -1,0 +1,31 @@
+---
+layout: 'knowledge-base'
+title: 'Soomla Integrations'
+theme: 'samples'
+---
+
+<div class="jumbotron" id="know-soomla">
+    <div id="jumbo-main-text">
+        <div id="hierarchy-nav">
+          <%- @partial('nav-menu-l1', {current:'integrations'}) %>
+        </div>
+        INTEGRATIONS
+    </div>
+    <div id="jumbo-small-text">
+        3rd party app integration examples and docs
+    </div>
+</div>
+
+<div id="samples-options">
+    <div class="nav-options nav-options-bottom">
+        <div class="container samples-page">
+            <% for doc in @getCollection('samples').toJSON(): %>
+                <div class="col-centered col-xs-6 col-sm-3 ">
+                    <div class="circle-sample">
+                        <%- @partial('sample-item', {image: "/img/samples/Icon2-#{doc.image}.png", link: doc.url}) %>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</div>

@@ -8,28 +8,27 @@ theme: 'samples'
     <div id="jumbo-main-text">
         <div id="hierarchy-nav">
           <%- @partial('nav-menu-l1', {current:'integrations'}) %>
-          <%- @partial('nav-menu-l3', {collection:@document.collection, navicon:@document.navicon}) %>
+          <%- @partial('nav-menu-l3', {collection:@document.collection, icon:'Star'}) %>
         </div>
+        <img class="dropdown-menu-icon sample-logo" src="/img/samples/Icon2-<%= @document.image %>.png"/>
     </div>
-    <div id="use-case-header">
-        Use Case: <%= @document.text %>
+    <div id="jumbo-small-text">
+        <%= @document.text %>
     </div>
 </div>
 <div class="container">
     <div class="row">
-        <div class="hidden-xs col-sm-3">
-            <a href="<%- @document.backlink %>" class="integration-brand-logo" target="_blank">
-                <img src="/img/samples/Icon2-<%- @document.image %>.png">
-            </a>
-            <div class="related-samples-title">Related Integrations</div>
+        <div class="col-md-3">
+            <div class="related-samples-title">Related Apps</div>
             <% for relatedDocName in @document.relates: %>
                 <% result = @getCollection('samples').findOne({basename: relatedDocName}) %>
                 <% if (result): %>
                 <% doc = result.toJSON() %>
-                <div class="related-samples-item">
+                <div class="menu-option related-samples-item">
                     <a href="<%= doc.url %>" class="link-container">
                         <div class="option-head-text related-samples-sub-title"><%= doc.title %></div>
                         <div class="option-text related-samples-text"><%= doc.text %></div>
+                        <legend/>
                     </a>
                 </div>
                 <% else: %>
@@ -37,7 +36,7 @@ theme: 'samples'
                 <% end %>
             <% end %>
         </div>
-        <div class="col-xs-12 col-sm-9">
+        <div class="col-md-9">
             <div id="doc-container" class="clearfix sample-content">
                 <%- @content %>
             </div>

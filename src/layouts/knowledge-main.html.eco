@@ -40,10 +40,10 @@ title: 'Soomla Knowledge Base'
       </a>
     </div>
     <div class="col-lg-4 col-md-4 menu-option">
-      <a href="/integrations" class="link-container">
+      <a href="/samples/list" class="link-container">
         <div class="option-image" style="background-image: url('img/Level1-integrations-orange.png')"></div>
         <div class="option-head-text">INTEGRATIONS</div>
-        <div class="option-text">Integrate SOOMLA with 3rd party SDKs for monetization, analytics and attribution</div>
+        <div class="option-text">3rd party app integration examples and docs</div>
       </a>
     </div>
   </div>

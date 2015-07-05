@@ -1,10 +1,6 @@
 <div class="dropdown dropdown-container">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-      <% if @navicon: %>
-      <img class="dropdown-menu-icon" src="/img/samples/topmenu/<%= @navicon %>"/>
-      <% else: %>
       <img class="dropdown-menu-icon" src="/img/level2/Icon-<%= @icon %>-Gray.png"/>
-      <% end %>
     </a>
     <ul id="nav-list-l3" class="dropdown-menu l3-gray" role="menu" >
         <% for doc in @getCollection(@collection).toJSON(): %>
