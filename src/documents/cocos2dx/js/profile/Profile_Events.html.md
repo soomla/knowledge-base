@@ -85,6 +85,7 @@ This event is triggered when the user profile has been updated, after login.
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_USER_PROFILE_UPDATED, this.onUserProfileUpdated, this);
 
 this.onUserProfileUpdated = function (userProfile) {
+  // userProfile - The user's profile which was updated
   // ... your game specific implementation here ...
 }
 ```
@@ -96,7 +97,10 @@ This event is triggered when logging into the social provider has started.
 ```js
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_LOGIN_STARTED, this.onLoginStarted, this);
 
-this.onLoginStarted = function (provider, payload) {
+this.onLoginStarted = function (provider, autoLogin, payload) {
+  //  provider - The provider on where the login has started
+  //  autoLogin - comes "true" if user login automatically
+  //  payload - an identification String sent from the caller of the action
   // ... your game specific implementation here ...
 }
 ```
@@ -108,7 +112,10 @@ This event is triggered when logging into the social provider has finished **suc
 ```js
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_LOGIN_FINISHED, this.onLoginFinished, this);
 
-this.onLoginFinished = function (userProfile, payload) {
+this.onLoginFinished = function (userProfile, autoLogin, payload) {
+  // userProfile - The user's profile from the logged in provider
+  // autoLogin - comes "true" if user login automatically
+  // payload - an identification String sent from the caller of the action
   // ... your game specific implementation here ...
 }
 ```
@@ -120,7 +127,10 @@ This event is triggered when logging into the social provider has been cancelled
 ```js
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_LOGIN_CANCELLED, this.onLoginCancelled, this);
 
-this.onLoginCancelled = function (provider, payload) {
+this.onLoginCancelled = function (provider, autoLogin, payload) {
+  //  provider - The provider on which the login has failed
+  //  autoLogin - comes "true" if user login automatically
+  //  payload - an identification String sent from the caller of the action
   // ... your game specific implementation here ...
 }
 ```
@@ -132,7 +142,11 @@ This event is triggered when logging into the social provider has failed.
 ```js
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_LOGIN_FAILED, this.onLoginFailed, this);
 
-this.onLoginFailed = function (provider, errorDescription, payload) {
+this.onLoginFailed = function (provider, errorDescription, autoLogin, payload) {
+  // provider - The provider on which the login has failed
+  // autoLogin - comes "true" if user login automatically
+  // errorDescription - a Description of the reason for failure
+  // payload - an identification String sent from the caller of the action
   // ... your game specific implementation here ...
 }
 ```
@@ -145,6 +159,7 @@ This event is triggered when logging out of the social provider has started.
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_LOGOUT_STARTED, this.onLogoutStarted, this);
 
 this.onLogoutStarted = function (provider) {
+  // provider - The provider on which the login has started
   // ... your game specific implementation here ...
 }
 ```
@@ -157,6 +172,7 @@ This event is triggered when logging out of the social provider has finished **s
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_LOGOUT_FINISHED, this.onLogoutFinished, this);
 
 this.onLogoutFinished = function (provider) {
+  // provider - The provider on which the logout has finished
   // ... your game specific implementation here ...
 }
 ```
@@ -169,6 +185,8 @@ This event is triggered when logging out of the social provider has failed.
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_LOGOUT_FAILED, this.onLogoutFailed, this);
 
 this.onLogoutFailed = function (provider, errorDescription) {
+  // provider - The provider on which the logout has failed
+  // errorDescription - a Description of the reason for failure
   // ... your game specific implementation here ...
 }
 ```
@@ -181,6 +199,9 @@ This event is triggered when a social action has started.
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_SOCIAL_ACTION_STARTED, this.onSocialActionStarted, this);
 
 this.onSocialActionStarted = function (provider, socialActionType, payload) {
+  // provider - The provider on which the social action has started
+  // socialActionType - The social action which started
+  // payload - an identification String sent from the caller of the action
   // ... your game specific implementation here ...
 }
 ```
@@ -193,6 +214,9 @@ This event is triggered when a social action has finished **successfully**.
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_SOCIAL_ACTION_FINISHED, this.onSocialActionFinished, this);
 
 this.onSocialActionFinished = function (provider, socialActionType, payload) {
+  // provider - The provider on which the social action has finished
+  // socialActionType - The social action which finished
+  // payload - an identification String sent from the caller of the action
   // ... your game specific implementation here ...
 }
 ```
@@ -205,6 +229,10 @@ This event is triggered when a social action has failed.
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_SOCIAL_ACTION_FAILED, this.onSocialActionFailed, this);
 
 this.onSocialActionFailed = function (provider, socialActionType, errorDescription, payload) {
+  // provider - The provider on which the social action has failed
+  // socialActionType - The social action which failed
+  // errorDescription - a Description of the reason for failure
+  // payload - an identification String sent from the caller of the action
   // ... your game specific implementation here ...
 }
 ```
@@ -217,6 +245,9 @@ This event is triggered when fetching the contacts from the social provider has 
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_GET_CONTACTS_STARTED, this.onGetContactsStarted, this);
 
 this.onGetContactsStarted = function (provider, fromStart, payload) {
+  // provider - The provider on which the get contacts process started
+  // fromFirst - Should we reset pagination or request the next page
+  // payload - an identification String sent from the caller of the action
   // ... your game specific implementation here ...
 }
 ```
@@ -229,6 +260,10 @@ This event is triggered when fetching the contacts from the social provider has 
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_GET_CONTACTS_FINISHED, this.onGetContactsFinished, this);
 
 this.onGetContactsFinished = function (provider, contacts, payload, hasMore) {
+  // provider - The provider on which the get contacts process finished
+  // contactsDict - an Array of contacts represented by CCUserProfile
+  // payload - an identification String sent from the caller of the action
+  // hasMore - if it has more in pagination
   // ... your game specific implementation here ...
 }
 ```
@@ -241,6 +276,10 @@ This event is triggered when fetching the contacts from the social provider has 
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_GET_CONTACTS_FAILED, this.onGetContactsFailed, this);
 
 this.onGetContactsFailed = function (provider, errorDescription, fromStart, payload) {
+  // provider - The provider on which the get contacts process has failed
+  // errorDescription - a Description of the reason for failure
+  // fromFirst - Should we reset pagination or request the next page
+  // payload - an identification String sent from the caller of the action
   // ... your game specific implementation here ...
 }
 ```
@@ -253,6 +292,9 @@ This event is triggered when fetching the feed from the social provider has star
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_GET_FEED_STARTED, this.onGetFeedStarted, this);
 
 this.onGetFeedStarted = function (provider, fromStart, payload) {
+  // provider - The provider on which the get feed process started
+  // fromFirst - Should we reset pagination or request the next page
+  // payload - an identification String sent from the caller of the action
   // ... your game specific implementation here ...
 }
 ```
@@ -265,6 +307,10 @@ This event is triggered when fetching the feed from the social provider has fini
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_GET_FEED_FINISHED, this.onGetFeedFinished, this);
 
 this.onGetFeedFinished = function (provider, feedList, payload, hasMore) {
+  //  provider - The provider on which the get feed process finished
+  //  feedList - an Array of feed entries represented by __String
+  //  payload - an identification String sent from the caller of the action
+  //  hasMore - if it has more in pagination
   // ... your game specific implementation here ...
 }
 ```
@@ -277,6 +323,10 @@ This event is triggered when fetching the feed from the social provider has fail
 Soomla.addHandler(Soomla.ProfileConsts.EVENT_GET_FEED_FAILED, this.onGetFeedFailed, this);
 
 this.onGetFeedFailed = function (provider, errorDescription, fromStart, payload) {
+  // provider - The provider on which the get feed process has failed
+  // errorDescription - a Description of the reason for failure
+  // fromFirst - Should we reset pagination or request the next page
+  // payload - an identification String sent from the caller of the action
   // ... your game specific implementation here ...
 }
 ```

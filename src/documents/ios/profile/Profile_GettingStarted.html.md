@@ -73,6 +73,15 @@ platform: 'ios'
   @(TWITTER): @{ ..., @"forceWeb": @(YES) },
   ```
 
+  4. **Common** - There is a common param, supported with all providers: `autoLogin`. Setting this param to `YES` makes 
+    Soomla to try to log in automatically to this provider, if an user already logged in with it in the previous sessions. 
+    The default value is `NO`.
+  
+	``` objectivec
+  	// For instance for FB
+  	@(FACEBOOK) : @{ @"autoLogin": @(YES) }
+  	```
+
 <div class="info-box">The following steps should be done according to the target social network.</div>
 
 **ios-profile** is structured to support multiple social networks (Facebook, Twitter, etc.), at the time of writing this the framework only supports Facebook, Twitter and Google+ integration.

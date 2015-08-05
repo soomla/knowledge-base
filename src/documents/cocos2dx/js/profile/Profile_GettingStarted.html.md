@@ -134,6 +134,19 @@ follow these directions only for the Profile module.</div>
     };
   ```
 
+  d. **Common** - There is a common param, supported with all providers: `autoLogin`. Setting this param to `true` makes 
+    Soomla to try to log in automatically to this provider, if an user already logged in with it in the previous sessions. 
+    The default value is `false`.
+  
+	``` js
+  	    // For instance for FB
+	    var profileParams = {
+          facebook: {
+            autoLogin: true
+          }
+        };
+  	```
+
 1. You'll need to subscribe to profile events to get notified about social network related events. refer to the [Event Handling](/cocos2dx/js/profile/Profile_Events) section for more information.
 
 <br>

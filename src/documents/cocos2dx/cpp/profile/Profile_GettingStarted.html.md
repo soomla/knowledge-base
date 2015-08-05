@@ -91,6 +91,17 @@ platform: 'cocos2dx'
   profileParams->setObject(twitterParams, soomla::CCUserProfileUtils::providerEnumToString(soomla::TWITTER)->getCString());
   ```
 
+  d. **Common** - There is a common param, supported with all providers: `autoLogin`. Setting this param to `true` makes 
+    Soomla to try to log in automatically to this provider, if an user already logged in with it in the previous sessions. 
+    The default value is `false`.
+  
+	``` cpp
+  	// For instance for FB
+    __Dictionary *facebookParams = __Dictionary::create();
+	facebookParams->setObject(__Bool::create(true), "autoLogin");
+    profileParams->setObject(facebookParams, soomla::CCUserProfileUtils::providerEnumToString(soomla::FACEBOOK)->getCString());
+  	```
+
 7. You'll need to subscribe to profile events to get notified about social network related events. refer to the [Event Handling](/cocos2dx/cpp/profile/Profile_Events) section for more information.
 
 <br>

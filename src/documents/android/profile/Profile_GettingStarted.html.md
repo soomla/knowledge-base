@@ -44,7 +44,7 @@ platform: 'android'
 	``` java
 	SoomlaProfile.getInstance().initialize();
 	```
-
+	
   **NOTE** that some social providers need special parameters in initialization - supply them like so:
 
 	``` java
@@ -78,6 +78,16 @@ platform: 'android'
 
 	SoomlaProfile.getInstance().initialize(providerParams);
 	```
+  d. **Common** - There is a common param, supported with all providers: `autoLogin`. Setting this param to `true` makes 
+    Soomla to try to log in automatically to this provider, if an user already logged in with it in the previous sessions. 
+    The default value is `false`.
+  
+	``` java
+  	// For instance for FB
+  	HashMap<String, String> facebookParams = new HashMap<String, String>();
+  	facebookParams.put("autoLogin", Boolean.toString(true));
+  	providerParams.put(IProvider.Provider.FACEBOOK, facebookParams);
+  	```
 
 6. If integrating a virtual economy with the store module, please see [android-store](/android/store/Store_GettingStarted) for store setup.
 

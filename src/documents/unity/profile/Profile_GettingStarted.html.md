@@ -107,6 +107,11 @@ Twitter is supported out-of-the-box, authentication is done either through the s
 2. In the menu bar of the Unity editor go to **Window > Soomla > Edit Settings** and toggle the "twitter" check box. Then fill in "Consumer Key" and "Consumer Secret".
 
 	**NOTE:** "Consumer Key" and "Consumer Secret" are located under "Keys and Access Tokens" of your twitter app.
+	
+###Common
+
+There is a common option, supported with all providers: `autoLogin`. Setting this option makes Soomla to try to log 
+in automatically to this provider, if an user already logged in with it in the previous sessions. 
 
 ##Caveats
 
