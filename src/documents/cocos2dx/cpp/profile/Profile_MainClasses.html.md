@@ -51,6 +51,7 @@ This class represents a profile of a user from a social network (provider).
 - `Gender`
 - `Language`
 - `Birthday`
+- `Extra` (a dictionary contains additional info provided by social provider, such as access token, granted permissions, etc.)
 
 ## CCSoomlaProfile <a href="https://github.com/soomla/cocos2dx-profile/blob/master/Soomla/CCSoomlaProfile.h" target="_blank"><img class="link-icon" src="/img/tutorial_img/linkImg.png"></a>
 

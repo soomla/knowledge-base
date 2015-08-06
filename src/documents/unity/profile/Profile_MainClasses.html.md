@@ -51,6 +51,7 @@ This class holds information about a user for a specific `Provider`.
 - `Gender`
 - `Language`
 - `Birthday`
+- `Extra` (a dictionary contains additional info provided by social provider, such as access token, granted permissions, etc.)
 
 ## SoomlaProfile <a href="https://github.com/soomla/unity3d-profile/blob/master/Soomla/Assets/Plugins/Soomla/Profile/SoomlaProfile.cs" target="_blank"><img class="link-icon" src="/img/tutorial_img/linkImg.png"></a>
 

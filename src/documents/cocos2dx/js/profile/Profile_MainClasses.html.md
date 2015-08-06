@@ -51,6 +51,7 @@ This class represents a profile of a user from a social network (provider).
 - `Gender`
 - `Language`
 - `Birthday`
+- `Extra` (a dictionary contains additional info provided by social provider, such as access token, granted permissions, etc.)
 
 ## Soomla.SoomlaProfile
 

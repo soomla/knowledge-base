@@ -43,6 +43,7 @@ This class holds information about a user for a specific `IProvider`.
 - `Username`
 - `FirstName`
 - `LastName`
+- `Extra` (a dictionary contains additional info provided by social provider, such as access token, granted permissions, etc.)
 
 ## SoomlaProfile <a href="https://github.com/soomla/android-profile/blob/master/SoomlaAndroidProfile/src/com/soomla/profile/SoomlaProfile.java" target="_blank"><img class="link-icon" src="/img/tutorial_img/linkImg.png"></a>
 

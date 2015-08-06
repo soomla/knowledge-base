@@ -50,6 +50,7 @@ This class represents a profile of a user from a social network (provider).
 - `gender`
 - `language`
 - `birthday`
+- `extra` (a dictionary contains additional info provided by social provider, such as access token, granted permissions, etc.)
 
 ## SoomlaProfile <a href="https://github.com/soomla/ios-profile/blob/master/SoomlaiOSProfile/SoomlaProfile.h" target="_blank"><img class="link-icon" src="/img/tutorial_img/linkImg.png"></a>
 
