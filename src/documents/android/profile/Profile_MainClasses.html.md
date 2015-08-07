@@ -43,7 +43,7 @@ This class holds information about a user for a specific `IProvider`.
 - `Username`
 - `FirstName`
 - `LastName`
-- `Extra` - a dictionary contains additional info provided by social provider:
+- `Extra` - a map contains additional info provided by social provider:
   - `Facebook` - access_token(String), permissions(JSONArray of Strings);
   - `Twitter` - access_token(String);
   - `Google+` - access_token(String).
