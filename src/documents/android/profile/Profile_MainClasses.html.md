@@ -43,6 +43,10 @@ This class holds information about a user for a specific `IProvider`.
 - `Username`
 - `FirstName`
 - `LastName`
+- `Extra` - a map contains additional info provided by social provider:
+  - `Facebook` - access_token(String), permissions(JSONArray of Strings);
+  - `Twitter` - access_token(String);
+  - `Google+` - access_token(String).
 
 ## SoomlaProfile <a href="https://github.com/soomla/android-profile/blob/master/SoomlaAndroidProfile/src/com/soomla/profile/SoomlaProfile.java" target="_blank"><img class="link-icon" src="/img/tutorial_img/linkImg.png"></a>
 

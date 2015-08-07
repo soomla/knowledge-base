@@ -50,6 +50,10 @@ This class represents a profile of a user from a social network (provider).
 - `gender`
 - `language`
 - `birthday`
+- `extra` - a NSDictionary contains additional info provided by social provider:
+  - `Facebook` - access_token(NSString), permissions(NSArray of NSStrings), expiration_date(UNIX timestamp as NSNumber);
+  - `Twitter` - access_token(NSString);
+  - `Google+` - access_token(NSString), refresh_token(NSString), expiration_date(UNIX timestamp as NSNumber).
 
 ## SoomlaProfile <a href="https://github.com/soomla/ios-profile/blob/master/SoomlaiOSProfile/SoomlaProfile.h" target="_blank"><img class="link-icon" src="/img/tutorial_img/linkImg.png"></a>
 

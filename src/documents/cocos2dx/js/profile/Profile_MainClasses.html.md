@@ -51,6 +51,10 @@ This class represents a profile of a user from a social network (provider).
 - `Gender`
 - `Language`
 - `Birthday`
+- `Extra` - a cocos2dx::__Dictionary contains additional info provided by social provider:
+  - `Facebook` - access_token(string), permissions(array of strings), expiration_date(UNIX timestamp as number) - not available for Android;
+  - `Twitter` - access_token(string);
+  - `Google+` - access_token(string), refresh_token(string) - not available for Android, expiration_date(UNIX timestamp as number) - not available for Android.
 
 ## Soomla.SoomlaProfile
 
