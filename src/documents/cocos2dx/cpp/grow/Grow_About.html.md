@@ -7,7 +7,7 @@ position: 1
 theme: 'platforms'
 collection: 'cocos2dx_grow'
 module: 'grow'
-lang: 'cpp' 
+lang: 'cpp'
 platform: 'cocos2dx'
 ---
 
@@ -123,3 +123,7 @@ Hover over any country on the map and see what percentage of your users in that 
 ![alt text](/img/tutorial_img/unity_grow/devices.png "Devices")
 
 See the percentage of your users who performed the action you defined in the filter per device. For example, 4.5% of your iPhone users rated your game. 6.2% of the other games' iPhone users rated their games, so your game is a bit behind the benchmark.
+
+## **Soomla Insights**
+
+Soomla Insights brings you priceless insights about your users. You can use the provided insights to take actions on your users at real time during gameplay or when your users arrive in the game. <a href="http://blog.soom.la/2015/08/soomla-insights-know-users-better-real-time.html/" target="_blank">Read more...</a>
