@@ -14,7 +14,7 @@ platform: 'ios'
 
 ## Getting Started
 
-1. Download [ios-profile](http://library.soom.la/fetch/ios-profile/1.0.1?cf=github).
+1. Download [ios-profile](http://library.soom.la/fetch/ios-profile/latest?cf=github).
 
 2. The static libs and headers you need are in the zip you downloaded from the link above.
 

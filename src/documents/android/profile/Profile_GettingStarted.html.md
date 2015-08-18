@@ -14,7 +14,7 @@ platform: 'android'
 
 ##Getting Started
 
-1. Download [android-profile](http://library.soom.la/fetch/android-profile/1.0.1?cf=github).
+1. Download [android-profile](http://library.soom.la/fetch/android-profile/latest?cf=github).
 
 2. From the downloaded zip, add the following jars to your project.
 
