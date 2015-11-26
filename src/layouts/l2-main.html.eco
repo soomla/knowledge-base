@@ -17,7 +17,11 @@ layout: 'knowledge-base'
 <div class="nav-options-sm">
   <div class="container">
     <% for doc in @getCollection(@document.collection).toJSON(): %>
-        <%- @partial('l2-grid-option', {image: "/img/level2/Icon-#{doc.image}.png", link:doc.url,title: doc.title,text: doc.text, subjectclass:@document.theme}) %>
+        <% if doc.featured: %>
+					<%- @partial('l2-grid-option-featured', {image: "/img/level2/Icon-#{doc.image}.png", link:doc.url,title: doc.title,text: doc.text, subjectclass:@document.theme, advancedcls: doc.advancedcls, breadcrumbs: doc.breadcrumbs }) %>
+        <% else: %>
+					<%- @partial('l2-grid-option', {image: "/img/level2/Icon-#{doc.image}.png", link:doc.url,title: doc.title,text: doc.text, subjectclass:@document.theme }) %>
+        <% end %>
     <% end %>
   </div>
 </div>

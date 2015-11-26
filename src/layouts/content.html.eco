@@ -2,6 +2,17 @@
 layout: 'knowledge-base'
 ---
 <div id="nav">
+<div class="clearfix"></div>
+<ul id="tocify-header0" class="tocify-header tocify-related nav nav-list">
+  <li class="tocify-item active" data-unique="RelatedArticles" style="cursor: pointer;">
+		<a title="related">Related articles</a>
+  </li>
+  <ul class="tocify-subheader nav nav-list">
+		<li class="tocify-item" style="cursor: pointer;"><a title="">State & Economy Sync</a></li>
+		<li class="tocify-item" style="cursor: pointer;"><a title="">Social Leaderboards</a></li>
+		<li class="tocify-item" style="cursor: pointer;"><a title="">State & Economy Sync</a></li>
+	</ul>
+</ul>
 </div>
 <div id="main-container" class="container">
   <div class="row">
