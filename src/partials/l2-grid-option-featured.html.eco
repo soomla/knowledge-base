@@ -1,0 +1,16 @@
+<div class="col-lg-4 col-md-6 menu-option <%= @advancedcls %>">
+	<div class="featured-ribbon"></div>
+  <a href="<%= @link %>" class="link-container clearfix">
+    <div class="option-image <%= @subjectclass %>" style="background-image: url('<%= @image %>')"></div>
+    <div class="option-bc"><%= @breadcrumbs %></div>
+      <div class="option-head-text <%= @subjectclass %>"><%= @title %></div>
+    <div class="option-text-container">
+      <div class="option-text">
+        <%= @text %>
+      </div>
+      <div class="featured-readmore"
+				<a href="<%= @link %>" class="featured-link">READ MORE</a>
+			</div>
+    </div>
+  </a>
+</div>
