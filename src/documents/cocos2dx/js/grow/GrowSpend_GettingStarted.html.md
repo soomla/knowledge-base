@@ -277,11 +277,7 @@ That's it! Now all you have to do is build your XCode project and run your game.
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="com.android.vending.BILLING"/>
-
-  <application
-            ...
-            android:name="com.soomla.SoomlaApp">
-  </application>
+  
   ```
 
 5. Connect the Store module to your desired billing service:

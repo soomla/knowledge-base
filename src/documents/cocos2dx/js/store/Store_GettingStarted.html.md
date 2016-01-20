@@ -202,16 +202,12 @@ ln -s <your-cocos2d-js-path>/frameworks/js-bindings/cocos2d-x frameworks/runtime
 	
     - Cocos2dxAndroidStore.jar
 
-1. Update your AndroidManifest.xml to include permissions and the SoomlaApp:
+1. Update your AndroidManifest.xml to include permissions:
 
     ```xml
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="com.android.vending.BILLING"/>
-
-    <application ...
-    	       android:name="com.soomla.SoomlaApp">
-    	       ...
-    </application>
+    
     ```
 
 **That's it! You now have storage and in-app purchasing capabilities and you can begin using cocos2dx-store in your game.**

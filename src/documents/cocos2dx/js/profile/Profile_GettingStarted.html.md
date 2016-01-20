@@ -346,7 +346,7 @@ Game Center is supported out-of-the-box, authentication is done through the sign
   
   - Cocos2dxAndroidProfile.jar
 
-4. Update your AndroidManifest.xml to include permissions and the SoomlaApp:
+4. Update your AndroidManifest.xml to include permissions:
 
     ``` xml
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -355,10 +355,6 @@ Game Center is supported out-of-the-box, authentication is done through the sign
     <!-- optional: required for uploadImage from SD card -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <application ...
-    	       android:name="com.soomla.SoomlaApp">
-    	       ...
-    </application>
     ```
 
 <div class="info-box">The following steps should be done according to the target social network.

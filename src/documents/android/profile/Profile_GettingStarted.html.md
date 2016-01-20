@@ -24,22 +24,14 @@ platform: 'android'
 
 	- `square-otto-1.3.2.jar`
 
-3. Make the following changes to your AndroidManifest.xml:
-
-	Set `SoomlaApp` as the main Application by placing it in the `application` tag:
-
-	``` xml
-	<application ...
-	             android:name="com.soomla.SoomlaApp">
-	```
-
-4. In the `onCreate()` method of your main activity, initialize `Soomla` with a "Soomla Secret", a secret of your choice used to encrypt your users' data. (If you used an older version of android-store, this should be the same as the old "custom secret"):
+3. In the `onCreate()` method of your main activity, initialize `Soomla` with your main activity and "Soomla Secret", a secret of your choice used to encrypt your users' data. (If you used an older version of android-store, this should be the same as the old "custom secret"):
 
 	``` java
-	Soomla.initialize("[YOUR CUSTOM GAME SECRET HERE]");
+	Soomla.initialize(this, "[YOUR CUSTOM GAME SECRET HERE]");
+	
 	```
 
-5. In the `onCreate()` method of your main activity, initialize `SoomlaProfile`:
+4. In the `onCreate()` method of your main activity, initialize `SoomlaProfile`:
 
 	``` java
 	SoomlaProfile.getInstance().initialize();
@@ -102,7 +94,7 @@ platform: 'android'
   providerParams.put(IProvider.Provider.FACEBOOK, facebookParams);
   ```
 
-6. If integrating a virtual economy with the store module, please see [android-store](/android/store/Store_GettingStarted) for store setup.
+5. If integrating a virtual economy with the store module, please see [android-store](/android/store/Store_GettingStarted) for store setup.
 
 <div class="info-box">The following steps should be done according to the target social network.</div>
 
