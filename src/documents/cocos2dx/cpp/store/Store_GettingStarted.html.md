@@ -161,16 +161,12 @@ In your XCode project, perform the following steps:
 	
     - Cocos2dxAndroidStore.jar
 
-3. Update your AndroidManifest.xml to include permissions and the SoomlaApp:
+3. Update your AndroidManifest.xml to include permissions:
 
     ```xml
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="com.android.vending.BILLING"/>
-
-    <application ...
-    	       android:name="com.soomla.SoomlaApp">
-    	       ...
-    </application>
+    
     ```
 
 ## **Select a Billing Service**

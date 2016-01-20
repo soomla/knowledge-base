@@ -30,30 +30,21 @@ Before doing anything, SOOMLA recommends that you go through [Android In-app Bil
 
     <div class="info-box">There are some necessary files in submodules linked with symbolic links. If you're cloning the project make sure to include the `--recursive` flag.</div>
 
-2. Make the following changes to your AndroidManifest.xml:
-
-    Set `SoomlaApp` as the main Application by placing it in the `application` tag:
-
-    ``` xml
-    <application ...
-        android:name="com.soomla.SoomlaApp">
-    ```
-
-3. In the `onCreate()` method of your main activity, initialize Soomla with a secret that you chose to encrypt the user data. (For those who came from older versions, this should be the same as the old "customSec"):
+2. In the `onCreate()` method of your main activity, initialize Soomla your main activity and secret that you chose to encrypt the user data. (For those who came from older versions, this should be the same as the old "customSec"):
 
     ``` java
-    Soomla.initialize("[YOUR CUSTOM GAME SECRET HERE]");
+    Soomla.initialize(this, "[YOUR CUSTOM GAME SECRET HERE]");
     ```
 
     <div class="info-box">This secret is your encryption secret for data saved in the DB.</div>
 
-4. Create your own implementation of `IStoreAssets` in order to describe your game's specific assets.
+3. Create your own implementation of `IStoreAssets` in order to describe your game's specific assets.
 
   - See the brief [example](#example) at the bottom.
 
   - See a more detailed example, our MuffinRush [example](https://github.com/soomla/android-store/blob/master/SoomlaAndroidExample/src/com/soomla/example/MuffinRushAssets.java).
 
-5. In the `onCreate()` method of your main activity, initialize `SoomlaStore` with the class you just created:
+4. In the `onCreate()` method of your main activity, initialize `SoomlaStore` with the class you just created:
 
     ``` java
     SoomlaStore.getInstance().initialize(new YourStoreAssetsImplementation());

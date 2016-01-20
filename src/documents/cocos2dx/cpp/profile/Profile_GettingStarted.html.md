@@ -276,7 +276,7 @@ That's it! Now all you have to do is build your XCode project and run your game 
   
   - Cocos2dxAndroidProfile.jar
 
-4. Update your AndroidManifest.xml to include permissions and the SoomlaApp:
+4. Update your AndroidManifest.xml to include permissions:
 
     ``` xml
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -284,11 +284,7 @@ That's it! Now all you have to do is build your XCode project and run your game 
 
     <!-- optional: required for uploadImage from SD card -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
-    <application ...
-    	       android:name="com.soomla.SoomlaApp">
-    	       ...
-    </application>
+    
     ```
 
 <div class="info-box">The following steps should be done according to the target social network.

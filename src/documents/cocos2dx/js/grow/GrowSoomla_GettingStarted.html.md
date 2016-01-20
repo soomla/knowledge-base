@@ -212,6 +212,7 @@ That's it! Now all you have to do is build your XCode project and run your game.
   ``` xml
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  
   ```
 
 That's it! Don't forget to run the **build_native.py** script so that SOOMLA sources will be built with cocos2d-x.
