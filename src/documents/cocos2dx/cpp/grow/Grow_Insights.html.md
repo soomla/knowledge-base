@@ -189,21 +189,26 @@ Returns the user's pay-rank for the given [genre](/cocos2dx/cpp/grow/Grow_Insigh
 
 - -1: No insights for selected genre
 
-- 0: The user has paid 0$ in total
+- 0: The user has paid $0 in total
 
-- 1: The user has paid up to 1$
+- 1: The user has paid up to $1
 
-- 2: The user has paid up to 5$
+- 2: The user has paid up to $5
 
-- 3: The user has paid up to 10$
+- 3: The user has paid up to $10
 
-- 4: The user has paid up to 50$
+- 4: The user has paid up to $50
 
-- 5: The user has paid up to 100$
+- 5: The user has paid up to $100
 
-- 6: The user has paid more than 100$
+- 6: The user has paid more than $100
 
 <div class="info-box">NOTE: Pay rank is calculated according to the user's total revenue from ALL games using GROW.</div>
+<br/>
+
+**`CCPayInsights::getTimeOfPurchase(grow::DayQuarter quarter)`**
+
+Returns a number between 0 to 1 per [DayQuarter](/unity/grow/Grow_Insights#DayQuarter) which indicates the user's likelihood to pay in that specific quarter.
 
 ### Genre
 
@@ -213,7 +218,25 @@ Returns the user's pay-rank for the given [genre](/cocos2dx/cpp/grow/Grow_Insigh
 
 For example, in order to access a user's pay rank by the `Action` genre use `CCGrowInsights::getInstance()->getUserInsights()->getPayInsights()->getPayRankForGenre(Genre::Action)`
 
-### Example
+### DayQuarter
+
+`DayQuarter` represents a quarter of the day, we split the day as following:
+
+- 12am to 6am
+
+- 6am to 12pm
+
+- 12pm to 6pm
+
+- 6pm to 12am
+
+<br/>
+
+#### Usage
+
+For example, in order to check the likelihood of the user to pay in the third quarter of the day `_12pm_6pm` use `CCGrowInsights::getInstance()->getUserInsights()->getPayInsights()->getTimeOfPurchase(DayQuarter::_12pm_6pm)`
+
+## Example
 
 ``` cpp
 using namespace grow;

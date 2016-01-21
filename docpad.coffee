@@ -85,9 +85,9 @@ docpadConfig = {
 				link: '/university'
 			}
 			{
-				id: 'download',
-				title: 'Download',
-				link: '/download'
+				id: 'downloads',
+				title: 'Downloads',
+				link: 'http://dashboard.soom.la/downloads'
 			}
 			{
 				id: 'integrations',
