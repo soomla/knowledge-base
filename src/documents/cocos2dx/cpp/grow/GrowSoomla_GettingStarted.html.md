@@ -124,11 +124,13 @@ In your XCode project, perform the following steps:
 
   ![alt text](/img/tutorial_img/ios_getting_started/linkerFlags.png "Linker Flags")
 
-5. Make sure you have these 9 Frameworks linked to your XCode project:
+5. Make sure you have these 10 Frameworks linked to your XCode project:
 
   - Security
 
   - libsqlite3.0.dylib
+  
+  - libz.dylib
 
   - StoreKit
 
