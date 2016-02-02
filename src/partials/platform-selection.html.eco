@@ -1,7 +1,6 @@
-<div class="col-lg-3 col-md-3 menu-option <%= 'col-md-offset-3' if @firstOfTwo %>">
+<div class="<%= 'col-lg-3 col-md-3' if !@big %> <%= 'col-lg-6 col-md-6' if @big %> menu-option <%= 'col-md-offset-3' if @firstOfTwo %>">
   <a href="<%= @link %>" class="link-container">
-    <div class="option-image" style="background-image: url('<%= @image %>')"></div>
+    <div class="option-image <%= 'big' if @big %> <%= 'small' if !@big %>" style="background-image: url('<%= @image %>')"></div>
     <div class="option-head-text"><%= @title %></div>
   </a>
 </div>
-

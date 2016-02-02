@@ -1,0 +1,82 @@
+---
+layout: "sample"
+image: "giftgaming_logo"
+title: "giftgaming®"
+text: "Monetize non-spenders by giving surprise in-game gifts containing currency and coupons"
+position: 7
+relates: ["supersonic", "unity_ads"]
+collection: 'samples'
+navicon: "nav-icon-giftgaming.png"
+backlink: "https://www.giftgaming.com/"
+theme: 'samples'
+---
+
+# giftgaming Integration
+
+<div>
+  <div class="samples-title">Ads Suck.</div>
+  <p>
+  	giftgaming&reg; monetises games non-intrusively by delivering in-game gifts containing free power-ups, currency and real-world coupons.
+  	Make money whilst making players feel good.
+  </p>
+
+  <div class="samples-title">Why giftgaming</div>
+  <p>
+  	Unlike competitors, giftgaming provides a better gaming experience by:
+  	<ul>
+  	<li>Not forcing players to watch video ads</li>
+  	<li>Not requiring credit card information, email address or phone number</li>
+  	<li>Enabling developers to select the most appropriate brands for their games</li>
+  	<li>Adapting to the look and feel of the game</li>
+  	</ul>
+  </p>
+</div>
+
+<div class="samples-title">Code Sample</div>
+
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-tabs-use-case-code sample-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#sample-unity" aria-controls="unity" role="tab" data-toggle="tab">Unity</a></li>
+  	<li role="presentation"><a href="#sample-android" aria-controls="android" role="tab" data-toggle="tab">Android</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content tab-content-use-case-code">
+
+    <div role="tabpanel" class="tab-pane" id="sample-android">
+    <p>In your MainActivity, you'll want to setup SOOMLA and giftgaming like so:</p>
+     <pre>
+```
+<%- @include('/samples/giftgaming/giftgaming_example_mainactivity.java') %>
+```
+	</pre>
+	<p>Then in your `MyGameGifts` class call Soomla's `StoreInventory.GiveVirtualItem` in your `giftClosed` function:</p>
+	<pre>
+```
+<%- @include('/samples/giftgaming/giftgaming_example_mygamegifts.java') %>
+```
+     </pre>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="samples-title">Getting started</div>
+
+1. Download a <a href="https://www.giftgaming.com/publishers#getPlugin?referrer=soomla">giftgaming Plugin</a> and follow the integration instructions.
+
+2. Integrate the SOOMLA <a href="/unity/grow/growspend_gettingstarted/" target="_blank">GrowSpend bundle</a>.
+
+3. The Unity code sample also makes use of <a href="/unity/grow/grow_insights/" target="_blank">GrowInsigts</a> to detect non-spending users.
+
+4. In your `giftClosed` callback call Soomla's `StoreInventory.GiveItem`
+
+<div class="samples-title">Additional tips and recommendations</div>
+
+1. <a href="http://dashboard.giftgaming.com">Get a giftgaming&reg; Account</a> to receive direct support.
+
+2. Make periodic gifts a part of your game as <a href="http://www.ccsenet.org/journal/index.php/ijms/article/download/11547/8155">studies</a> show surprise gifts improve loyalty, spending and recommendations.
+
+3. Use a unique gift icon for giftgaming so as to not confuse your players.

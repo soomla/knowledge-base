@@ -2,7 +2,7 @@
 title: 'Unity'
 layout: 'l2-main'
 theme: 'platforms'
-collection: 'unity_grow'
+collection: 'soomla_unity_profile'
 platform: 'unity'
-module: 'grow'
+module: 'profile'
 ---

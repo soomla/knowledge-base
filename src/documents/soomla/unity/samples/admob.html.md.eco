@@ -1,0 +1,60 @@
+---
+layout: "sample"
+image: "admob_logo"
+title: "Google AdMob"
+text: "Purchase \"Remove Ads\" to block banners and interstitials"
+position: 3
+relates: ["chartboost", "unity_ads", "heyzap"]
+collection: 'samples'
+navicon: "nav-icon-admob.png"
+backlink: "https://www.google.com/admob/"
+theme: 'samples'
+---
+
+# Admob Integration
+
+An example of the popular "Remove Ads" monetization scheme. When the user purchases the "Remove Ads" in-app purchase item, all ads become hidden, allowing an ad-free experience with more screen real estate.
+
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-tabs-use-case-code sample-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#sample-unity" aria-controls="unity" role="tab" data-toggle="tab">Unity</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content tab-content-use-case-code">
+    <div role="tabpanel" class="tab-pane active" id="sample-unity">
+      <pre>
+```
+<%- @include('/samples/admob/admob_example_soomlaadmob.cs') %>
+```
+      </pre>
+          <p>Then in your `MyGameGifts` class call Soomla's `StoreInventory.GiveVirtualItem` in your `giftClosed` function:</p>
+      <pre>
+```
+<%- @include('/samples/admob/admob_example_soomlaassets.cs') %>
+```
+      </pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="samples-title">Getting started</div>
+
+1. Sign up to <a href="https://www.google.com/admob/" target="_blank">Admob</a>.
+
+2. Download the <a href="https://github.com/googleads/googleads-mobile-unity/releases" target="_blank">Admob Unity plugin</a>.
+
+3. Follow <a href="https://github.com/googleads/googleads-mobile-unity/tree/master/unity" target="_blank">Admob integration instructions for Unity</a>.
+
+4. Integrate <a href="/unity/store/store_gettingstarted/" target="_blank">SOOMLA Store</a>.
+
+5. Add the above implementation of `IStoreAssets` containing the "Remove Ads" lifetime good.
+
+6. Implement banner / interstitial logic according the example above.
+
+
+<div class="samples-title">Credits</div>
+
+This code sample was contributed by SOOMLA community developer Livan Valladares, creator of <a href="http://www.augmentedrealitygirls.com/" target="_blank">ARGirls Augmented Reality app</a>.

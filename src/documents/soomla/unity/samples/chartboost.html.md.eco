@@ -1,0 +1,65 @@
+---
+layout: "sample"
+image: "chartboost_logo"
+title: "Chartboost"
+text: "Adapt ad exposure to paying vs. non-paying users"
+position: 4
+relates: ["unity_ads", "adcolony", "heyzap"]
+collection: 'samples'
+navicon: "nav-icon-chartboost.png"
+backlink: "http://www.chartboost.com/"
+theme: 'samples'
+---
+
+# Chartboost Integration
+
+
+Showing interstital ads is easy. Choosing which users to show them to, and at what frequency is the hard part.  This code sample shows how to increase / decrease ad exposure according to user purchase history.  For this example we consider four types of users:
+
+* non-payers -  haven't paid in other games
+
+* Minnows -  paid up to $1 in other games
+
+* Dolphins -  paid up to $5 in other games
+
+* Whales -  paid more than $5 in other games
+
+Read more about this <a href="http://www.gamesbrief.com/2011/11/whales-dolphins-and-minnows-the-beating-heart-of-a-free-to-play-game/" target="_blank">F2P user classification</a>.
+<br>
+
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-tabs-use-case-code sample-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#sample-unity" aria-controls="unity" role="tab" data-toggle="tab">Unity</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content tab-content-use-case-code">
+    <div role="tabpanel" class="tab-pane active" id="sample-unity">
+      <pre>
+```
+<%- @include('/samples/chartboost/chartboost_example.cs') %>
+```
+      </pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="samples-title">Getting started</div>
+
+1. Sign up to <a href="https://www.chartboost.com/" target="_blank">Chartboost</a>.
+
+2. Add your app to the Chartboost dashboard and download the latest SDK. See <a href="https://answers.chartboost.com/hc/en-us/categories/200356615-SDKs-and-Integrations">Unity instructions</a>.
+
+3. Integrate the SOOMLA <a href="/unity/grow/growultimate_gettingstarted/" target="_blank">GrowUltimate bundle</a>.
+
+4. Load user pay insights by handling the Grow event `OnInsightsRefreshFinished` and caching the `PayRankByGenre`.
+
+5. When level gameplay ends in your game, handle the LevelUp event `OnLevelEnded`.  Then determine according to the pay insights how often to show an interstitial ad.  The more a user is likely to pay, the less you want to show him interstitials to reduce the barriers to first purchase.
+
+
+<div class="samples-title">Credits</div>
+
+This code sample was contributed by SOOMLA community developer Enzi Marinov of <a href="http://toughwin.net/" target="_blank">Toughwin Studio</a>.

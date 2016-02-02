@@ -16,10 +16,8 @@ title: 'Soomla Knowledge Base'
 <div id="platform-options">
 
   <div class="container">
-    <%- @partial('platform-selection', {image:"img/Level2-Unity.png", link:"/unity", title: "Unity3D"}) %>
-    <%- @partial('platform-selection', {image:"img/Level2-Cocos2dx.png", link:"/cocos2dx", title: "Cocos2d-x"}) %>
-    <%- @partial('platform-selection', {image:"img/Level2-iOS.png", link:"/ios", title: "iOS"}) %>
-    <%- @partial('platform-selection', {image:"img/Level2-Android.png", link:"/android", title: "Android"}) %>
+    <%- @partial('platform-selection', {image:"img/Level2-Unity170.png", link:"/unity", title: "Unity3D", big: true}) %>
+    <%- @partial('platform-selection', {image:"img/Level2-Cocos2dx170.png", link:"/cocos2dx", title: "Cocos2d-x", big: true}) %>
   </div>
 </div>
 
@@ -41,9 +39,9 @@ title: 'Soomla Knowledge Base'
       </a>
     </div>
     <div class="col-lg-4 col-md-4 menu-option">
-      <a href="/integrations" class="link-container">
+      <a href="/soomla" class="link-container">
         <div class="option-image" style="background-image: url('img/Level1-integrations-orange.png')"></div>
-        <div class="option-head-text">INTEGRATIONS</div>
+        <div class="option-head-text">SOOMLA</div>
         <div class="option-text">Integrate SOOMLA with 3rd party SDKs for monetization, analytics and attribution</div>
       </a>
     </div>

@@ -1,22 +1,24 @@
 ---
 layout: 'knowledge-base'
-title: 'Soomla'
+title: 'Soomla Knowledge Base'
 ---
 
 <div class="jumbotron" id="know-soomla">
+
     <div id="jumbo-main-text">
-        <div id="hierarchy-nav"><%- @partial('nav-menu-l1', {current:'soomla'}) %></div>
-        CHOOSE YOUR MODULE
+        KNOW SOOMLA - CHOOSE YOUR MODULE
     </div>
     <div id="jumbo-small-text">
-        SOOMLA provides several open-source products.
+        Choose your platform to get started with SOOMLA and related services
     </div>
 </div>
 
-<div class="nav-options">
+<div id="platform-options">
+
   <div class="container">
-    <%- @partial('grid-option', {image:"/img/Level2-StoreFramework.png",link:"/docs/soomla/store",title: "STORE FRAMEWORK",text: "SOOMLA provides the building blocks for all free-to-play games. Read about them here."}) %>
-    <%- @partial('grid-option', {image:"/img/Level2-Highway-ComingSoon.png",link:"javascript:;",title: "HIGHWAY",text: "SOOMLA Highway allows you to sync your users' balances to the cloud and remotely control your in-game economy."}) %>
-    <%- @partial('grid-option', {image:"/img/Level2-Profile-ComingSoon.png",link:"javascript:;",title: "PROFILE",text: "SOOMLA offers a complete social-based solution to integrate with your in-game economy."}) %>
+    <%- @partial('platform-selection', {image:"img/Level2-Unity.png", link:"/soomla/unity", title: "Unity3D", big: false}) %>
+    <%- @partial('platform-selection', {image:"img/Level2-Cocos2dx.png", link:"/soomla/cocos2dx", title: "Cocos2d-x", big: false}) %>
+    <%- @partial('platform-selection', {image:"img/Level2-Android.png", link:"/soomla/android", title: "Android", big: false}) %>
+    <%- @partial('platform-selection', {image:"img/Level2-iOS.png", link:"/soomla/ios", title: "iOS", big: false}) %>
   </div>
 </div>

@@ -42,7 +42,15 @@
   @media all and (max-width: 1124px) {
     padding-top:80px;
   }
-
+.setHoverActive() {
+  &:hover {
+    background-position-y: -1 * @edge;
+    .scale(1.1,1.1);
+  }
+  &:active {
+    background-position-y: -2 * @edge;
+  }
+}
   .menu-option {
 
     margin-bottom:50px;
@@ -53,18 +61,20 @@
       display: inline-block;
 
       .option-image {
-        @edge: 118px;
-        .square(@edge);
         margin-bottom: 15px;
         background-repeat: no-repeat;
         transition: transform 100ms ease-in-out;
 
-        &:hover {
-          background-position-y: -1 * @edge;
-          .scale(1.1,1.1);
+        &.big {
+          @edge: 170px;
+          .square(@edge);
+          .setHoverActive();
         }
-        &:active {
-          background-position-y: -2 * @edge;
+
+        &.small {
+          @edge: 118px;
+          .square(@edge);
+          .setHoverActive();
         }
       }
 

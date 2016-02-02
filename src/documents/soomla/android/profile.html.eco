@@ -1,0 +1,8 @@
+---
+title: 'Android'
+layout: 'l2-main'
+theme: 'platforms'
+collection: 'soomla_android_profile'
+platform: 'android'
+module: 'profile'
+---

@@ -1,0 +1,59 @@
+---
+layout: "sample"
+image: "fyber_logo"
+title: "Fyber"
+text: "Show rewarded video / offer wall to earn coins"
+position: 5
+relates: ["supersonic", "adience", "heyzap"]
+collection: 'samples'
+navicon: "nav-icon-fyber.png"
+backlink: "http://www.fyber.com/"
+theme: 'samples'
+---
+
+# Fyber Integration
+
+This article shows an example of how to integrate Fyber Ads together with Soomla Store to reward and store virtual currency after completing a Rewarded Video.
+
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-tabs-use-case-code sample-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#sample-unity" aria-controls="unity" role="tab" data-toggle="tab">Unity</a></li>
+    <li role="presentation"><a href="#sample-ios" aria-controls="ios" role="tab" data-toggle="tab">iOS</a></li>
+    <li role="presentation"><a href="#sample-android" aria-controls="android" role="tab" data-toggle="tab">Android</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content tab-content-use-case-code">
+    <div role="tabpanel" class="tab-pane active" id="sample-unity">
+      <pre>
+```
+<%- @include('/samples/fyber/fyber_example.cs') or {} %>
+```
+      </pre>
+    </div>
+
+</div>
+
+<div class="samples-title">Getting started</div>
+
+1. Create an account with Fyber <a href="https://dashboard.fyber.com/" target="_blank">here</a>.
+
+2. Create a new application in the Fyber Dashboard
+
+3. <a href="http://developer.fyber.com/content/" target="_blank">Download</a> the Fyber SDK and follow the integration guide for your platform: <br>
+    <a href="http://developer.fyber.com/content/unity/integration/getting-started/" target="_blank">Unity</a> |
+    <a href="http://developer.fyber.com/content/ios/basics/getting-started-sdk/" target="_blank">iOS</a> |
+    <a href="http://developer.fyber.com/content/android/basics/getting-started-sdk/" target="_blank">Android</a>
+
+4. Integrate SOOMLA Store.  Follow all steps in the platform specific getting started guides: <br>
+    <a href="/unity/store/store_gettingstarted/" target="_blank">Unity</a> |
+    <a href="/ios/store/store_gettingstarted/" target="_blank">iOS</a> |
+    <a href="/android/store/store_gettingstarted/" target="_blank">Android</a> |
+
+<div class="samples-title">Additional tips and recommendations</div>
+
+1. Using multiple networks through Fyber Mediation will help you increase both your fill rate and revenue!
+
+2. Adding <a href="http://know.soom.la/unity/grow/grow_gettingstarted/" target="_blank">GROW</a> will allow your users to backup their balances and will give you more tools to analyze their behavior.

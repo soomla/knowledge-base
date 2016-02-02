@@ -1,0 +1,8 @@
+---
+title: 'iOS'
+layout: 'l2-main'
+theme: 'platforms'
+collection: 'soomla_ios_profile'
+platform: 'ios'
+module: 'profile'
+---

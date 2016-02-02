@@ -1,0 +1,22 @@
+---
+layout: 'knowledge-base'
+title: 'Soomla'
+theme: 'platforms'
+---
+
+<div class="jumbotron" id="know-soomla">
+    <div id="jumbo-main-text">
+        <div id="hierarchy-nav"><%- @partial('nav-menu-l1', {current:'cocos2dx'}) %></div>
+        CHOOSE YOUR MODULE
+    </div>
+    <div id="jumbo-small-text">
+        SOOMLA provides several open-source products.
+    </div>
+</div>
+
+<div id="platform-options">
+  <div class="container">
+    <%- @partial('platform-selection', {firstOfTwo: true,image:"/img/Level2-Cocos2dx.png",link:"/soomla/cocos2dx/cpp",title: "C++",text: "Cocos2d-x"}) %>
+    <%- @partial('platform-selection', {image:"/img/Level2-Cocos2dx.png",link:"/soomla/cocos2dx/js",title: "JS",text: "Cocos2d-js"}) %>
+  </div>
+</div>
