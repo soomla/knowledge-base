@@ -17,7 +17,7 @@ theme: 'platforms'
 <div class="nav-options">
   <div class="container">
     <%- @partial('grid-option', {image:"/img/Level2-Store.png",link:"/soomla/android/store",title: "STORE",text: "SOOMLA provides the building blocks for all free-to-play games. Read about them here."}) %>
-    <%- @partial('grid-option', {image:"/img/Level2-Samples.png",link:"/soomla/android/samples",title: "SAMPLES",text: "SOOMLA provides the building blocks for all free-to-play games. Read about them here."}) %>
     <%- @partial('grid-option', {image:"/img/Level2-Profile.png",link:"/soomla/android/profile",title: "PROFILE",text: "SOOMLA offers a complete social-based solution to integrate with your in-game economy."}) %>
+    <%- @partial('grid-option', {image:"/img/Level2-Samples.png",link:"/soomla/android/samples",title: "SAMPLES",text: "SOOMLA provides the building blocks for all free-to-play games. Read about them here."}) %>
   </div>
 </div>

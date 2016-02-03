@@ -1,10 +1,9 @@
 ---
+title: 'Unity'
 layout: 'knowledge-base'
-title: 'Android'
-layout: 'l2-main'
 theme: 'samples'
-collection: 'soomla_android_samples'
-platform: 'android'
+collection: 'soomla_unity_profile'
+platform: 'unity'
 module: 'samples'
 ---
 
@@ -24,7 +23,7 @@ module: 'samples'
     <div class="nav-options nav-options-bottom">
         <div class="container samples-page">
             <div class="row">
-                <% for doc in @getCollection('soomla_android_samples').toJSON(): %>
+                <% for doc in @getCollection('soomla_unity_samples').toJSON(): %>
                 <div class="col-centered col-xs-6 col-md-3 <%= if doc.featured then 'featured' %>">
                     <div class="circle-sample">
                         <%- @partial('sample-item', {image: "/img/samples/Icon2-#{doc.image}.png", link: doc.url, featured: doc.featured}) %>

@@ -18,5 +18,6 @@ theme: 'platforms'
     <div class="container">
       <%- @partial('grid-option', {image:"/img/Level2-Store.png",link:"/soomla/cocos2dx/cpp/store",title: "STORE",text: "SOOMLA provides the building blocks for all free-to-play games. Read about them here."}) %>
       <%- @partial('grid-option', {image:"/img/Level2-Profile.png",link:"/soomla/cocos2dx/cpp/profile",title: "PROFILE",text: "SOOMLA offers a complete social-based solution to integrate with your in-game economy."}) %>
+      <%- @partial('grid-option', {image:"/img/Level2-Samples.png",link:"/soomla/cocos2dx/cpp/samples",title: "SAMPLES",text: "Integrate SOOMLA with 3rd party SDKs for monetization, analytics and attribution."}) %>
     </div>
 </div>

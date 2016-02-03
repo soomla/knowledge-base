@@ -40,9 +40,9 @@ title: 'Soomla Knowledge Base'
     </div>
     <div class="col-lg-4 col-md-4 menu-option">
       <a href="/soomla" class="link-container">
-        <div class="option-image" style="background-image: url('img/Level1-integrations-orange.png')"></div>
+        <div class="option-image" style="background-image: url('img/Level1-Soomla.png')"></div>
         <div class="option-head-text">SOOMLA</div>
-        <div class="option-text">Integrate SOOMLA with 3rd party SDKs for monetization, analytics and attribution</div>
+        <div class="option-text">SOOMLA's open source modules along with Samples to integrate SOOMLA with 3rd party SDKs for monetization, analytics and attribution.</div>
       </a>
     </div>
   </div>

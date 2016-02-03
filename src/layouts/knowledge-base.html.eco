@@ -55,12 +55,13 @@
       <div class="cover"> <a id="header-logo" href="/"><img  src="/img/HeaderLogo.png"/></a></div>
       <div id="header-right">
       </div>
-      <div id="header-before-right">
+<!-- SURVEY     <div id="header-before-right">
         <a href="https://soom.la/labs2" class="survey-banner" target="_blank">
           <span class="survey-sign"></span>
           <span class="survey-soombot animated bounceInDown"></span>
         </a>
       </div>
+-->
     </div>
 
 </nav>
