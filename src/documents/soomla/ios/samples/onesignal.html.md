@@ -15,15 +15,8 @@ theme: 'samples'
 
 <div>
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs nav-tabs-use-case-code sample-tabs" role="tablist">
-    <li role="presentation"><a href="#sample-ios" aria-controls="ios" role="tab" data-toggle="tab">iOS</a></li>
-  </ul>
 
-  <!-- Tab panes -->
-  <div class="tab-content tab-content-use-case-code">
-
-    <div role="tabpanel" class="tab-pane" id="sample-ios">
+    <div role="tabpanel" class="tab-pane active" id="sample-ios">
               <pre>
 ```
 // observe the event:
@@ -40,8 +33,6 @@ theme: 'samples'
 ```
 </pre>
 </div>
-</div>
-
 
 </div>
 

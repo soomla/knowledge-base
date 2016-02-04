@@ -15,13 +15,6 @@ theme: 'samples'
 
 <div>
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs nav-tabs-use-case-code sample-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#sample-unity" aria-controls="unity" role="tab" data-toggle="tab">Unity</a></li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content tab-content-use-case-code">
     <div role="tabpanel" class="tab-pane active" id="sample-unity">
       <pre>
 ```
@@ -46,29 +39,9 @@ public class purchaseTracking : MonoBehaviour {
       </pre>
 
     </div>
-    <div role="tabpanel" class="tab-pane" id="sample-cocos2dx">
-      <pre>
-```
 
-Director::getInstance()->getEventDispatcher()->addCustomEventListener(CCStoreConsts::EVENT_MARKET_PURCHASE_STARTED, CC_CALLBACK_1(Example::onMarketPurchaseStarted, this));
-
-void Example::onMarketPurchaseStarted(EventCustom *event) {
-  // DICT_ELEMENT_PURCHASABLE - the PurchasableVirtualItem whose purchase
-  //                            operation has just started
-
-  // Read purchase data if you need to.
-  // __Dictionary *eventData = (__Dictionary *)event->getUserData();
-  // CCPurchasableVirtualItem *purchasable = dynamic_cast<CCPurchasableVirtualItem *>(eventData->objectForKey(CCStoreConsts::DICT_ELEMENT_PURCHASABLE));
-
-  _push->sendTag("StartedPurchase", "true");
-}
-```
-</pre>
-
-
-  </div>
 </div>
-</div>
+
 
 <div class="samples-title">Getting Started</div>
 

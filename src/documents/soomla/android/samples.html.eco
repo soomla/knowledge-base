@@ -13,7 +13,7 @@ module: 'samples'
         <div id="hierarchy-nav">
           <%- @partial('nav-menu-l1', {current:'integrations'}) %>
         </div>
-        INTEGRATIONS
+        SAMPLES
     </div>
     <div id="jumbo-small-text">
         3rd party integration examples and docs

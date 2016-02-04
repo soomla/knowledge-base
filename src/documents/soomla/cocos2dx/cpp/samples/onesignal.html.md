@@ -15,15 +15,9 @@ theme: 'samples'
 
 <div>
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs nav-tabs-use-case-code sample-tabs" role="tablist">
-    <li role="presentation"><a href="#sample-cocos2dx" aria-controls="cocos2dx" role="tab" data-toggle="tab">Cocos2d-x v3</a></li>
-  </ul>
-
-  <!-- Tab panes -->
   <div class="tab-content tab-content-use-case-code">
 
-    <div role="tabpanel" class="tab-pane" id="sample-cocos2dx">
+    <div role="tabpanel" class="tab-pane active" id="sample-cocos2dx">
       <pre>
 ```
 
@@ -42,7 +36,7 @@ void Example::onMarketPurchaseStarted(EventCustom *event) {
 ```
 </pre>
     </div>
-    
+
   </div>
 
 </div>

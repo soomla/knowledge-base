@@ -15,16 +15,6 @@ theme: 'samples'
 
 <div>
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs nav-tabs-use-case-code sample-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#sample-unity" aria-controls="unity" role="tab" data-toggle="tab">Unity</a></li>
-    <!-- <li role="presentation"><a href="#sample-cocos2dx" aria-controls="cocos2dx" role="tab" data-toggle="tab">Cocos2d-x</a></li> -->
-    <!-- <li role="presentation"><a href="#sample-ios" aria-controls="ios" role="tab" data-toggle="tab">iOS</a></li> -->
-    <li role="presentation"><a href="#sample-android" aria-controls="android" role="tab" data-toggle="tab">Android</a></li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content tab-content-use-case-code">
     <div role="tabpanel" class="tab-pane active" id="sample-unity">
       <pre>
 ```
@@ -162,7 +152,6 @@ public class SoomlaHeroicLabsBehaviour : MonoBehaviour
 ```
       </pre>
     </div>
-  </div>
 </div>
 
 <div class="samples-title">Getting Started</div>

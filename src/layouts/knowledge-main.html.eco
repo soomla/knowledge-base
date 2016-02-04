@@ -6,10 +6,10 @@ title: 'Soomla Knowledge Base'
 <div class="jumbotron" id="know-soomla">
 
     <div id="jumbo-main-text">
-        KNOW SOOMLA
+        KNOW GROW
     </div>
     <div id="jumbo-small-text">
-        Choose your platform to get started with SOOMLA and related services
+        Choose your platform to get started with GROW and related services
     </div>
 </div>
 
@@ -28,14 +28,14 @@ title: 'Soomla Knowledge Base'
       <a href="http://dashboard.soom.la/downloads" class="link-container">
         <div class="option-image" style="background-image: url('img/Level1-Downloads.png')"></div>
         <div class="option-head-text">DOWNLOADS</div>
-        <div class="option-text">All of SOOMLA's SDKs bundled and packaged for getting started. Come and get'em!</div>
+        <div class="option-text">All of GROW's integrations packaged for getting started. Come and get'em!</div>
       </a>
     </div>
     <div class="col-lg-4 col-md-4 menu-option">
       <a href="/university" class="link-container">
         <div class="option-image" style="background-image: url('img/Level1-University-green.png')"></div>
         <div class="option-head-text">UNIVERSITY</div>
-        <div class="option-text">Watch our new video tutorials to get started with SOOMLA. More videos coming soon!</div>
+        <div class="option-text">Watch our new video tutorials to get started with GROW. More videos coming soon!</div>
       </a>
     </div>
     <div class="col-lg-4 col-md-4 menu-option">
