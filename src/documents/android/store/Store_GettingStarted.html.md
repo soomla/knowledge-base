@@ -182,7 +182,7 @@ public class StoreExampleActivity extends Activity {
 
         // This value is a secret of your choice.
         // You can't change it after you publish your game.
-        Soomla.initialize("[CUSTOM SECRET HERE]");
+        Soomla.initialize(this, "[CUSTOM SECRET HERE]");
         SoomlaStore.getInstance().initialize(storeAssets);
 
         /** The following is relevant only if your Billing Provider is Google Play **/
