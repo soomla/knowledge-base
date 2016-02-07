@@ -179,8 +179,6 @@ ln -s <your-cocos2d-js-path>/frameworks/js-bindings/cocos2d-x frameworks/runtime
 
   - SystemConfiguration
 
-  - AdSupport
-
   - MediaPlayer
 
   - GameController
