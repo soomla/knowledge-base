@@ -114,8 +114,6 @@ sure to check "create group").
   - libicucore
   
   - SystemConfguration
-  
-  - AdSupport
 
 That's it!
 > Don't forget to `Build Custom Simulator` for iOS, if you use Cocos IDE.
