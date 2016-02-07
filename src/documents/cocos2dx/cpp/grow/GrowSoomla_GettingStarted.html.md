@@ -162,7 +162,13 @@ That's it! Now all you have to do is build your XCode project and run your game.
 
   From `extensions/cocos2dx-highway/build/android`
 
-    - AndroidViper.jar
+    - GrowHighway.jar
+        
+    - GrowServices.jar
+        
+    - GrowSoomla.jar
+        
+    - keeva-1.0.1.jar
 
     - Cocos2dxAndroidHighway.jar
 
