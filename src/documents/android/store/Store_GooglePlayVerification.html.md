@@ -29,9 +29,9 @@ In order for the verification to work, you need to follow Google's guidelines an
    
   Fill the values of: `Redirect URIs` and `Authorized JavaScript origins`:
 
-  ![alt text](/img/tutorial_img/google_play_verification/create_web_application.png "Creating Web App")
+  <div class="info-box">You can use http://www.example.com and http://www.example.com/oauth2callback here as default values.</div>
 
-  <div class="info-box">You can use default values (just leave empty values and defaults will be used).</div>  
+  ![alt text](/img/tutorial_img/google_play_verification/create_web_application.png "Creating Web App")  
 
   From the created client id, take `clientId` and `clientSecret`.
 
