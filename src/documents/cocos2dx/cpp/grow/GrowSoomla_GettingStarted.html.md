@@ -140,8 +140,6 @@ In your XCode project, perform the following steps:
 
   - SystemConfiguration
 
-  - AdSupport
-
   - MediaPlayer
 
   - GameController
