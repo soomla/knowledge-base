@@ -260,7 +260,7 @@ That's it! Now all you have to do is build your XCode project and run your game.
         
     - GrowSoomla.jar
         
-    - keeva-1.0.1.jar
+    - keeva-1.0.1.jar (not required if already added in `soomla-cocos2dx-core`)
 
     - Cocos2dxAndroidHighway.jar
 
@@ -271,6 +271,8 @@ That's it! Now all you have to do is build your XCode project and run your game.
     - SoomlaAndroidCore.jar
 
     - Cocos2dxAndroidCore.jar
+    
+    - keeva-1.0.1.jar (not required if already added in `cocos2dx-highway`)
 
     - square-otto-1.3.2.jar
 
