@@ -268,6 +268,8 @@ That's it! Now all you have to do is build your XCode project and run your game.
     - SoomlaAndroidCore.jar
 
     - Cocos2dxAndroidCore.jar
+    
+    - keeva-1.0.1.jar
 
     - square-otto-1.3.2.jar
 

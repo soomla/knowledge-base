@@ -272,7 +272,7 @@ That's it! Now all you have to do is build your XCode project and run your game.
 
     - Cocos2dxAndroidCore.jar
     
-    - keeva-1.0.1.jar (not required if already added in `cocos2dx-highway`)
+    - keeva-1.0.1.jar
 
     - square-otto-1.3.2.jar
 
