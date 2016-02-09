@@ -297,22 +297,21 @@ public class ExampleWindow : MonoBehaviour {
 	public static void onLoginFinished(UserProfile userProfileJson, bool autoLogin, string payload){
 		SoomlaUtils.LogDebug("TAG", "Logged in as: " + userProfileJson.toJSONObject().print());
 	}
-	public void onGrowInsightsInitialized () {
+	public void onGrowInsightsInitialized (GrowInsightsInitializedEvent event) {
 		Debug.Log("Grow insights has been initialized.");
 	}
-	public void onInsightsRefreshFinished (){
+	public void onInsightsRefreshFinished (InsightsRefreshFinishedEvent event) {
 		if (GrowInsights.UserInsights.PayInsights.PayRankByGenre[Genre.Educational] > 3) {
 			// ... Do stuff according to your business plan ...
 		}
 	}
-	public void onGrowSyncInitialized() {
+	public void onGrowSyncInitialized(GrowSyncInitializedEvent event) {
 		Debug.Log("GROW Sync has been initialized.");
 	}
-	public void onModelSyncFinished(IList<string> modules) {
+	public void onModelSyncFinished(ModelSyncFinishedEvent event) {
 		Debug.Log("Model Sync has finished.");
 	}
-	public void onStateSyncFinished(IList<string> changedComponents,
-	                                IList<string> failedComponents) {
+	public void onStateSyncFinished(StateSyncFinishedEvent event) {
 		Debug.Log("State Sync has finished.");
 	}
 
@@ -328,9 +327,9 @@ public class ExampleWindow : MonoBehaviour {
 		HighwayEvents.OnGrowInsightsInitialized += onGrowInsightsInitialized;
 		HighwayEvents.OnInsightsRefreshFinished += onInsightsRefreshFinished;
 
-		HighwayEvents.OnGrowSyncInitialized += onGrowSyncInitialized;
-		HighwayEvents.OnModelSyncFinished += onModelSyncFinished;
-		HighwayEvents.OnStateSyncFinished += onStateSyncFinished;
+		ServicesEvents.OnGrowSyncInitialized += onGrowSyncInitialized;
+		ServicesEvents.OnModelSyncFinished += onModelSyncFinished;
+		ServicesEvents.OnStateSyncFinished += onStateSyncFinished;
 
 		// We can fetch friends states upon getting the player's friends list
 		ProfileEvents.OnGetContactsFinished +=

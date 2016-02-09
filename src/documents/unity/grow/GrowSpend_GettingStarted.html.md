@@ -262,14 +262,13 @@ public class ExampleWindow : MonoBehaviour {
 	public void onGoodBalanceChanged(VirtualGood good, int balance, int amountAdded) {
 		SoomlaUtils.LogDebug("TAG", good.ID + " now has a balance of " + balance);
 	}
-	public void onGrowSyncInitialized() {
+	public void onGrowSyncInitialized(GrowSyncInitializedEvent event) {
 		Debug.Log("GROW Sync has been initialized.");
 	}
-	public void onModelSyncFinished(IList<string> modules) {
+	public void onModelSyncFinished(ModelSyncFinishedEvent event) {
 		Debug.Log("Model Sync has finished.");
 	}
-	public void onStateSyncFinished(IList<string> changedComponents,
-	                                IList<string> failedComponents) {
+	public void onStateSyncFinished(StateSyncFinishedEvent event) {
 		Debug.Log("State Sync has finished.");
 	}
 
@@ -281,9 +280,9 @@ public class ExampleWindow : MonoBehaviour {
 		// Setup all event handlers - Make sure to set the event handlers before you initialize
 		StoreEvents.OnGoodBalanceChanged += onGoodBalanceChanged;
 
-		HighwayEvents.OnGrowSyncInitialized += onGrowSyncInitialized;
-		HighwayEvents.OnModelSyncFinished += onModelSyncFinished;
-		HighwayEvents.OnStateSyncFinished += onStateSyncFinished;
+		ServicesEvents.OnGrowSyncInitialized += onGrowSyncInitialized;
+		ServicesEvents.OnModelSyncFinished += onModelSyncFinished;
+		ServicesEvents.OnStateSyncFinished += onStateSyncFinished;
 
 		// Make sure to make this call in your earliest loading scene,
 		// and before initializing any other SOOMLA/GROW components
