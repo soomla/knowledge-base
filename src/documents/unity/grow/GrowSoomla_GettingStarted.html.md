@@ -114,10 +114,10 @@ public class ExampleWindow : MonoBehaviour {
 	//
 	// Various event handling methods
 	//
-	public void onGrowInsightsInitialized () {
+	public void onGrowInsightsInitialized (GrowInsightsInitializedEvent event) {
 		Debug.Log("Grow insights has been initialized.");
 	}
-	public void onInsightsRefreshFinished (){
+	public void onInsightsRefreshFinished (InsightsRefreshFinishedEvent event) {
 		if (GrowInsights.UserInsights.PayInsights.PayRankByGenre[Genre.Educational] > 3) {
 			// ... Do stuff according to your business plan ...
 		}
