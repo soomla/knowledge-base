@@ -46,10 +46,10 @@ Following is a list of all the events in GROW Sync and an example of how to obse
 This event is triggered when the GROW Sync feature is initialized and ready.
 
 ``` cs
-HighwayEvents.OnGrowSyncInitialized += onGrowSyncInitialized;
+ServicesEvents.OnGrowSyncInitialized += onGrowSyncInitialized;
 
-public void onGrowSyncInitialized() {
-// ... your game specific implementation here ...
+public void onGrowSyncInitialized(GrowSyncInitializedEvent event) {
+    // ... your game specific implementation here ...
 }
 ```
 
@@ -58,10 +58,10 @@ public void onGrowSyncInitialized() {
 This event is triggered when model sync has started.
 
 ``` cs
-HighwayEvents.OnModelSyncStarted += onModelSyncStarted;
+ServicesEvents.OnModelSyncStarted += onModelSyncStarted;
 
-public void onModelSyncStarted() {
-// ... your game specific implementation here ...
+public void onModelSyncStarted(ModelSyncStartedEvent event) {
+    // ... your game specific implementation here ...
 }
 ```
 
@@ -71,10 +71,11 @@ This event is triggered when model sync has finished.
 Provides a list of modules which were synced.
 
 ``` cs
-HighwayEvents.OnModelSyncFinished += onModelSyncFinished;
+ServicesEvents.OnModelSyncFinished += onModelSyncFinished;
 
-public void onModelSyncFinished(IList<string> modules) {
-// ... your game specific implementation here ...
+public void onModelSyncFinished(ModelSyncFinishedEvent event) {
+    IList<string> components = event.ChangedComponents;
+    // ... your game specific implementation here ...
 }
 ```
 
@@ -84,10 +85,12 @@ This event is triggered when model sync has failed.
 Provides the error code and reason of the failure.
 
 ``` cs
-HighwayEvents.OnModelSyncFailed += onModelSyncFailed;
+ServicesEvents.OnModelSyncFailed += onModelSyncFailed;
 
-public void onModelSyncFailed(ModelSyncErrorCode errorCode, string failReason) {
-// ... your game specific implementation here ...
+public void onModelSyncFailed(ModelSyncFailedEvent event) {
+    ModelSyncErrorCode errorCode = event.ErrorCode;
+    string reason = event.ErrorMessage;
+    // ... your game specific implementation here ...
 }
 ```
 
@@ -96,9 +99,9 @@ public void onModelSyncFailed(ModelSyncErrorCode errorCode, string failReason) {
 This event is triggered when state sync has started.
 
 ``` cs
-HighwayEvents.OnStateSyncStarted += onStateSyncStarted;
+ServicesEvents.OnStateSyncStarted += onStateSyncStarted;
 
-public void onStateSyncStarted() {
+public void onStateSyncStarted(StateSyncStartedEvent event) {
 // ... your game specific implementation here ...
 }
 ```
@@ -109,10 +112,12 @@ This event is triggered when state sync has finished.
 Provides a list of modules which had their state updated, and a list of modules which failed to update.
 
 ``` cs
-HighwayEvents.OnStateSyncFinished += onStateSyncFinished;
+ServicesEvents.OnStateSyncFinished += onStateSyncFinished;
 
-public void onStateSyncFinished(IList<string> changedComponents, IList<string> failedComponents) {
-// ... your game specific implementation here ...
+public void onStateSyncFinished(StateSyncFinishedEvent event) {
+    IList<string> changedComponents = event.ChangedComponents;
+    IList<string> failedComponents = event.FailedComponents;
+    // ... your game specific implementation here ...
 }
 ```
 
@@ -124,10 +129,12 @@ This event is triggered when state sync has failed.
 Provides the error code and reason of failure.
 
 ``` cs
-HighwayEvents.OnStateSyncFailed += onStateSyncFailed;
+ServicesEvents.OnStateSyncFailed += onStateSyncFailed;
 
-public void onStateSyncFailed(StateSyncErrorCode errorCode, string failReason) {
-// ... your game specific implementation here ...
+public void onStateSyncFailed(StateSyncFailedEvent event) {
+    StateSyncErrorCode errorCode = event.ErrorCode;
+    string reason = event.ErrorMessage;
+    // ... your game specific implementation here ...
 }
 ```
 
@@ -136,10 +143,10 @@ public void onStateSyncFailed(StateSyncErrorCode errorCode, string failReason) {
 This event is triggered when state reset has started.
 
 ``` cs
-HighwayEvents.OnStateResetStarted += onStateResetStarted;
+ServicesEvents.OnStateResetStarted += onStateResetStarted;
 
-public void onStateResetStarted() {
-// ... your game specific implementation here ...
+public void onStateResetStarted(StateResetStartedEvent event) {
+    // ... your game specific implementation here ...
 }
 ```
 
@@ -148,10 +155,10 @@ public void onStateResetStarted() {
 This event is triggered when state reset has finished.
 
 ``` cs
-HighwayEvents.OnStateResetFinished += onStateResetFinished;
+ServicesEvents.OnStateResetFinished += onStateResetFinished;
 
-public void onStateResetFinished() {
-// ... your game specific implementation here ...
+public void onStateResetFinished(StateResetFinishedEvent event) {
+    // ... your game specific implementation here ...
 }
 ```
 
@@ -161,10 +168,12 @@ This event is triggered when state reset has failed.
 Provides the error code and reason of failure.
 
 ``` cs
-HighwayEvents.OnStateResetFailed += onStateResetFailed;
+ServicesEvents.OnStateResetFailed += onStateResetFailed;
 
-public void onStateResetFailed(StateSyncErrorCode errorCode, string failReason) {
-// ... your game specific implementation here ...
+public void onStateResetFailed(StateResetFailedEvent event) {
+    StateSyncErrorCode errorCode = event.ErrorCode;
+    string reason = event.ErrorMessage;
+    // ... your game specific implementation here ...
 }
 ```
 
@@ -206,14 +215,13 @@ public class ExampleWindow : MonoBehaviour {
 	//
 	// Various event handling methods
 	//
-	public void onGrowSyncInitialized() {
+	public void onGrowSyncInitialized(GrowSyncInitializedEvent event) {
 	    Debug.Log("GROW Sync has been initialized.");
 	}
-	public void onModelSyncFinished(IList<string> modules) {
+	public void onModelSyncFinished(ModelSyncFinishedEvent event) {
 	    Debug.Log("Model Sync has finished.");
 	}
-	public void onStateSyncFinished(IList<string> changedComponents,
-                                    IList<string> failedComponents) {
+	public void onStateSyncFinished(StateSyncFinishedEvent event) {
 	    Debug.Log("State Sync has finished.");
 	}
 
@@ -224,9 +232,9 @@ public class ExampleWindow : MonoBehaviour {
 		...
 
 		// Setup all event handlers - Make sure to set the event handlers before you initialize
-		HighwayEvents.OnGrowSyncInitialized += onGrowSyncInitialized;
-		HighwayEvents.OnModelSyncFinished += onModelSyncFinished;
-		HighwayEvents.OnStateSyncFinished += onStateSyncFinished;
+		ServicesEvents.OnGrowSyncInitialized += onGrowSyncInitialized;
+		ServicesEvents.OnModelSyncFinished += onModelSyncFinished;
+		ServicesEvents.OnStateSyncFinished += onStateSyncFinished;
 
 		// Make sure to make this call in your earliest loading scene,
 		// and before initializing any other SOOMLA/GROW components
