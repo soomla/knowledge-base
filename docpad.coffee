@@ -91,15 +91,15 @@ docpadConfig = {
 			{
 				id: 'unity',
 				title: 'Unity'
-			},
+			}
 			{
 				id: 'cocos2dx',
 				title: 'Cocos2dx'
-			},
+			}
 			{
 				id: 'ios',
 				title: 'iOS'
-			},
+			}
 			{
 				id: 'android',
 				title: 'Android'

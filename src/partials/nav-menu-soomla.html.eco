@@ -5,7 +5,7 @@
     <ul id="nav-list-l2" class="dropdown-menu <%= @theme %>" role="menu">
       <% for item in @soomlaModulesNames: %>
 
-          <li class="icon-option">
+          <li class="icon-option aaa">
             <% if @platform == item.id: %>
               <a class="icon-link link-current" href="/soomla/<%= item.id %>"><%= item.title %></a>
             <% else: %>

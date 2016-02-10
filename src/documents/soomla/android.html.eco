@@ -1,12 +1,15 @@
 ---
 layout: 'knowledge-base'
 title: 'Soomla'
-theme: 'platforms'
+theme: 'soomla-android'
+platform: 'android'
 ---
-
 <div class="jumbotron" id="know-soomla">
     <div id="jumbo-main-text">
-        <div id="hierarchy-nav"><%- @partial('nav-menu-l1', {current:'android'}) %></div>
+        <div id="hierarchy-nav">
+          <%- @partial('nav-menu-l1', {current:'soomla'}) %>
+          <%- @partial('nav-menu-soomla', {platform: @document.platform, theme: @document.theme}) %>
+        </div>
         CHOOSE YOUR MODULE
     </div>
     <div id="jumbo-small-text">

@@ -1,16 +1,19 @@
 ---
 title: 'iOS'
 layout: 'knowledge-base'
-theme: 'samples'
+theme: 'soomla-ios'
 collection: 'soomla_ios_samples'
 platform: 'ios'
 module: 'samples'
 ---
 
+
 <div class="jumbotron" id="know-soomla">
     <div id="jumbo-main-text">
         <div id="hierarchy-nav">
-          <%- @partial('nav-menu-l1', {current:'integrations'}) %>
+          <%- @partial('nav-menu-l1', {current: 'soomla'}) %>
+          <%- @partial('nav-menu-soomla', {platform: @document.platform, theme: @document.theme}) %>
+          <%- @partial('nav-menu-soomla-platform', {collection:@document.collection, platform: @document.platform, module: @document.module, theme: @document.theme}) %>
         </div>
         SAMPLES
     </div>
@@ -18,7 +21,6 @@ module: 'samples'
         3rd party integration examples and docs
     </div>
 </div>
-
 <div id="samples-options">
     <div class="nav-options nav-options-bottom">
         <div class="container samples-page">
