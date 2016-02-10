@@ -16,8 +16,10 @@ title: 'Soomla Knowledge Base'
 <div id="platform-options">
 
   <div class="container">
+  <div class="col-md-3"></div>
     <%- @partial('platform-selection', {image:"img/Level2-Unity170.png", link:"/unity", title: "Unity3D", big: true}) %>
     <%- @partial('platform-selection', {image:"img/Level2-Cocos2dx170.png", link:"/cocos2dx", title: "Cocos2d-x", big: true}) %>
+  <div class="col-md-3"></div>
   </div>
 </div>
 
