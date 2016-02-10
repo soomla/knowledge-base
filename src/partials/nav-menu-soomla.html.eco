@@ -1,0 +1,19 @@
+<div class="dropdown dropdown-container">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      <img class="dropdown-menu-icon" src="/img/navmenu/<%= @platform %>.png"/>
+    </a>
+    <ul id="nav-list-l2" class="dropdown-menu <%= @theme %>" role="menu">
+      <% for item in @soomlaModulesNames: %>
+
+          <li class="icon-option">
+            <% if @platform == item.id: %>
+              <a class="icon-link link-current" href="/soomla/<%= item.id %>"><%= item.title %></a>
+            <% else: %>
+              <a class="icon-link" href="/soomla/<%= item.id %>"><%= item.title %></a>
+            <% end %>
+          </li>
+
+      <% end %>
+    </ul>
+</div>
+<img class="breadcrumb-icon" src="/img/Arrow.png"/>

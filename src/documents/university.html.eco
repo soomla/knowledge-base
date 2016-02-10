@@ -1,6 +1,6 @@
 ---
-layout: 'knowledge-base'
 title: 'Soomla University'
+theme: 'university'
 ---
 
 <div class="jumbotron" id="know-soomla">

@@ -87,58 +87,39 @@ docpadConfig = {
 			}
 		]
 
-		soomlaModules: {
-			'unity': [
-				{
-					id: 'store',
-					title: 'Store'
-				}
-				{
-					id: 'profile',
-					title: 'Profile'
-				}
-			],
-			'cocos2dx': [
-				{
-					id: 'store',
-					title: 'Store'
-				}
-				{
-					id: 'profile',
-					title: 'Profile'
-				}
-			],
-			'ios': [
-				{
-					id: 'store',
-					title: 'Store'
-				}
-				{
-					id: 'profile',
-					title: 'Profile'
-				}
-			],
-			'android': [
-				{
-					id: 'store',
-					title: 'Store'
-				}
-				{
-					id: 'profile',
-					title: 'Profile'
-				}
-			],
-			'university': [
-				{
-					id: 'articles',
-					title: 'Articles'
-				},
-				{
-					id: 'videos',
-					title: 'Videos'
-				}
-			]
-		}
+		soomlaModulesNames: [
+			{
+				id: 'unity',
+				title: 'Unity'
+			},
+			{
+				id: 'cocos2dx',
+				title: 'Cocos2dx'
+			},
+			{
+				id: 'ios',
+				title: 'iOS'
+			},
+			{
+				id: 'android',
+				title: 'Android'
+			}
+		]
+
+		soomlaModules: [
+			{
+				id: 'store',
+				title: 'Store'
+			}
+			{
+				id: 'profile',
+				title: 'Profile'
+			}
+			{
+				id: 'samples',
+				title: 'Samples'
+			}
+		]
 
 
 

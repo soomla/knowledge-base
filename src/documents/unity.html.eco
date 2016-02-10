@@ -1,6 +1,6 @@
 ---
 title: 'Unity'
-layout: 'l2-main'
+layout: 'l1-docs-list'
 theme: 'platforms'
 collection: 'unity_grow'
 platform: 'unity'

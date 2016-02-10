@@ -1,7 +1,7 @@
 ---
 title: 'Unity'
-layout: 'l2-main'
-theme: 'platforms'
+layout: 'soomla-platform'
+theme: 'soomla-unity'
 collection: 'soomla_unity_store'
 platform: 'unity'
 module: 'store'

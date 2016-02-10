@@ -1,12 +1,14 @@
 ---
 layout: 'knowledge-base'
 title: 'Soomla Knowledge Base'
+theme: 'soomla'
 ---
 
 <div class="jumbotron" id="know-soomla">
 
     <div id="jumbo-main-text">
-        KNOW SOOMLA - CHOOSE YOUR MODULE
+        <div id="hierarchy-nav"><%- @partial('nav-menu-l1', {current:'soomla'}) %></div>
+        KNOW SOOMLA - CHOOSE PLATFORM
     </div>
     <div id="jumbo-small-text">
         Choose your platform to get started with SOOMLA and related services
