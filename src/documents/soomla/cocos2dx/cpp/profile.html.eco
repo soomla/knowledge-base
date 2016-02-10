@@ -1,8 +1,8 @@
 ---
 title: 'Cocos2dx'
-layout: 'l2-main'
-theme: 'platforms'
-collection: 'soomla_cocos2dx_profile'
+layout: 'soomla-platform'
+theme: 'soomla-cocos2dx'
+collection: 'soomla_cocos2djs_profile'
 platform: 'cocos2dx'
 lang: 'cpp'
 module: 'profile'

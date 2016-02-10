@@ -1,7 +1,7 @@
 ---
 title: 'Cocos2dx'
-layout: 'l2-main'
-theme: 'platforms'
+layout: 'soomla-platform'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2djs_store'
 platform: 'cocos2dx'
 lang: 'js'

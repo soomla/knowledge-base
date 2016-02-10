@@ -13,7 +13,7 @@ module: 'samples'
         <div id="hierarchy-nav">
           <%- @partial('nav-menu-l1', {current: 'soomla'}) %>
           <%- @partial('nav-menu-soomla', {platform: @document.platform, theme: @document.theme}) %>
-          <%- @partial('nav-menu-soomla-platform', {collection:@document.collection, platform: @document.platform, module: @document.module, theme: @document.theme}) %>
+          <%- @partial('nav-menu-platform-module', {collection:@document.collection, platform: @document.platform, module: @document.module, theme: @document.theme}) %>
         </div>
         SAMPLES
     </div>
