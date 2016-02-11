@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Tutorial"
 title: "Getting Started"
 text: "Get started with unity3d-profile. Here you can find integration instructions and a basic example of initialization."
 position: 1
-theme: 'platforms'
+theme: 'soomla-unity'
 collection: 'soomla_unity_profile'
 module: 'profile'
 platform: 'unity'

@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Tutorial"
 title: "Getting Started"
 text: "Get started with unity3d-store. Here you can find a basic example of initialization, economy framework integration, and links to downloads and IAP setup."
 position: 1
-theme: 'platforms'
+theme: 'soomla-unity'
 collection: 'soomla_unity_store'
 module: 'store'
 platform: 'unity'

@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Tutorial"
 title: "FAQ"
 text: "Frequently asked questions about unity3d-store"
 position: 9
-theme: 'platforms'
+theme: 'soomla-unity'
 collection: 'soomla_unity_store'
 module: 'store'
 platform: 'unity'

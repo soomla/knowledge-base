@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Modeling"
 title: "Main Classes & Operations"
 text: "Read descriptions of the various social entities cocos2dx-profile provides, and see usage examples of operations that can be done to the different entities."
 position: 2
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2djs_profile'
 module: 'profile'
 lang: 'js'
@@ -65,23 +65,23 @@ This class represents a profile of a user from a social network (provider).
 - `Extra` - a dictionary contains additional info provided by social provider:
 
   - `Facebook`
-  
+
     - **access_token** - *string*
-	
+
     - **permissions** - *array of strings*
-	
+
     - **expiration_date** - *UNIX timestamp as number* - `not available for Android`
-	
+
   - `Twitter`
-  
+
     - **access_token** - *string*
-	
+
   - `Google+`
-  
+
     - **access_token** - *string*
-	
+
     - **refresh_token** - *string* - `not available for Android`
-	
+
     - **expiration_date** - *UNIX timestamp as number* - `not available for Android`
 
 ## Soomla.SoomlaProfile
@@ -210,7 +210,7 @@ Soomla.soomlaProfile.updateStatusDialog(
 	Soomla.Models.Provider.FACEBOOK,      // Provider
 	'I LOVE SOOMLA!  http://www.soom.la', // Message to post as status
 	'',                                   // Payload
-	null,                                 // Reward	
+	null,                                 // Reward
 );
 ```
 
@@ -275,14 +275,14 @@ Using the provider's native dialog (when available).
 
 ``` js
 Soomla.soomlaProfile.updateStoryDialog(
-	Soomla.Models.Provider.FACEBOOK,            // Provider	
+	Soomla.Models.Provider.FACEBOOK,            // Provider
 	'The story of SOOMBOT (Profile Test App)',  // Name
 	'SOOMBOT Story',                            // Caption
 	'Hey! It's SOOMBOT Story',                  // Description
 	'http://about.soom.la/soombots',            // Link to post
 	'http://about.soom.la/.../spockbot.png',    // Image URL
 	'',                                         // Payload
-	null                                        // Reward	
+	null                                        // Reward
 );
 ```
 
@@ -346,7 +346,7 @@ Soomla.soomlaProfile.uploadCurrentScreenshot(
   'Sharing title',                 // Story title
   'Let's use SOOMLA together!',    // Story message
   '',                              // Payload
-  null                             // Reward	
+  null                             // Reward
 );
 ```
 
@@ -549,7 +549,7 @@ Soomla.soomlaProfile.submitScore(
         null,                               // no reward
         null                                // no error handling, to keep example simple
         );
-        
+
 ```
 
 ### `showLeaderboards`
@@ -563,7 +563,7 @@ Soomla.soomlaProfile.showLeaderboards(
         null,                               // no reward
         null                                // no error handling, to keep example simple
         );
-        
+
 ```
 
 ## Auxiliary Model: Soomla.Models.Reward

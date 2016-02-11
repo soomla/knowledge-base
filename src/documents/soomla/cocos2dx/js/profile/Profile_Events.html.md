@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Events"
 title: "Events"
 text: "Learn how to observe and handle social events triggered by cocos2dx-profile to customize your game-specific behavior."
 position: 3
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2djs_profile'
 module: 'profile'
 lang: 'js'
@@ -455,7 +455,7 @@ this.EVENT_GET_SCORES_STARTED = function (provider, leaderboard, fromStart, payl
   // leaderboard - the source leaderboard
   // fromStart - Should we reset pagination or request the next page
   // payload - an identification string that you can give when you initiate
-  //      the get scores operation and want to receive back upon starting 
+  //      the get scores operation and want to receive back upon starting
 
   // ... your game specific implementation here ...
 }
@@ -512,7 +512,7 @@ this.EVENT_SUBMIT_SCORE_STARTED = function (provider, leaderboard, payload) {
   // leaderboard - the source leaderboard  
   // payload - an identification string that you can give when you initiate
   //      the submit score operation and want to receive back upon starting
-    
+
   // ... your game specific implementation here ...
 }
 ```
@@ -529,7 +529,7 @@ this.EVENT_SUBMIT_SCORE_FINISHED = function (provider, leaderboard, score, paylo
   // leaderboard - the source leaderboard
   // score - the resulted score
   // payload - an identification string that you can give when you initiate
-  //      the submit score operation and want to receive back upon starting 
+  //      the submit score operation and want to receive back upon starting
 
   // ... your game specific implementation here ...
 }
@@ -547,7 +547,7 @@ this.EVENT_SUBMIT_SCORE_FINISHED = function (provider, leaderboard, message, pay
   // leaderboard - the source leaderboard
   // message  - the failure message
   // payload - an identification string that you can give when you initiate
-  //      the submit score operation and want to receive back upon starting 
+  //      the submit score operation and want to receive back upon starting
 
   // ... your game specific implementation here ...
 }
@@ -563,7 +563,7 @@ Soomla.addHandler(Soomla.ProfileConsts.EVENT_SHOW_LEADERBOARDS, this.EVENT_SHOW_
 this.EVENT_SHOW_LEADERBOARDS = function (provider, payload) {
   // provider - the social provider  
   // payload - an identification string that you can give when you initiate
-  //      the operation and want to receive back upon starting 
+  //      the operation and want to receive back upon starting
 
   // ... your game specific implementation here ...
 }

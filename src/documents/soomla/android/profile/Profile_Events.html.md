@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Events"
 title: "Events"
 text: "Learn how to observe and handle social events triggered by android-profile to customize your game-specific behavior."
 position: 3
-theme: 'platforms'
+theme: 'soomla-android'
 collection: 'soomla_android_profile'
 module: 'profile'
 platform: 'android'
@@ -466,9 +466,9 @@ The event is triggered when fetching leaderboards has started.
 ``` java
 @Subscribe
 public void onGetLeaderboardsStarted(GetLeaderboardsStartedEvent getLeaderboardsStartedEvent) {
-	// Provider is the social provider	
+	// Provider is the social provider
   // Payload is an identification string that you can give when you initiate the social action operation and want to receive back upon failure
-  
+
   // ... your game specific implementation here ...
 }
 ```
@@ -483,7 +483,7 @@ public void onGetLeaderboardsFinished(GetLeaderboardsFinishedEvent getLeaderboar
 	// Provider is the social provider
   // Leaderboards is a list of leaderboards
   // Payload is an identification string that you can give when you initiate the social action operation and want to receive back upon failure
-  
+
  	// ... your game specific implementation here ...
 }
 ```
@@ -498,7 +498,7 @@ public void onGetLeaderboardsFailed(GetLeaderboardsFailedEvent getLeaderboardsFa
 	// Provider is the social provider
   // ErrorDescription is Description of the reason for failure
   // Payload is an identification string that you can give when you initiate the social action operation and want to receive back upon failure
-  
+
   // ... your game specific implementation here ...
 }
 ```
@@ -514,7 +514,7 @@ public void onGetScoresStarted(GetScoresStartedEvent getScoresStartedEvent) {
   // Leaderboard is a source leaderboard
   // FromStart should we reset pagination or request the next page
   // Payload is an identification string that you can give when you initiate the social action operation and want to receive back upon failure
-  
+
   // ... your game specific implementation here ...
 }
 ```
@@ -530,7 +530,7 @@ public void onGetScoresFinished(GetScoresFinishedEvent getScoresFinishedEvent) {
   // Leaderboard is a source leaderboard
   // Scores an array of scores
   // Payload is an identification string that you can give when you initiate the social action operation and want to receive back upon failure
-  
+
   // ... your game specific implementation here ...
 }
 ```
@@ -547,7 +547,7 @@ public void onGetScoresFailed(GetScoresFailedEvent getScoresFailedEvent) {
   // ErrorDescription description of the reason for failure
   // FromStart should we reset pagination or request the next page
   // Payload is an identification string that you can give when you initiate the social action operation and want to receive back upon failure
-  
+
   // ... your game specific implementation here ...
 }
 ```
@@ -562,7 +562,7 @@ public void onSubmitScoreStarted(SubmitScoreStartedEvent submitScoreStartedEvent
 	// Provider is the social provider
   // Leaderboard is a source leaderboard    
   // Payload is an identification string that you can give when you initiate the social action operation and want to receive back upon failure
-  
+
   // ... your game specific implementation here ...
 }
 ```
@@ -578,7 +578,7 @@ public void onSubmitScoreFinished(SubmitScoreFinishedEvent submitScoreFinishedEv
   // Leaderboard is a source leaderboard
   // Score is a new score instance was created
   // Payload is an identification string that you can give when you initiate the social action operation and want to receive back upon failure
-  
+
   // ... your game specific implementation here ...
 }
 ```
@@ -594,7 +594,7 @@ public void onSubmitScoreFailed(SubmitScoreFailedEvent submitScoreFailedEvent) {
   // Leaderboard is a source leaderboard
   // ErrorDescription description of the reason for failure
   // Payload is an identification string that you can give when you initiate the social action operation and want to receive back upon failure
-  
+
   // ... your game specific implementation here ...
 }
 ```
@@ -608,7 +608,7 @@ The event is triggered when leaderboards native dialog was shown.
 public void onShowLeaderboards(ShowLeaderboardsEvent showLeaderboardsEvent) {
 	// Provider is the social provider  
   // Payload is an identification string that you can give when you initiate the social action operation and want to receive back upon failure
-  
+
   // ... your game specific implementation here ...
 }
 ```

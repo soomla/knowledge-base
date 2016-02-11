@@ -1,20 +1,20 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "FraudProtection"
 title: "Fraud Protection"
 text: "Get started with Grow Fraud Protection."
 position: 18
-theme: 'platforms'
-collection: 'unity_grow'
-module: 'grow'
-platform: 'unity'
+theme: 'soomla-android'
+collection: 'soomla_android_store'
+module: 'store'
+platform: 'android'
 ---
 
 # Fraud Protection
 
 <div class="info-box">General information about Fraud Protection available in this [article](/university/articles/Grow_FraudProtection).</div>
 
-In case you want to turn on _Fraud Protection_ you need to get clientId, clientSecret and refreshToken as explained in 
+In case you want to turn on _Fraud Protection_ you need to get clientId, clientSecret and refreshToken as explained in
 [Google Play Purchase Verification](/android/store/Store_GooglePlayVerification) and use them like this:   
 
   ``` java
@@ -30,4 +30,3 @@ In case you want to turn on _Fraud Protection_ you need to get clientId, clientS
   > ``` java
   > GooglePlayIabService.getInstance().verifyOnServerFailure = true;
   > ```
-

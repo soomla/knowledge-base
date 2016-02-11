@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Modeling"
 title: "Economy Model & API"
 text: "Every game economy can be based on SOOMLA's economy model. Learn the building blocks of creating a virtual economy with currencies and virtual goods."
 position: 3
-theme: 'platforms'
+theme: 'soomla-android'
 collection: 'soomla_android_store'
 module: 'store'
 platform: 'android'

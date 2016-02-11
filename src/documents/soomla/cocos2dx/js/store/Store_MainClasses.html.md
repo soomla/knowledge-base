@@ -1,25 +1,25 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Tutorial"
 title: "Main Classes"
 text: "The main classes of cocos2dx-store contain functionality for store-related operations such as purchasing, billing, inventory querying and storage."
 position: 4
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2djs_store'
 module: 'store'
-lang: 'js' 
+lang: 'js'
 platform: 'cocos2dx'
 ---
 
 # Main Classes
 
-Here you can find descriptions of some of the main classes and interfaces of cocos2dx-store. These classes contain functionality for store-related operations, provide you with various storages, and hold the basic assets needed to operate the store. 
-All the classes are implemented in [soomla-store.js](https://github.com/soomla/cocos2dx-store/blob/master/js/soomla-store.js). 
+Here you can find descriptions of some of the main classes and interfaces of cocos2dx-store. These classes contain functionality for store-related operations, provide you with various storages, and hold the basic assets needed to operate the store.
+All the classes are implemented in [soomla-store.js](https://github.com/soomla/cocos2dx-store/blob/master/js/soomla-store.js).
 
 ## Soomla.SoomlaStore
 
 `SoomlaStore` holds the basic assets needed to operate the store. You can use it to purchase products from the Market. It provides you with functionality such as querying the inventory for information, and starting a purchase process with the market (Google Play, App Store, etc…).
-After Store initialized the instance of this class is available through `Soomla.soomlaStore`. 
+After Store initialized the instance of this class is available through `Soomla.soomlaStore`.
 
 ### Important Functions
 
@@ -30,7 +30,7 @@ This function queries the Market’s inventory, and creates a list of all metada
 ## Soomla.StoreInfo
 
 StoreInfo is the mother of all metadata information about your specific game.
-After Store initialized the instance of this class is available through `Soomla.storeInfo`. 
+After Store initialized the instance of this class is available through `Soomla.storeInfo`.
 
 **This class holds your store’s**
 
@@ -52,14 +52,14 @@ Get the first upgrade of the virtual good with item id “strength” (This is t
 var firstUpgrade = Soomla.storeInfo.getFirstUpgradeForVirtualGood("strength");
 ```
 
-`StoreInfo` is always initialized from the database, except for the first time the game is loaded - in that case it is initialized 
+`StoreInfo` is always initialized from the database, except for the first time the game is loaded - in that case it is initialized
 with your implementation of `IStoreAssets`, a class that represents your game’s metadata. When your game loads for the first time,
 the virtual economy’s metadata is saved, and from that moment on it’ll be loaded from the database.
 
 ## Soomla.StoreInventory
 
 `StoreInventory` is a utility class that provides you with functions that perform store-related operations. With `StoreInventory` you can give or take items from your users. You can buy items or upgrade them. You can also check their equipping status and change it.
-The instance of this class is available through `Soomla.storeInventory`. 
+The instance of this class is available through `Soomla.storeInventory`.
 
 ### Important Functions
 

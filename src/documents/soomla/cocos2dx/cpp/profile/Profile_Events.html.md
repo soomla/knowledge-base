@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Events"
 title: "Events"
 text: "Learn how to observe and handle social events triggered by cocos2dx-profile to customize your game-specific behavior."
 position: 3
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2dx_profile'
 module: 'profile'
 lang: 'cpp'

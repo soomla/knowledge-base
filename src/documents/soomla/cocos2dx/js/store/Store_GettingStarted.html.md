@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Tutorial"
 title: "Getting Started"
 text: "Get started with cocos2dx-store. Here you can find a basic example of initialization, economy framework integration, and links to downloads and IAP setup."
 position: 1
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2djs_store'
 module: 'store'
 lang: 'js'
@@ -93,7 +93,7 @@ supported by SOOMLA's cocos2dx-store (the tag is the version).</div>
 	- *Test Purchases* - allows testing IAP on Google Play. (iOS doesn't have this functionality).
 
 	- *SSV* - enables _Fraud Protection_. (in order to activate it in Google Play see the related section below).
-	
+
 	- *verifyOnServerFailure* - if you use Fraud Protection, optionally you set this param,
 	if you want to get purchases automatically verified in case of network failures during the verification process.
 
@@ -191,15 +191,15 @@ ln -s <your-cocos2d-js-path>/frameworks/js-bindings/cocos2d-x frameworks/runtime
     From `frameworks/runtime-src/Classes/soomla-cocos2dx-core/build/android`:
 
     - SoomlaAndroidCore.jar
-	
+
     - Cocos2dxAndroidCore.jar
-	
+
     - square-otto-1.3.2.jar
 
   From `frameworks/runtime-src/Classes/cocos2dx-store/build/android`:
 
     - SoomlaAndroidStore.jar
-	
+
     - Cocos2dxAndroidStore.jar
 
 1. Update your AndroidManifest.xml to include permissions:
@@ -207,7 +207,7 @@ ln -s <your-cocos2d-js-path>/frameworks/js-bindings/cocos2d-x frameworks/runtime
     ```xml
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="com.android.vending.BILLING"/>
-    
+
     ```
 
 **That's it! You now have storage and in-app purchasing capabilities and you can begin using cocos2dx-store in your game.**
@@ -260,7 +260,7 @@ SOOMLA's cocos2dx-store knows how to contact Google Play, Amazon Appstore, or Ap
 		storeParams.clientSecret = <YOUR_CLIENT_SECRET>;
 		storeParams.refreshToken = <YOUR_REFRESH_TOKEN>;
 	```
-	
+
 ### Amazon
 
 1. Add `in-app-purchasing-1.0.3.jar` and `AndroidStoreAmazon.jar` from `frameworks/runtime-src/Classes/cocos2dx-store/build/android/billing-services/amazon` to your classpath:
@@ -285,11 +285,11 @@ SOOMLA's cocos2dx-store knows how to contact Google Play, Amazon Appstore, or Ap
 
 2. Use SOOMLA's Fraud Protection **(Optional)**
 
-	As you probably know, fraud on IAP is pretty common. Hackers can crack their smartphones to think that a purchase 
-	was made when the payment isn't actually transferred to you. To help game developers with this issue, we created 
+	As you probably know, fraud on IAP is pretty common. Hackers can crack their smartphones to think that a purchase
+	was made when the payment isn't actually transferred to you. To help game developers with this issue, we created
 	a verification server that you can use instantly through the framework.
 
-	All you need to do is let cocos2dx-store know that you want to verify purchases. You can do this by passing an extra 
+	All you need to do is let cocos2dx-store know that you want to verify purchases. You can do this by passing an extra
 	parameter to `Soomla.soomlaStore`:
 
 	```js
@@ -341,4 +341,3 @@ To integrate cocos2dx-store into your game, follow these steps.
 2. **For iOS:** Use sourced versions of Linked projects (`frameworks/runtime-src/Classes/soomla-cocos2dx-core/development/Cocos2dxCoreFromSources.xcodeproj`, `frameworks/runtime-src/Classes/cocos2dx-store/development/Cocos2dxStoreFromSources.xcodeproj`)
 
 3. **For Android:** You can use our "sourced" modules for Android Studio (or IntelliJ IDEA) (`frameworks/runtime-src/Classes/soomla-cocos2dx-core/development/Cocos2dxCoreFromSources.iml`, `frameworks/runtime-src/Classes/cocos2dx-store/development/Cocos2dxStoreFromSources.iml`), just include them in your project.
-

@@ -1,13 +1,13 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Storage"
 title: "Storage"
 text: "Your users get access to their data even when there’s no internet around. Our encrypted local storage is designed just for that."
 position: 7
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2dx_store'
 module: 'store'
-lang: 'cpp' 
+lang: 'cpp'
 platform: 'cocos2dx'
 ---
 

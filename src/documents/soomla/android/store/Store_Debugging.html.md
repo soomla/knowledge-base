@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Wrench"
 title: "Debugging"
 text: "Debugging methods and tips for android-store."
 position: 6
-theme: 'platforms'
+theme: 'soomla-android'
 collection: 'soomla_android_store'
 module: 'store'
 platform: 'android'

@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Events"
 title: "Events"
 text: "Learn how to observe and handle social events triggered by ios-profile to customize your game-specific behavior."
 position: 3
-theme: 'platforms'
+theme: 'soomla-ios'
 collection: 'soomla_ios_profile'
 module: 'profile'
 platform: 'ios'
@@ -726,7 +726,7 @@ The event `EVENT_UP_SUBMIT_SCORE_FINISHED` is triggered when score submission fo
   // DICT_ELEMENT_PROVIDER           = The provider (NSNumber*) on which the score submission process
   //                                   finished
   // DICT_ELEMENT_LEADERBOARD        = Source leaderboard(Leaderboard*)
-  // DICT_ELEMENT_SCORE              = New score (Score*) instance was created 
+  // DICT_ELEMENT_SCORE              = New score (Score*) instance was created
   // DICT_ELEMENT_PAYLOAD            = An identification string (NSString*) that you can give  
   // when you initiate the submit score operation and want to receive back upon its completion
 

@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Game"
 title: "IStoreAssets"
 text: "To use SOOMLA, you'll need to create your own implementation of IStoreAssets, an interface that represents your game’s economy."
 position: 2
-theme: 'platforms'
+theme: 'soomla-unity'
 collection: 'soomla_unity_store'
 module: 'store'
 platform: 'unity'

@@ -1,13 +1,13 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Wrench"
 title: "Debugging"
 text: "Debugging methods and tips for cocos2dx-store."
 position: 6
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2djs_store'
 module: 'store'
-lang: 'js' 
+lang: 'js'
 platform: 'cocos2dx'
 ---
 
@@ -30,4 +30,3 @@ You can enable debug logging by setting `Soomla.DEBUG` to **true**.
 - **android-profile:** Set the `logDebug` variable in com.soomla.store.StoreConfig to **true**.
 
 - **ios-profile:** Make sure you have also `DEBUG=1` in your Build Settings' Preprocessor Macros (for Debug only).
-

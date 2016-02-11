@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Tutorial"
 title: "Getting Started"
 text: "Get started with ios-profile. Here you can find integration instructions and a basic example of initialization."
 position: 1
-theme: 'platforms'
+theme: 'soomla-ios'
 collection: 'soomla_ios_profile'
 module: 'profile'
 platform: 'ios'
@@ -37,8 +37,8 @@ platform: 'ios'
   ``` objectivec
   [[SoomlaProfile getInstance] initialize];
   ```
-  
-<div class="info-box">**NOTE:** 
+
+<div class="info-box">**NOTE:**
   If `-ObjC` flag conflicts with other libs you use in your project, you should remove the `-ObjC` flag from the link flags in Xcode and add `-force_load $(BUILT_PRODUCTS_DIR)/<LIBRARY_NAME>` to `Other Linker Flags` for the following SOOMLA libraries:    
     <ul>
       <li>`libSoomlaiOSCore.a`</li>
@@ -72,9 +72,9 @@ platform: 'ios'
     ```objectivec
     @(GOOGLE) : @{ @"clientId": @"[CLIENT ID]" }
     ```
-    
+
    (OPTIONAL) You can supply the `enableGameServices` key in the parameters (with a `BOOL`) value if you would like to use functionality of Google Play Game Services (score submitting, retrieving of leaderboards and scores), like so:
-    
+
      ```objectivec
      @(GOOGLE): @{ ..., @"enableGameServices": @(YES) },
      ```
@@ -141,7 +141,7 @@ Google Plus is supported out-of-the-box, authentication is done either through t
 1. Follow [Step 1. Creating the Google Developers Console project](https://developers.google.com/+/mobile/ios/getting-started#step_1_creating_the_console_name_project) and create a google+ app for iOS.
 
   **NOTE:** Set the BUNDLE ID of the google+ app to the bundle identifier of your app.
-  
+
 2. SOOMLA Profile supports [GPGS](https://developers.google.com/games/services/) functionality out-of-the-box also. If you want to use GPGS, please, follow [Steps 3 and 4 (Option 2: Manual Installation) in GPGS Quickstart Guide](https://developers.google.com/games/services/ios/quickstart). Also, there you can find information how to add your own leaderboards.
 
 3. Follow [Add URL schemes to your project](https://developers.google.com/identity/sign-in/ios/start-integrating#add_url_schemes_to_your_project) and add url type to your application to allow browser based authentication.
@@ -149,59 +149,59 @@ Google Plus is supported out-of-the-box, authentication is done either through t
 4. Add the following frameworks to your application:
 
     * GoogleSignIn.framework (can be downloaded here: https://developers.google.com/identity/sign-in/ios/sdk/)
-    
+
     * GoogleSignIn.bundle (coming together with GoogleSignIn.framework)
 
     * GooglePlus.framework (can be downloaded here: https://developers.google.com/+/downloads/)
-	
+
     * GoogleOpenSource.framework (can be downloaded here: https://developers.google.com/+/downloads/)
-	
+
     * GooglePlus.bundle (coming together with GooglePlus.framework)
-    
+
     and, if you want to use GPGS, also include the following frameworks:
-    
+
     * gpg.framework (can be downloaded here: https://developers.google.com/games/services/downloads/sdks)
-        
-    * gpg.bundle (coming together with gpg.framework) 
+
+    * gpg.bundle (coming together with gpg.framework)
 
   **NOTE** that ios-profile uses [Google Plus SDK 1.7.1](https://developers.google.com/+/mobile/ios/upgrading-sdk) to support Google Plus integration.
 
 5. Add additional frameworks to your project:
 
     * AddressBook.framework
-	
+
     * AssetsLibrary.framework
-	
+
     * Foundation.framework
-	
+
     * CoreLocation.framework
-	
+
     * CoreMotion.framework
-	
+
     * CoreGraphics.framework
-	
+
     * CoreText.framework
-	
+
     * MediaPlayer.framework
-	
+
     * Security.framework
-	
+
     * SystemConfiguration.framework
-    
+
     * StoreKit.framework
-	
+
     * UIKit.framework
-    
+
     and, if you want to use GPGS, also include the following frameworks:
-            
+
     * CoreData.framework
-    
+
     * CoreTelephony.framework
-                
+
     * QuartzCore.framework
-            
+
     * libc++.dylib
-    
+
     * libz.dylib
 
 6. Add `-lSoomlaiOSProfileGoogle` to the project's "Other Linker Flags".

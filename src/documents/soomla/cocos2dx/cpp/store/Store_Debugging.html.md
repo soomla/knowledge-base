@@ -1,13 +1,13 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Wrench"
 title: "Debugging"
 text: "Debugging methods and tips for cocos2dx-store."
 position: 6
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2dx_store'
 module: 'store'
-lang: 'cpp' 
+lang: 'cpp'
 platform: 'cocos2dx'
 ---
 

@@ -1,13 +1,13 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Game"
 title: "IStoreAssets"
 text: "To use SOOMLA, you'll need to create your own implementation of IStoreAssets, an \"interface\" that represents your game’s economy."
 position: 2
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2djs_store'
 module: 'store'
-lang: 'js' 
+lang: 'js'
 platform: 'cocos2dx'
 ---
 
@@ -47,7 +47,7 @@ function ExampleAssets {
     currency_itemId: 'coin_currency_ID',
     purchasableItem: Soomla.Models.PurchaseWithMarket.createWithMarketItem('coins_100_PROD_ID', 1.99)
   });
-  
+
   /** Virtual Goods **/
   var shieldGood = Soomla.Models.SingleUseVG.create({
     name: "Shield",
@@ -58,7 +58,7 @@ function ExampleAssets {
       pvi_amount: 225
     })
   });
-  
+
   var noAdsLTVG = Soomla.Models.LifetimeVG.create({
     name: 'No Ads',
     description: 'No More Ads!',
@@ -68,7 +68,7 @@ function ExampleAssets {
       pvi_amount: 0.99
     })
   });
-  
+
 
   /** Virtual Categories **/
   var generalCategory = Soomla.Models.VirtualCategory.create({
@@ -125,7 +125,7 @@ Create an instance of all your desired `VirtualCurrencyPack`s. For every `Virtua
 
 ### `goods`
 
-Create an instance of all your desired `VirtualGood`s. For every good, you'll have to provide: name, description, item ID and purchase type. 
+Create an instance of all your desired `VirtualGood`s. For every good, you'll have to provide: name, description, item ID and purchase type.
 Goods are divided into their types (`singleUse`, `lifetime`, `equippable`, `goodUpgrades`, `goodPacks`). You should use appropriate array for every your good. Use this field to access your game's virtual goods.
 
 ### `categories`

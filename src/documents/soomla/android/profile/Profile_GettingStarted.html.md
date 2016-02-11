@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Tutorial"
 title: "Getting Started"
 text: "Get started with android-profile. Here you can find integration instructions and a basic example of initialization."
 position: 1
-theme: 'platforms'
+theme: 'soomla-android'
 collection: 'soomla_android_profile'
 module: 'profile'
 platform: 'android'
@@ -28,7 +28,7 @@ platform: 'android'
 
 	``` java
 	Soomla.initialize(this, "[YOUR CUSTOM GAME SECRET HERE]");
-	
+
 	```
 
 4. In the `onCreate()` method of your main activity, initialize `SoomlaProfile`:
@@ -59,16 +59,16 @@ platform: 'android'
 	```
   <div class="info-box">**NOTE:** You should not request all the possible permissions you'll ever need in your app,
   just request the reasonable minimum. Other permissions will be requested, when they will be needed.
-  For instance, if you try to call `updateStatus`, SoomlaProfile will ask for `publish_actions` permission, 
+  For instance, if you try to call `updateStatus`, SoomlaProfile will ask for `publish_actions` permission,
   if your app has not got it.</div>
 
   b. **Google+** -  You can enable Google Play Games Services here.
-  
+
   ``` java
   	HashMap<String, String> googleParams = new HashMap<String, String>();
   	googleParams.put("enableGameServices", Boolean.toString(true));
   	providerParams.put(IProvider.Provider.GOOGLE, googleParams);
-  
+
   	SoomlaProfile.getInstance().initialize(providerParams);
   	```
 
@@ -105,9 +105,9 @@ Facebook is supported out-of-the-box, you just have to follow the next steps to 
 1. From the downloaded zip, Add the following jars to your project.
 
 	- `AndroidProfileFacebook.jar`
-	
+
 	- `simple-fb-4.0.3.jar`
-	
+
 	- `gson-1.7.2.jar`
 
 2. Import the Facebook SDK for Android into your project and setup all the relevant information (Application ID, etc).
@@ -163,7 +163,7 @@ Twitter is supported out-of-the-box, authentication is done via web view. Follow
 
 4. Import `google-play-services_lib` project as module dependency to your project.
 
-    > **Note:** You can either download/copy the existing `google-play-services_lib` project located under 
+    > **Note:** You can either download/copy the existing `google-play-services_lib` project located under
     [google social provider libs](https://github.com/soomla/android-profile/tree/master/social-providers/android-profile-google/libs) folder or [create one yourself](https://developers.google.com/+/mobile/android/getting-started#step_2_configure_your_eclipse_project).
 
 5. Add `SoomlaGooglePlusActivity` to `AndroidManifest.xml` as following:

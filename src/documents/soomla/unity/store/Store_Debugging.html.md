@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Wrench"
 title: "Debugging"
 text: "Debugging methods and tips for unity3d-store."
 position: 6
-theme: 'platforms'
+theme: 'soomla-unity'
 collection: 'soomla_unity_store'
 module: 'store'
 platform: 'unity'

@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Modeling"
 title: "Main Classes & Operations"
 text: "Read descriptions of the various social entities ios-profile provides, and see usage examples of operations that can be done to the different entities."
 position: 2
-theme: 'platforms'
+theme: 'soomla-ios'
 collection: 'soomla_ios_profile'
 module: 'profile'
 platform: 'ios'
@@ -64,25 +64,25 @@ This class represents a profile of a user from a social network (provider).
 - `extra` - a NSDictionary contains additional info provided by social provider:
 
   - `Facebook`
-  
+
     - **access_token** - *NSString*
-	
+
     - **permissions** - *NSArray of NSStrings*
-	
+
     - **expiration_date** - *UNIX timestamp as NSNumber*
-	
+
   - `Twitter`
-  
+
     - **access_token** - *NSString*
-	
+
   - `Google+`
-  
+
     - **access_token** - *NSString*
-	
+
     - **refresh_token** - *NSString*
-	
+
     - **expiration_date** - *UNIX timestamp as NSNumber*
-    
+
 ## Leaderboard <a href="https://github.com/soomla/ios-profile/blob/master/SoomlaiOSProfile/game-services/domain/Leaderboard.h" target="_blank"><img class="link-icon" src="/img/tutorial_img/linkImg.png"></a>
 
 This class holds information about a leaderboard which was returned by `getLeaderboards`.
@@ -230,7 +230,7 @@ Shares a story to the user's feed and grants the user a reward.
 Using the provider's native dialog (when available).
 
 ``` objectivec
-[[SoomlaProfile getInstance] updateStoryWithProviderDialog:TARGET_PROVIDER	
+[[SoomlaProfile getInstance] updateStoryWithProviderDialog:TARGET_PROVIDER
 	andName:@"The story of SOOMBOT (Profile Test App)"
 	andCaption:@"SOOMBOT Story"
 	andDescription:@"DESCRIPTION"
@@ -387,7 +387,7 @@ Note that the results will contain only part of the list. In order to get more i
 
 ``` objectivec
 [[SoomlaProfile getInstance] inviteWithProvider:FACEBOOK
-                                  inviteMessage:@"Let's use SOOMLA together!" 
+                                  inviteMessage:@"Let's use SOOMLA together!"
                                     dialogTitle:@"Invitation"
                                         payload:@""
                                       andReward:nil];
@@ -399,7 +399,7 @@ Note that the results will contain only part of the list. In order to get more i
 `uploadCurrentScreenshot` uploads the current screen shot image to the user's social page on the given Provider.
 
 ``` objectivec
-[[SoomlaProfile getInstance] uploadCurrentScreenshot:FACEBOOK 
+[[SoomlaProfile getInstance] uploadCurrentScreenshot:FACEBOOK
                                                title:@"Sharing title"
                                              message:@"Let's use SOOMLA together!"
                                              payload:@""
@@ -447,8 +447,8 @@ The user will be shown a screen where he selects where he wants to share.
 ``` objectivec
 [[SoomlaProfile getInstance] getScoresWithProvider:GAME_CENTER //selected provider
     forLeaderboard:leaderboard //your leaderboard
-    fromStart:false //should we fetch list from the 1st page or not 
-    payload:@"" 
+    fromStart:false //should we fetch list from the 1st page or not
+    payload:@""
     andReward:nil];
 
 ```
@@ -501,7 +501,7 @@ Note that the results will contain only part of the list. In order to get more i
 [[SoomlaProfile getInstance] submitScoreForProvider:GAME_CENTER //selected provider
     score:score //value to submit
     forLeaderboard:leaderboard //your leaderboard     
-    payload:@"" 
+    payload:@""
     andReward:nil];
 
 ```
@@ -514,7 +514,7 @@ Note that the results will contain only part of the list. In order to get more i
 
 ``` objectivec
 [[SoomlaProfile getInstance] showLeaderboardsForProvider:GAME_CENTER //selected provider         
-    payload:@"" 
+    payload:@""
     andReward:nil];
 
 ```

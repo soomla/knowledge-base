@@ -1,13 +1,13 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Modeling"
 title: "Economy Model & API"
 text: "Every game economy can be based on SOOMLA's economy model. Learn the building blocks of creating a virtual economy with currencies and virtual goods."
 position: 3
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2dx_store'
 module: 'store'
-lang: 'cpp' 
+lang: 'cpp'
 platform: 'cocos2dx'
 ---
 

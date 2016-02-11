@@ -2,11 +2,13 @@
 layout: 'knowledge-base'
 title: 'Cocos2dx'
 theme: 'platforms'
+platform: 'cocos2dx'
 ---
 
 <div class="jumbotron" id="know-soomla">
     <div id="jumbo-main-text">
-        <div id="hierarchy-nav"><%- @partial('nav-menu-l1', {current:'cocos2dx'}) %></div>
+        <%- @partial('nav-menu-l1', {current:'soomla'}) %>
+        <%- @partial('nav-menu-soomla', {platform: @document.platform, theme: @document.theme}) %>
         CHOOSE YOUR MODULE
     </div>
     <div id="jumbo-small-text">

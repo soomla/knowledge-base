@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Wrench"
 title: "Debugging"
 text: "Debugging methods and tips for iOS-store."
 position: 6
-theme: 'platforms'
+theme: 'soomla-ios'
 collection: 'soomla_ios_store'
 module: 'store'
 platform: 'ios'

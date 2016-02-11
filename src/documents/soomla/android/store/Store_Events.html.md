@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Events"
 title: "Events"
 text: "Learn how to observe and handle economy events triggered by android-store to customize your game-specific behavior."
 position: 5
-theme: 'platforms'
+theme: 'soomla-android'
 collection: 'soomla_android_store'
 module: 'store'
 platform: 'android'
@@ -327,7 +327,7 @@ public void onUnexpectedStoreError(UnexpectedStoreErrorEvent unexpectedStoreErro
   // unexpectedStoreErrorEvent contains:
   // errorCode - code of the error:  
   //    VERIFICATION_FAIL - something is going wrong while SOOMLA tried to verify purchase.
-  //    VERIFICATION_TIMEOUT - app didn't receive validation response from server in time. Please, try again later. 
+  //    VERIFICATION_TIMEOUT - app didn't receive validation response from server in time. Please, try again later.
   //    PURCHASE_FAIL - something is going wrong while SOOMLA tried to make purchase.
   //    GENERAL - other types of error. See details in app logs.
 

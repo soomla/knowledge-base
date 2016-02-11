@@ -1,13 +1,13 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Events"
 title: "Events"
 text: "Learn how to observe and handle economy events triggered by cocos2dx-store to customize your game-specific behavior."
 position: 5
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2dx_store'
 module: 'store'
-lang: 'cpp' 
+lang: 'cpp'
 platform: 'cocos2dx'
 ---
 
@@ -186,13 +186,13 @@ void Example::onMarketPurchase(EventCustom *event) {
   CCPurchasableVirtualItem *purchasable = dynamic_cast<CCPurchasableVirtualItem *>(eventData->objectForKey(CCStoreConsts::DICT_ELEMENT_PURCHASABLE));
   __String *payload = dynamic_cast<__String *>(eventData->objectForKey(CCStoreConsts::DICT_ELEMENT_DEVELOPERPAYLOAD));
   __Dictionary *extraInfo = dynamic_cast<(__Dictionary *>(eventData->objectForKey(CCStoreConsts::DICT_ELEMENT_EXTRA_INFO));
-  
+
   // Data from DICT_ELEMENT_EXTRA_INFO
-  //  Android ONLY. 
+  //  Android ONLY.
   __String *originalJSON = dynamic_cast<__String *>(extraInfo->objectForKey(CCStoreConsts::DICT_ELEMENT_ORIGINAL_JSON));
   __String *signature = dynamic_cast<__String *>(extraInfo->objectForKey(CCStoreConsts::DICT_ELEMENT_SIGNATURE));
   __String *userId = dynamic_cast<__String *>(extraInfo->objectForKey(CCStoreConsts::DICT_ELEMENT_USER_ID));  
-  //  iOS ONLY. 
+  //  iOS ONLY.
   __String *receiptUrl = dynamic_cast<__String *>(extraInfo->objectForKey("receiptUrl"));  
   __String *transactionIdentifier = dynamic_cast<__String *>(extraInfo->objectForKey("transactionIdentifier"));  
   __String *receiptBase64 = dynamic_cast<__String *>(extraInfo->objectForKey("receiptBase64"));  
@@ -458,11 +458,11 @@ This event is triggered an unexpected error occurs in the Store.
 
 Available error codes:
  - VERIFICATION_TIMEOUT(1) - app didn't receive validation response from server in time. Please, try again later.
- 
+
  - VERIFICATION_FAIL(2) - something is going wrong while SOOMLA tried to verify purchase.  
- 
+
  - PURCHASE_FAIL(3) - something is going wrong while SOOMLA tried to make purchase.
- 
+
  - GENERAL(0) - other types of error. See details in app logs.
 
 ```cpp

@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "InAppPurchase"
 title: "In-app Billing"
 text: "iTunes Connect in-app-purchase setup and integration with SOOMLA - define your game's in-app products."
 position: 8
-theme: 'platforms'
+theme: 'soomla-ios'
 collection: 'soomla_ios_store'
 module: 'store'
 platform: 'ios'

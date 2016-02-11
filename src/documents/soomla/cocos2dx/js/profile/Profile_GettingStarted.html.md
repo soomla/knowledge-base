@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Tutorial"
 title: "Getting Started"
 text: "Get started with cocos2dx-profile. Here you can find integration instructions and a basic example of initialization."
 position: 1
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2djs_profile'
 module: 'profile'
 lang: 'js'
@@ -181,11 +181,11 @@ ln -s <your-cocos2d-js-path>/frameworks/js-bindings/cocos2d-x frameworks/runtime
 1. Add the following directories to **Build Settings->Header Search Paths** (with `recursive` option):
 
  - `$(SRCROOT)/../Classes/soomla-cocos2dx-core/Soomla`
- 
+
  - `$(SRCROOT)/../Classes/soomla-cocos2dx-core/build/ios/headers`
- 
+
  - `$(SRCROOT)/../Classes/cocos2dx-profile/Soomla`
- 
+
  - `$(SRCROOT)/../Classes/cocos2dx-profile/build/ios/headers`
 
  ![alt text](/img/tutorial_img/cocos2dx-profile/headerSP.png "Header search paths")
@@ -228,37 +228,37 @@ web browser (fallback). Follow the next steps to make it work:
 5. Add additional frameworks if you still haven't:
 
     * AddressBook.framework
-	
+
     * AssetsLibrary.framework
-	
+
     * Foundation.framework
-	
+
     * CoreLocation.framework
-	
+
     * CoreMotion.framework
-	
+
     * CoreGraphics.framework
-	
+
     * CoreText.framework
-	
+
     * MediaPlayer.framework
-	
+
     * Security.framework
-	
+
     * SystemConfiguration.framework
-	
+
     * UIKit.framework
-    
+
     and, if you want to use GPGS, also include the following frameworks:
-                
+
     * CoreData.framework
-       
+
     * CoreTelephony.framework
-                    
+
     * QuartzCore.framework
-                
+
     * libc++.dylib
-        
+
     * libz.dylib    
 
 6. Add `-lSoomlaiOSProfileGoogle` to your project's **Build Settings->Other Linker Flags**.
@@ -336,14 +336,14 @@ Game Center is supported out-of-the-box, authentication is done through the sign
 
   From `frameworks/runtime-src/Classes/soomla-cocos2dx-core/build/android`:
   - SoomlaAndroidCore.jar
-  
+
   - Cocos2dxAndroidCore.jar
-  
+
   - square-otto-1.3.2.jar
 
   From `frameworks/runtime-src/Classes/cocos2dx-profile/build/android`:
   - AndroidProfile.jar
-  
+
   - Cocos2dxAndroidProfile.jar
 
 4. Update your AndroidManifest.xml to include permissions:
@@ -370,7 +370,7 @@ Facebook is supported out-of-the-box, you just have to follow the next steps to 
   - `AndroidProfileFacebook.jar`
 
   - `simple-fb-4.0.3.jar`
-  
+
   - `gson-1.7.2.jar`  
 
 2. Import the Facebook SDK for Android into your project and setup all the relevant information (Application ID, etc).

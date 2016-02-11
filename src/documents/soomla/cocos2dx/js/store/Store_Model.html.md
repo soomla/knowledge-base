@@ -1,64 +1,64 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Modeling"
 title: "Economy Model & API"
 text: "Every game economy can be based on SOOMLA's economy model. Learn the building blocks of creating a virtual economy with currencies and virtual goods."
 position: 3
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2djs_store'
 module: 'store'
-lang: 'js' 
+lang: 'js'
 platform: 'cocos2dx'
 ---
 
 # Economy Model & API
 
-SOOMLA's cocos2dx-store provides a complete data model implementation for virtual economies. Every game economy has 
-currencies, packs of currencies that can be sold, and items that can be sold either for money or in exchange for other 
-items. And these are just the very basics, of course. This tutorial contains descriptions of each entity in the economy 
+SOOMLA's cocos2dx-store provides a complete data model implementation for virtual economies. Every game economy has
+currencies, packs of currencies that can be sold, and items that can be sold either for money or in exchange for other
+items. And these are just the very basics, of course. This tutorial contains descriptions of each entity in the economy
 model, along with examples.
 
-All the classes are implemented in [soomla-store.js](https://github.com/soomla/cocos2dx-store/blob/master/js/soomla-store.js). 
+All the classes are implemented in [soomla-store.js](https://github.com/soomla/cocos2dx-store/blob/master/js/soomla-store.js).
 
 ![alt text](/img/tutorial_img/soomla_diagrams/EconomyModel.png "Soomla Economy Model")
 
 ## Virtual Items
 
-Almost every entity in your virtual economy will be a Virtual Item. 
-There are many types of Virtual Items and you can select the ones that fit your needs. Each one of the various types 
+Almost every entity in your virtual economy will be a Virtual Item.
+There are many types of Virtual Items and you can select the ones that fit your needs. Each one of the various types
 extends the class `VirtualItem` and adds its own behavior.
 
-Almost all `VirtualItems` are `PurchasableVirtualItems`. Among other features, all Virtual items have 2 functions to 
-help you easily interact with them: `give` and `take`. Preferably, you should use the two methods provided in `StoreInventory` 
-for these purposes, called `giveItem` and `takeItem`. Use these functions to give or take from your users a specific 
+Almost all `VirtualItems` are `PurchasableVirtualItems`. Among other features, all Virtual items have 2 functions to
+help you easily interact with them: `give` and `take`. Preferably, you should use the two methods provided in `StoreInventory`
+for these purposes, called `giveItem` and `takeItem`. Use these functions to give or take from your users a specific
 amount of a specific Virtual Item.
 
-Use `giveItem` when you want to give your user something and get nothing in return. (If you want to give something and 
-get something in return, you need to use `buyItem`). Use `takeItem` when you want to take something from your user, for 
+Use `giveItem` when you want to give your user something and get nothing in return. (If you want to give something and
+get something in return, you need to use `buyItem`). Use `takeItem` when you want to take something from your user, for
 example in the case of a refund.
 
 Every virtual item has an ID, a unique string that we use to identify the different items.
 
 ## PurchaseTypes
 
-As stated above, almost all Virtual Items are purchasable, or as we call them, `PurchasableVirtualItem`s. Purchase types 
-are used to indicate whether an item will be purchased with money or with other virtual items: there are 2 different 
+As stated above, almost all Virtual Items are purchasable, or as we call them, `PurchasableVirtualItem`s. Purchase types
+are used to indicate whether an item will be purchased with money or with other virtual items: there are 2 different
 purchase types described below.
 
-<div class="info-box">In the examples below the declarations of purchase types are shown as a part of 
+<div class="info-box">In the examples below the declarations of purchase types are shown as a part of
 `PurchasableVirtualItem` declarations, because this is the most common use of purchase types.</div>
 
 ### PurchaseWithMarket
 
-This kind of `PurchaseType` should be attached to items that you want to make available for purchase in the Market (App 
-Store, Google Play Store, etc..) for real money. When you create an instance of `PurchaseWithMarket`, you need to define 
+This kind of `PurchaseType` should be attached to items that you want to make available for purchase in the Market (App
+Store, Google Play Store, etc..) for real money. When you create an instance of `PurchaseWithMarket`, you need to define
 the associated `VirtualItem` in the Market.
 
-**NOTE:** The product ID you define in your implementation of `IStoreAssets` should be the same as you define in the 
+**NOTE:** The product ID you define in your implementation of `IStoreAssets` should be the same as you define in the
 Market.
 
 #### **For Example**
-Suppose that in your game, you offer a “No-Ads” feature for $1.99 in the Market. The code below shows how you need to 
+Suppose that in your game, you offer a “No-Ads” feature for $1.99 in the Market. The code below shows how you need to
 declare the `PurchaseType` parameter of your “No-Ads” item.
 
 ``` js
@@ -93,12 +93,12 @@ For more info on how to declare your items in the Market, see one of our tutoria
 
 ### PurchaseWithVirtualItem
 
-Any item with purchase type `PurchaseWithVirtualItem` can be purchased with any `VirtualItem`, like a sort of trade. 
-When creating an instance of `PurchaseWithVirtualItem`, you need to provide the ID of the virtual item that you want to 
+Any item with purchase type `PurchaseWithVirtualItem` can be purchased with any `VirtualItem`, like a sort of trade.
+When creating an instance of `PurchaseWithVirtualItem`, you need to provide the ID of the virtual item that you want to
 be paid with and the amount of that virtual item.
 
 #### **For Example**
-Suppose that in your game, you offer a chocolate cake that can be bought by paying 250 “Muffins”. The item being 
+Suppose that in your game, you offer a chocolate cake that can be bought by paying 250 “Muffins”. The item being
 purchased is a `chocolateCakeGood`, the item (virtual currency) to pay with is “Muffin”, and the amount is 250.
 
 ``` js
@@ -116,10 +116,10 @@ var chocolateCakeGood = Soomla.Models.SingleUseVG.create({
 
 ### VirtualCurrency
 
-Every game that has an economy has at least one `VirtualCurrency`. `VirtualCurrency` is NOT a `PurchasableVirtualItem`. 
-This is because in game stores, you never buy just a single "Gold Coin" or a "Muffin", but rather you buy a pack of them. 
-Your users will be able to buy packs of your game’s `VirtualCurrency` by using `VirtualCurrencyPack` (explained later in 
-this document). If for some reason you *do* want to sell a single currency you can do so by providing a 
+Every game that has an economy has at least one `VirtualCurrency`. `VirtualCurrency` is NOT a `PurchasableVirtualItem`.
+This is because in game stores, you never buy just a single "Gold Coin" or a "Muffin", but rather you buy a pack of them.
+Your users will be able to buy packs of your game’s `VirtualCurrency` by using `VirtualCurrencyPack` (explained later in
+this document). If for some reason you *do* want to sell a single currency you can do so by providing a
 `VirtualCurrencyPack` with an amount of 1.
 
 #### **How to define**
@@ -134,7 +134,7 @@ var muffinCurrency = Soomla.Models.VirtualCurrency.create({
 
 #### How to use
 
-A `VirtualCurrency` by itself is not very useful, because it cannot be sold individually. To sell currency, you need to 
+A `VirtualCurrency` by itself is not very useful, because it cannot be sold individually. To sell currency, you need to
 use a VirtualCurrencyPack (see section below).
 
 ``` js
@@ -173,8 +173,8 @@ Soomla.storeInventory.getItemBalance('currency_muffin');
 
 ### VirtualCurrencyPack
 
-As mentioned above, in game stores you never buy just a "Gold Coin" or a "Muffin", you always buy a pack of the game's 
-`VirtualCurrency`. This class represents exactly that: a pack of `VirtualCurrency`. Use this class to define various 
+As mentioned above, in game stores you never buy just a "Gold Coin" or a "Muffin", you always buy a pack of the game's
+`VirtualCurrency`. This class represents exactly that: a pack of `VirtualCurrency`. Use this class to define various
 currency packs in your game.
 
 ####**How to define**
@@ -196,7 +196,7 @@ var fiftymuffPack = Soomla.Models.VirtualCurrencyPack.create({
 
 **Buy:**
 
-When your user buys a VirtualCurrencyPack of 50 muffins, his/her muffin currency balance will be increased by 50, and 
+When your user buys a VirtualCurrencyPack of 50 muffins, his/her muffin currency balance will be increased by 50, and
 the payment will be deducted.
 
 ``` js
@@ -205,7 +205,7 @@ Soomla.storeInventory.buyItem('muffins_50');
 
 **Give:**
 
-Give your users a 50-muffin pack for free. This is useful if you’d like to give your users a currency_pack to begin with 
+Give your users a 50-muffin pack for free. This is useful if you’d like to give your users a currency_pack to begin with
 when they first download your game.
 
 ``` js
@@ -214,7 +214,7 @@ Soomla.storeInventory.giveItem('muffins_50', 1);
 
 **Take:**
 
-This function simply deducts the user’s balance. In case of a refund request, it is your responsibility to give the user 
+This function simply deducts the user’s balance. In case of a refund request, it is your responsibility to give the user
 back whatever he/she paid.
 
 Take back the 50-muffin pack that the user owns:
@@ -225,7 +225,7 @@ Soomla.storeInventory.takeItem('muffins_50', 1);
 
 #### **Get the balance**
 
-VirtualCurrencyPacks do not have a balance of their own in the database. When a user purchases a VirtualCurrencyPack, 
+VirtualCurrencyPacks do not have a balance of their own in the database. When a user purchases a VirtualCurrencyPack,
 the balance of the associated VirtualCurrency is increased.
 
 ``` js
@@ -234,8 +234,8 @@ Soomla.storeInventory.getItemBalance('currency_muffin');
 
 ## Virtual Goods
 
-Every virtual good is a `PurchasableVirtualItem`. You can buy it with other `VirtualItem`s, or in the market with money. 
-Virtual goods are the heart of every virtual economy. These are the game objects you’re going to want to sell in your 
+Every virtual good is a `PurchasableVirtualItem`. You can buy it with other `VirtualItem`s, or in the market with money.
+Virtual goods are the heart of every virtual economy. These are the game objects you’re going to want to sell in your
 game's store.
 
 Virtual goods need to be declared in your implementation of `IStoreAssets`.
@@ -256,14 +256,14 @@ Below are detailed descriptions of each category.
 
 ### SingleUseVG
 
-The most basic and common kind of a `VirtualGood` is a `SingleUseVG`. `SingleUseVG`s can be purchase by your users 
+The most basic and common kind of a `VirtualGood` is a `SingleUseVG`. `SingleUseVG`s can be purchase by your users
 multiple times. No limits!
 
 **The SingleUseVG's characteristics are:**
 
 - Can be purchased an unlimited number of times.
 
-- Has a balance that is saved in the database. Its balance goes up when you "give" it or "buy" it. The balance goes 
+- Has a balance that is saved in the database. Its balance goes up when you "give" it or "buy" it. The balance goes
 down when you “take” it (for example in the case of a refund).
 
 #### **How to define**
@@ -273,9 +273,9 @@ var fruitCakeGood = Soomla.Models.SingleUseVG.create({
     name: "Fruit Cake",                 // Name          
     description: "Tasty cake",          // Description   
     itemId: "fruit_cake",               // Item id       
-    purchasableItem: Soomla.Models.PurchaseWithVirtualItem.create({ 
+    purchasableItem: Soomla.Models.PurchaseWithVirtualItem.create({
       pvi_itemId: 'muffinCurrency_ID',  // Target item ID
-      pvi_amount: 225                   // Initial price 
+      pvi_amount: 225                   // Initial price
     })
   });
 ```
@@ -284,7 +284,7 @@ var fruitCakeGood = Soomla.Models.SingleUseVG.create({
 
 **Buy:**
 
-When your user buys a `SingleUseVG`, for example “fruit_cake”, his/her “fruit_cake” balance will be increased by 1, 
+When your user buys a `SingleUseVG`, for example “fruit_cake”, his/her “fruit_cake” balance will be increased by 1,
 and the payment will be deducted.
 
 ``` js
@@ -293,7 +293,7 @@ Soomla.storeInventory.buyItem("fruit_cake");
 
 **Give:**
 
-Gives your user the given amount of the `SingleUseVG` with the given itemId(“fruit_cake” in our example) for free. 
+Gives your user the given amount of the `SingleUseVG` with the given itemId(“fruit_cake” in our example) for free.
 This is useful if you’d like to give your users a `SingleUseVG` to start with when they first download your game.
 
 ``` js
@@ -302,7 +302,7 @@ Soomla.storeInventory.giveItem("fruit_cake", 1);
 
 **Take:**
 
-This function simply deducts the user’s balance. In case of a refund request, it is your responsibility to give the 
+This function simply deducts the user’s balance. In case of a refund request, it is your responsibility to give the
 user back whatever he/she paid.
 
 ``` js
@@ -325,12 +325,12 @@ Sometimes, you'll want to to sell packs of `SingleUseVG`s. To support these case
 
 - Can be purchased an unlimited number of times.
 
-- Doesn't have a balance in the database. The `SingleUseVG` that's associated with this pack has its own balance. When 
-your users buy a `SingleUsePackVG`, the balance of the associated `SingleUseVG` goes up in the amount you defined for 
+- Doesn't have a balance in the database. The `SingleUseVG` that's associated with this pack has its own balance. When
+your users buy a `SingleUsePackVG`, the balance of the associated `SingleUseVG` goes up in the amount you defined for
 the pack.
 
 **For Example:**
-Suppose you offer a `SingleUsePackVG` of “5 fruit cakes”. The `SingleUseVG` that’s associated with this Pack is 
+Suppose you offer a `SingleUsePackVG` of “5 fruit cakes”. The `SingleUseVG` that’s associated with this Pack is
 "fruit_cake". When your user buys a “5 fruit cake" Pack, the balance of fruit_cake is increased by 5 in the storage.
 
 #### **How to define**
@@ -344,7 +344,7 @@ Suppose you offer a `SingleUsePackVG` of “5 fruit cakes”. The `SingleUseVG` 
      itemId: "fruitcake_5",                // Item ID                    
      purchasableItem: Soomla.Models.PurchaseWithVirtualItem.create({             
        pvi_itemId: 'muffinCurrency_ID',    // Target item ID
-       pvi_amount: 1750                    // Initial price 
+       pvi_amount: 1750                    // Initial price
      })
    });
 ```
@@ -373,8 +373,8 @@ Soomla.storeInventory.takeItem("fruitcake_5", 1);
 
 #### **Get the balance**
 
-SingleUsePackVGs do not have a balance of their own in the database. When a user buys a SingleUsePackVG, the balance of 
-the associated `SingleUseVG` is increased. After buying a pack of 5 fruit cakes, your user’s fruit cake balance should 
+SingleUsePackVGs do not have a balance of their own in the database. When a user buys a SingleUsePackVG, the balance of
+the associated `SingleUseVG` is increased. After buying a pack of 5 fruit cakes, your user’s fruit cake balance should
 be increased by 5.
 
 Query the balance of the virtual good with item ID “fruit_cake”:
@@ -391,14 +391,14 @@ A `LifetimeVG` is a `VirtualGood` that can be bought once and is kept forever.
 
 - Can only be purchased once.
 
-- Your users can't have more than one of this item. In other words, they can have either 0 or 1 of this item at any 
+- Your users can't have more than one of this item. In other words, they can have either 0 or 1 of this item at any
 given time.
 
-If you declare a `LifetimeVG` with a purchase type of `PurchaseWithMarket`, it represents a non-consumable item in the 
+If you declare a `LifetimeVG` with a purchase type of `PurchaseWithMarket`, it represents a non-consumable item in the
 market, i.e., it cannot be consumed and is owned by the user forever. (The Market saves this information forever)
 
-However, notice that if you declare a `LifetimeVG` with a purchase type of `PurchaseWithVirtualItem`, the user will own 
-the `LifetimeVG` **as long as the local storage of the game has NOT been deleted** (i.e. the version has been updated, 
+However, notice that if you declare a `LifetimeVG` with a purchase type of `PurchaseWithVirtualItem`, the user will own
+the `LifetimeVG` **as long as the local storage of the game has NOT been deleted** (i.e. the version has been updated,
 or the game was deleted and re-downloaded, etc..).
 
 #### **For Example**
@@ -429,10 +429,10 @@ or the game was deleted and re-downloaded, etc..).
   });            
 ```
 
-Let's say a user purchases both cars. Even if the game's local storage is deleted, the user will still own the red car 
+Let's say a user purchases both cars. Even if the game's local storage is deleted, the user will still own the red car
 and will receive it upon `refreshInventory` process. However, the user will not own the blue car any longer.
 
-<div class="info-box">IMPORTANT: When defining a `LifetimeVG` in the App Store (iOS), you MUST define its type as a 
+<div class="info-box">IMPORTANT: When defining a `LifetimeVG` in the App Store (iOS), you MUST define its type as a
 Non-Consumable! For more information see our guide for [defining IAP products in the App Store](/ios/store/Store_AppStoreIAB).
 </div>
 
@@ -456,7 +456,7 @@ Non-Consumable! For more information see our guide for [defining IAP products in
 
 **Buy:**
 
-Buying a `LifetimeVG` means that the user will now own the item for the rest of time, unless the game developer decides 
+Buying a `LifetimeVG` means that the user will now own the item for the rest of time, unless the game developer decides
 to explicitly take away the item from the user. Lifetime goods can be bought only once.
 
 ``` js
@@ -465,7 +465,7 @@ Soomla.storeInventory.buyItem("marriage");
 
 **Give:**
 
-Give a `LifetimeVG` and get nothing in return. This is useful if you’d like to give your users a `LifetimeVG` when they 
+Give a `LifetimeVG` and get nothing in return. This is useful if you’d like to give your users a `LifetimeVG` when they
 first download your game.
 
 ```js
@@ -474,7 +474,7 @@ Soomla.storeInventory.giveItem("marriage", 1);
 
 **Take:**
 
-This function simply deducts the user’s balance. In case of a refund request, it is your responsibility to give the user 
+This function simply deducts the user’s balance. In case of a refund request, it is your responsibility to give the user
 back whatever he/she paid.
 
 ```js
@@ -490,8 +490,8 @@ Soomla.storeInventory.getItemBalance("marriage");
 
 ### EquippableVG
 
-An `EquippableVG` is a special type of `LifetimeVG`. In addition to the fact that an `EquippableVG` can be purchased 
-once, it can also be equipped by your users. Equipping means that the user decides to currently use a specific 
+An `EquippableVG` is a special type of `LifetimeVG`. In addition to the fact that an `EquippableVG` can be purchased
+once, it can also be equipped by your users. Equipping means that the user decides to currently use a specific
 `EquippableVG`.
 
 **The EquippableVG's characteristics are:**
@@ -512,7 +512,7 @@ once, it can also be equipped by your users. Equipping means that the user decid
 
 #### **How to define**
 
-In this example we're defining 2 characters, George and Kramer as `CATEGORY` equippable goods. This means the user can 
+In this example we're defining 2 characters, George and Kramer as `CATEGORY` equippable goods. This means the user can
 own both characters but can play only as one at a time.
 
 ``` js
@@ -544,7 +544,7 @@ own both characters but can play only as one at a time.
 
 **Buy:**
 
-Buying an `EquippableVG` is exactly like buying a `LifetimeVG`. The balance of “kramer” will be checked and if it is 0, 
+Buying an `EquippableVG` is exactly like buying a `LifetimeVG`. The balance of “kramer” will be checked and if it is 0,
 buying will be allowed.
 
 ``` js
@@ -562,7 +562,7 @@ Soomla.storeInventory.giveItem("george", 1);
 
 **Take:**
 
-This function simply deducts the user’s balance. In case of a refund request, it is your responsibility to give the user 
+This function simply deducts the user’s balance. In case of a refund request, it is your responsibility to give the user
 back whatever he/she paid.
 
 ``` js
@@ -600,7 +600,7 @@ Soomla.storeInventory.isVirtualGoodEquipped("kramer");
 
 ### UpgradeVG
 
-An `UpgradeVG` is a `VirtualGood` in a series of `UpgradeVG`s that define an upgrade sequence for a given `VirtualGood`. 
+An `UpgradeVG` is a `VirtualGood` in a series of `UpgradeVG`s that define an upgrade sequence for a given `VirtualGood`.
 The associated `VirtualGood` can be of any type (`SingleUseVG`, `EquippableVG`, etc..).
 
 When the user buys an`UpgradeVG`, a check is performed to make sure the appropriate conditions are met.
@@ -615,15 +615,15 @@ When the user buys an`UpgradeVG`, a check is performed to make sure the appropri
 
 - `goodItemId` - the itemId of the `VirtualGood` associated with this upgrade.
 
-- `prevItemId` - the itemId of the `UpgradeVG` that comes before this one, or if this is the first `UpgradeVG` in the 
+- `prevItemId` - the itemId of the `UpgradeVG` that comes before this one, or if this is the first `UpgradeVG` in the
 scale then this value is null.
 
-- `nextItemId` - the itemId of the `UpgradeVG` that comes after this one, or if this is the last `UpgradeVG` in the 
+- `nextItemId` - the itemId of the `UpgradeVG` that comes after this one, or if this is the last `UpgradeVG` in the
 scale then the value is null.
 
 #### **How to define**
 
-Say you have a strength attribute in your game and that strength is upgradeable on a scale of 1-3.  This is what you'll 
+Say you have a strength attribute in your game and that strength is upgradeable on a scale of 1-3.  This is what you'll
 need to create:
 
 1. SingleUseVG for 'strength'
@@ -739,16 +739,16 @@ Soomla.storeInventory.getGoodUpgradeLevel("strength_ID");
 
 ## VirtualCategory
 
-A `VirtualCategory` is used to categorize `VirtualGood`s. Categories are helpful for organizational purposes, but 
+A `VirtualCategory` is used to categorize `VirtualGood`s. Categories are helpful for organizational purposes, but
 especially come in handy when you have Equippable Virtual Goods.
 
-<div class="info-box">If you don’t have any need for categories, you can just define all of your virtual goods in one 
+<div class="info-box">If you don’t have any need for categories, you can just define all of your virtual goods in one
 category and call it something like “General”.</div>
 
 #### **Real Game Examples:**
 
-Let’s suppose your game has the following categories of virtual goods: "Power Ups", "Weapons", and  "Hats". 
-Say you decide to make “Weapons” and “Hats” `CATEGORY` `EquippableVG`s. You can easily implement this functionality once 
+Let’s suppose your game has the following categories of virtual goods: "Power Ups", "Weapons", and  "Hats".
+Say you decide to make “Weapons” and “Hats” `CATEGORY` `EquippableVG`s. You can easily implement this functionality once
 the goods are divided into virtual categories.
 
 #### How to define

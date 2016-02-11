@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Events"
 title: "Events"
 text: "Learn how to observe and handle economy events triggered by unity3d-store to customize your game-specific behavior."
 position: 5
-theme: 'platforms'
+theme: 'soomla-unity'
 collection: 'soomla_unity_store'
 module: 'store'
 platform: 'unity'
@@ -165,7 +165,7 @@ public void onMarketPurchaseDeferred(PurchasableVirtualItem pvi, string payload)
     // pvi - the PurchasableVirtualItem whose purchase operation was deferred
     // payload - a text that you can give when you initiate the purchase operation and
     //    you want to receive back upon completion
-    
+
     // ... your game specific implementation here ...
 }
 ```

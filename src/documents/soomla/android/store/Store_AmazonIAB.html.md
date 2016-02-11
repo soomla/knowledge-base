@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "InAppPurchase"
 title: "Amazon In-app Billing"
 text: "Amazon in-app-purchase setup and integration with SOOMLA - define your game's in-app products."
 position: 9
-theme: 'platforms'
+theme: 'soomla-android'
 collection: 'soomla_android_store'
 module: 'store'
 platform: 'android'

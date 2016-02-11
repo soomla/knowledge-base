@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Modeling"
 title: "Main Classes & Operations"
 text: "Read descriptions of the various social entities cocos2dx-profile provides, and see usage examples of operations that can be done to the different entities."
 position: 2
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2dx_profile'
 module: 'profile'
 lang: 'cpp'
@@ -65,23 +65,23 @@ This class represents a profile of a user from a social network (provider).
 - `Extra` - a cocos2dx::__Dictionary contains additional info provided by social provider:
 
   - `Facebook`
-  
+
     - **access_token** - *cocos2dx::__String*
-	
+
     - **permissions** - *cocos2dx::__Array of cocos2dx::__Strings*
-	
+
     - **expiration_date** - *UNIX timestamp as cocos2dx::__Double* - `not available for Android`
-	
+
   - `Twitter`
-  
+
     - **access_token** - *cocos2dx::__String*
-	
+
   - `Google+`
-  
+
     - **access_token** - *cocos2dx::__String*
-	
+
     - **refresh_token** - *cocos2dx::__String* - `not available for Android`
-	
+
     - **expiration_date** - *UNIX timestamp as cocos2dx::__Double* - `not available for Android`
 
 ## CCLeaderboard <a href="https://github.com/soomla/cocos2dx-profile/blob/master/Soomla/domain/CCLeaderboard.h" target="_blank"><img class="link-icon" src="/img/tutorial_img/linkImg.png"></a>
@@ -243,7 +243,7 @@ soomla::CCSoomlaProfile::getInstance()->updateStatusDialog(
   	"I LOVE SOOMLA!  http://www.soom.la",   // Message to post as status
   	"",                                     // Payload
   	nullptr,                                // Reward  	
-  	&profileError                           // Used for error handling	
+  	&profileError                           // Used for error handling
 );
 ```
 
@@ -310,14 +310,14 @@ Using the provider's native dialog (when available).
 
 ``` java
 soomla::CCSoomlaProfile::getInstance()->updateStoryDialog(
-	soomla::FACEBOOK,                           // Provider	
+	soomla::FACEBOOK,                           // Provider
 	"The story of SOOMBOT (Profile Test App)",  // Name
 	"SOOMBOT Story",                            // Caption
 	"Hey! It's SOOMBOT Story",                  // Description
 	"http://about.soom.la/soombots",            // Link to post
 	"http://about.soom.la/.../spockbot.png",    // Image URL
 	"",                                         // Payload
-	nullptr,                                    // Reward	
+	nullptr,                                    // Reward
 	&profileError                               // Used for error handling
 );
 ```
@@ -391,8 +391,8 @@ soomla::CCSoomlaProfile::getInstance()->uploadCurrentScreenshot(
 	"Sharing title",                // Story title
 	"Let's use SOOMLA together!",   // Story message
 	"",                             // Payload
-	nullptr,                        // Reward	
-	&profileError                   // Used for error handling	
+	nullptr,                        // Reward
+	&profileError                   // Used for error handling
 );
 ```
 
@@ -702,7 +702,7 @@ soomla::CCSoomlaProfile::getInstance()->submitScore(
         NULL,                               // no reward
         NULL                                // no error handling, to keep example simple
         );
-        
+
 ```
 
 <br>
@@ -717,7 +717,7 @@ soomla::CCSoomlaProfile::getInstance()->showLeaderboards(
         "",                                 // no payload
         null                                // no reward        
         );
-        
+
 ```
 
 <br>

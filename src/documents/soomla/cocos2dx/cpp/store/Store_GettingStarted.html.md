@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Tutorial"
 title: "Getting Started"
 text: "Get started with cocos2dx-store. Here you can find a basic example of initialization, economy framework integration, and links to downloads and IAP setup."
 position: 1
-theme: 'platforms'
+theme: 'soomla-cocos2dx'
 collection: 'soomla_cocos2dx_store'
 module: 'store'
 lang: 'cpp'
@@ -49,7 +49,7 @@ platform: 'cocos2dx'
 	YourImplementationAssets *assets = YourImplementationAssets::create();
 
 	bool verifyOnFailure = true;
-  soomla::CCSoomlaStoreConfigBuilder *storeConfig 
+  soomla::CCSoomlaStoreConfigBuilder *storeConfig
       = soomla::CCSoomlaStoreConfigBuilder::create();
   storeConfig
     ->setGpConfiguration(soomla::CCSoomlaStoreGpConfigBuilder::create()
@@ -58,7 +58,7 @@ platform: 'cocos2dx'
       ->activateFraudProtection("clientId", "clientSecret", "refreshToken", verifyOnFailure))
     ->setIosConfiguration(soomla::CCSoomlaStoreIosConfigBuilder::create()
       ->activateFraudProtection(verifyOnFailure));
-  
+
   soomla::CCSoomlaStore::initialize(assets, storeConfig->build());
 	```
 
@@ -69,8 +69,8 @@ platform: 'cocos2dx'
 	- *Test Purchases* - allows testing IAP on Google Play. (iOS doesn't have this functionality).
 
 	- *SSV* - enables _Fraud Protection_. (in order to activate it in Google Play see the related section below).
-	
-	- *verifyOnServerFailure* - if you use Fraud Protection, optionally you set this param, if you want to get purchases 
+
+	- *verifyOnServerFailure* - if you use Fraud Protection, optionally you set this param, if you want to get purchases
 	automatically verified in case of network failures during the verification process.
 
 	<div class="warning-box">Choose the secret wisely. You can't change it after you launch your game!
@@ -150,15 +150,15 @@ In your XCode project, perform the following steps:
     From `extensions/soomla-cocos2dx-core/build/android`:
 
     - SoomlaAndroidCore.jar
-	
+
     - Cocos2dxAndroidCore.jar
-	
+
     - square-otto-1.3.2.jar
 
   From `extensions/cocos2dx-store/build/android`:
 
     - SoomlaAndroidStore.jar
-	
+
     - Cocos2dxAndroidStore.jar
 
 3. Update your AndroidManifest.xml to include permissions:
@@ -166,7 +166,7 @@ In your XCode project, perform the following steps:
     ```xml
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="com.android.vending.BILLING"/>
-    
+
     ```
 
 ## **Select a Billing Service**
@@ -212,7 +212,7 @@ SOOMLA's cocos2dx-store knows how to contact Google Play, Amazon Appstore, or Ap
 
     <div class="info-box">Don't forget to close the Iab Service when your store is closed.</div>
 
-5. In case you want to turn on Fraud Protection you need to get clientId, clientSecret and refreshToken as explained in 
+5. In case you want to turn on Fraud Protection you need to get clientId, clientSecret and refreshToken as explained in
 [Google Play Purchase Verification](/android/store/Store_GooglePlayVerification) and use them like this:
 
 	``` cpp
@@ -245,11 +245,11 @@ SOOMLA's cocos2dx-store knows how to contact Google Play, Amazon Appstore, or Ap
 
 2. Use SOOMLA's Fraud Protection **(Optional)**
 
-	As you probably know, fraud on IAP is pretty common. Hackers can crack their smartphones to think that a purchase 
-	was made when the payment isn't actually transferred to you. To help game developers with this issue, we created 
+	As you probably know, fraud on IAP is pretty common. Hackers can crack their smartphones to think that a purchase
+	was made when the payment isn't actually transferred to you. To help game developers with this issue, we created
 	a verification server that you can use instantly through the framework.
 
-	All you need to do is let cocos2dx-store know that you want to verify purchases. You can do this by passing an extra 
+	All you need to do is let cocos2dx-store know that you want to verify purchases. You can do this by passing an extra
 	parameter to `CCSoomlaStore`:
 
 	```cpp
@@ -308,4 +308,3 @@ To integrate cocos2dx-store into your game, follow these steps.
 2. **For iOS:** Use sourced versions of Linked projects (`extensions/soomla-cocos2dx-core/development/Cocos2dxCoreFromSources.xcodeproj`, `extensions/cocos2dx-store/development/Cocos2dxStoreFromSources.xcodeproj`)
 
 3. **For Android:** You can use our "sourced" modules for Android Studio (or IntelliJ IDEA) (`extensions/soomla-cocos2dx-core/development/Cocos2dxCoreFromSources.iml`, `extensions/cocos2dx-store/development/Cocos2dxStoreFromSources.iml`), just include them in your project.
-

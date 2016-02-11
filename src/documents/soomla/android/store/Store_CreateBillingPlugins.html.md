@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Plugins"
 title: "Create Your Own Billing Plugin"
 text: "Not all Android users pay with Google Play. Learn how to create new billing plugins for android-store to allow alternative payment methods."
 position: 10
-theme: 'platforms'
+theme: 'soomla-android'
 collection: 'soomla_android_store'
 module: 'store'
 platform: 'android'

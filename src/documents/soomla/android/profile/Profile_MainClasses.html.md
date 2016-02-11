@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Modeling"
 title: "Main Classes & Operations"
 text: "Read descriptions of the various social entities android-profile provides, and see usage examples of operations that can be done to the different entities."
 position: 2
-theme: 'platforms'
+theme: 'soomla-android'
 collection: 'soomla_android_profile'
 module: 'profile'
 platform: 'android'
@@ -52,17 +52,17 @@ This class holds information about a user for a specific `IProvider`.
 - `Extra` - a map contains additional info provided by social provider:
 
   - `Facebook`
-  
+
     - **access_token** - *String*
-	
+
     - **permissions** - *JSONArray of Strings*
-	
+
   - `Twitter`
-  
+
     - **access_token** - *String*
-	
+
   - `Google+`
-  
+
     - **access_token** - *String*
 
 ## SoomlaProfile <a href="https://github.com/soomla/android-profile/blob/master/SoomlaAndroidProfile/src/com/soomla/profile/SoomlaProfile.java" target="_blank"><img class="link-icon" src="/img/tutorial_img/linkImg.png"></a>
@@ -205,7 +205,7 @@ SoomlaProfile.getInstance().updateStatusDialog(
 	IProvider.Provider.FACEBOOK,            // Provider
 	" http://www.soom.la",                  // Link to post as status
 	"",                                     // Payload
-	null                              		  // Reward	
+	null                              		  // Reward
 );
 ```
 
@@ -289,7 +289,7 @@ SoomlaProfile.getInstance().updateStoryDialog(
   "http://about.soom.la/soombots",            // Link to post
   "http://about.soom.la/.../spockbot.png",    // Image URL					
 	"",                                         // Payload
-	null                                        // Reward	
+	null                                        // Reward
 );
 ```
 
@@ -560,7 +560,7 @@ SoomlaProfile.getInstance().submitScore(
         "",                                 // no payload
         null                                // no reward        
         );
-        
+
 ```
 
 <br>
@@ -575,7 +575,7 @@ SoomlaProfile.getInstance().showLeaderboards(
         "",                                 // no payload
         null                                // no reward        
         );
-        
+
 ```
 
 <br>

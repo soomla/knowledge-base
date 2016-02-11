@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Events"
 title: "Events"
 text: "Learn how to observe and handle economy events triggered by ios-store to customize your game-specific behavior."
 position: 5
-theme: 'platforms'
+theme: 'soomla-ios'
 collection: 'soomla_ios_store'
 module: 'store'
 platform: 'ios'
@@ -392,7 +392,7 @@ The event `EVENT_UNEXPECTED_ERROR_IN_STORE` is triggered an unexpected error occ
   // notification's userInfo contains the following keys:
   // DICT_ELEMENT_ERROR_CODE = Numeric error code
   //    ERR_VERIFICATION_FAIL - something is going wrong while SOOMLA tried to verify purchase.
-  //    ERR_VERIFICATION_TIMEOUT - app didn't receive validation response from server in time. Please, try again later. 
+  //    ERR_VERIFICATION_TIMEOUT - app didn't receive validation response from server in time. Please, try again later.
   //    ERR_PURCHASE_FAIL - something is going wrong while SOOMLA tried to make purchase.
   //    ERR_GENERAL - other types of error. See details in app logs.
 

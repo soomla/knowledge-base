@@ -1,10 +1,10 @@
 ---
-layout: "content"
+layout: "soomla-content"
 image: "Events"
 title: "Events"
 text: "Learn how to observe and handle social events triggered by unity3d-profile to customize your game-specific behavior."
 position: 3
-theme: 'platforms'
+theme: 'soomla-unity'
 collection: 'soomla_unity_profile'
 module: 'profile'
 platform: 'unity'
@@ -430,7 +430,7 @@ The event is triggered when fetching leaderboards has started.
 ProfileEvents.OnGetLeaderboardsStarted += onGetLeaderboardsStarted;
 
 public void onGetLeaderboardsStarted(GetLeaderboardsStartedEvent event) {
-	// event.Provider is the social provider	
+	// event.Provider is the social provider
 	// event.Payload is an identification string that you can give when you initiate the social action operation and want to receive back upon failure
 
 	// ... your game specific implementation here ...
