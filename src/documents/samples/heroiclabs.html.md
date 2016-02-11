@@ -352,9 +352,9 @@ Heroic Labs is a **free** game backend for developers which offers a plethora of
 2. Get your API key and integrate the code samples above into your game.
 
 3. Integrate SOOMLA Profile and LevelUp.  Follow all steps in the platform specific getting started guides. <br>
-    <a href="/unity/profile/profile_gettingstarted/" target="_blank">Unity Profile</a> |
+    <a href="/soomla/unity/store/Profile_GettingStarted/" target="_blank">Unity Profile</a> |
     <a href="/unity/levelup/levelup_gettingstarted/" target="_blank">Unity LevelUp</a> |
-    <a href="/android/profile/profile_gettingstarted/" target="_blank">Android Profile</a>
+    <a href="/soomla/android/profile/profile_gettingstarted/" target="_blank">Android Profile</a>
 
 4. Check out the <a href="https://heroiclabs.com/" target="_blank">Heroic Labs website</a> and <a href="https://heroiclabs.com/docs/" target="_blank">documentation</a> for more details.
 

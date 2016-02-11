@@ -15,7 +15,7 @@ platform: 'android'
 <div class="info-box">General information about Fraud Protection available in this [article](/university/articles/Grow_FraudProtection).</div>
 
 In case you want to turn on _Fraud Protection_ you need to get clientId, clientSecret and refreshToken as explained in
-[Google Play Purchase Verification](/android/store/Store_GooglePlayVerification) and use them like this:   
+[Google Play Purchase Verification](/soomla/android/store/Store_GooglePlayVerification) and use them like this:   
 
   ``` java
       GooglePlayIabService.getInstance().configVerifyPurchases(new HashMap<String, Object>() {{

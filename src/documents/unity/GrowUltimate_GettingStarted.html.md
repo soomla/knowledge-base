@@ -18,12 +18,12 @@ GrowUltimate is the perfect All In One solution for your game. If you want your 
 
 GrowUltimate includes:
 
-- SOOMLA's open-source modules - [Store](/unity/store/Store_GettingStarted) and [Profile](/unity/profile/Profile_GettingStarted)
-- [State & Economy Sync](/unity/grow/Grow_Sync)
-- [IAP Fraud Protection](/unity/grow/Grow_FraudProtection)
-- [Analytics](/unity/grow/Grow_Analytics)
-- [Whales Report](/unity/grow/Grow_WhalesReport)
-- [Insights](/unity/grow/Grow_Insights)
+- SOOMLA's open-source modules - [Store](/soomla/unity/store/Store_GettingStarted) and [Profile](/soomla/unity/store/Profile_GettingStarted)
+- [State & Economy Sync](/unity/Grow_Sync)
+- [IAP Fraud Protection](/unity/Grow_FraudProtection)
+- [Analytics](/unity/Grow_Analytics)
+- [Whales Report](/unity/Grow_WhalesReport)
+- [Insights](/unity/Grow_Insights)
 
 ## Integrating GrowUltimate
 
@@ -104,7 +104,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
 
 	<img src="/img/tutorial_img/unity_grow/dashboardKeys.png" alt="Game key and Env key" style="border:0;">
 
-	c. **Choose your social platform** by toggling Facebook, twitter or Google in the settings. Follow the instructions for integrating [Facebook](/unity/profile/Profile_GettingStarted#facebook), [Twitter](/unity/profile/Profile_GettingStarted#twitter) or [Google+](/unity/profile/Profile_GettingStarted#google-).
+	c. **Choose your social platform** by toggling Facebook, twitter or Google in the settings. Follow the instructions for integrating [Facebook](/soomla/unity/store/Profile_GettingStarted#facebook), [Twitter](/soomla/unity/store/Profile_GettingStarted#twitter) or [Google+](/soomla/unity/store/Profile_GettingStarted#google-).
 
 	d. If you're building for Android, click on the "Android Settings" option, and choose your billing provider. If you choose Google Play, you need to provide the Public Key, which is given to you from Google.
 
@@ -117,7 +117,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
 
 	- Check the "Receipt Validation" option under the relevant platform (Android - Google Play / iOS).
 
-	- (Google Play only) Fill in the clientId, clientSecret and refreshToken fields by following the instructions posted [here](/android/store/Store_GooglePlayVerification).
+	- (Google Play only) Fill in the clientId, clientSecret and refreshToken fields by following the instructions posted [here](/soomla/android/store/Store_GooglePlayVerification).
 
 <div class="info-box">General information about Fraud Protection available in this [article](/university/articles/Grow_FraudProtection).</div>
 
@@ -179,21 +179,21 @@ The next step is to create your game specific implementation for each of the mod
 In order to be notified about (and handle) SOOMLA-related events, you will also need to create event-handling functions. Refer to the following sections for more information:
 
 - **Store** - With Store you create your in-game virtual economy. It'll allow you to easily setup IAP and safely store your users' balances.  
-[API](/unity/store/Store_Model) | [Main classes](/unity/store/Store_MainClasses) | [Events](/unity/store/Store_Events)
+[API](/soomla/unity/store/Store_Model) | [Main classes](/soomla/unity/store/Store_MainClasses) | [Events](/soomla/unity/store/Store_Events)
 
 - **Profile** - This module will make your life extremely easy when it comes to connecting your users to Social Networks.  
-[API](/unity/profile/Profile_MainClasses) | [Events](/unity/profile/Profile_Events)
+[API](/soomla/unity/profile/Profile_MainClasses) | [Events](/soomla/unity/profile/Profile_Events)
 
 - **Insights** - Getting in-game information about your users in real-time used to be a dream. Now it's here. Insights will tell you things about your users (as seen in other games) inside the code so you can take actions when it matters. This is the power of the GROW data network.  
-[API](/unity/grow/Grow_Insights#MainClasses&Methods) | [Events](/unity/grow/Grow_Insights#Events)
+[API](/unity/Grow_Insights#MainClasses&Methods) | [Events](/unity/Grow_Insights#Events)
 
 - **State & Economy Sync** - Your users want to get their balances, levels and other game state parameters when they switch devices. Now you can let them do it.  
-[Events](/unity/grow/Grow_Sync#Events)
+[Events](/unity/Grow_Sync#Events)
 
 
 ## Example
 
-Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and their entities in SOOMLA's Knowledge Base: [Store](/unity/store/Store_Model), [Profile](/unity/profile/Profile_MainClasses), [State & Economy Sync](/unity/grow/Grow_Sync) and [Insights](/unity/grow/Grow_Insights).
+Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and their entities in SOOMLA's Knowledge Base: [Store](/soomla/unity/store/Store_Model), [Profile](/soomla/unity/profile/Profile_MainClasses), [State & Economy Sync](/unity/Grow_Sync) and [Insights](/unity/Grow_Insights).
 
 ### IStoreAssets
 

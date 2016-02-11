@@ -94,7 +94,7 @@ platform: 'android'
   providerParams.put(IProvider.Provider.FACEBOOK, facebookParams);
   ```
 
-5. If integrating a virtual economy with the store module, please see [android-store](/android/store/Store_GettingStarted) for store setup.
+5. If integrating a virtual economy with the store module, please see [android-store](/soomla/android/store/Store_GettingStarted) for store setup.
 
 <div class="info-box">The following steps should be done according to the target social network.</div>
 
@@ -219,7 +219,7 @@ Twitter is supported out-of-the-box, authentication is done via web view. Follow
 
 Below is a brief example of initializing Profile, logging the user into Facebook, and sharing a story on the user's Facebook wall. To see a full example, check out the [Muffin Rush Example](https://github.com/soomla/android-profile/tree/master/SoomlaAndroidExample/src/com/soomla/example).
 
-To learn about the different entities and functionality of Profile, see [Main Classes & Operations](/android/profile/Profile_MainClasses).
+To learn about the different entities and functionality of Profile, see [Main Classes & Operations](/soomla/android/profile/Profile_MainClasses).
 
 <br>
 Initialize `SoomlaProfile`.

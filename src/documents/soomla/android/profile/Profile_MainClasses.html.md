@@ -69,7 +69,7 @@ This class holds information about a user for a specific `IProvider`.
 
 This is the main class that controls the entire SOOMLA Profile module. Use this class to perform various social and authentication operations for users.
 
-**NOTE:** Most of the functions in this class call relevant functions from the social provider's SDK, and do NOT return a value, but rather fire appropriate events that contain the return values. Read more about [Events](/android/profile/Profile_Events).
+**NOTE:** Most of the functions in this class call relevant functions from the social provider's SDK, and do NOT return a value, but rather fire appropriate events that contain the return values. Read more about [Events](/soomla/android/profile/Profile_Events).
 
 The diagram below depicts the flow that takes place when a `SoomlaProfile` function is called. In the diagram, the example function shown is `login`, but this principle holds for all functions.
 
@@ -78,7 +78,7 @@ The diagram below depicts the flow that takes place when a `SoomlaProfile` funct
 <br>
 ### `initialize`
 
-`SoomlaProfile` is the class that needs to be initialized in order to begin using Profile. This is covered in android-profile's [Getting Started](/android/profile/Profile_GettingStarted) tutorial.
+`SoomlaProfile` is the class that needs to be initialized in order to begin using Profile. This is covered in android-profile's [Getting Started](/soomla/android/profile/Profile_GettingStarted) tutorial.
 
 ``` java
 SoomlaProfile.getInstance().initialize();

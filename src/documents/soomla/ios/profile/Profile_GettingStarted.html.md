@@ -30,7 +30,7 @@ platform: 'ios'
     [Soomla initializeWithSecret:@"[YOUR CUSTOM GAME SECRET HERE]"];
     ```
 
-5. If integrating a virtual economy with the store module, please see [ios-store](/ios/store/Store_GettingStarted) for store setup.
+5. If integrating a virtual economy with the store module, please see [ios-store](/soomla/ios/store/Store_GettingStarted) for store setup.
 
 6. Initalize Soomla Profile:
 
@@ -277,7 +277,7 @@ The callback to this process is `openURL` which should be defined in your `AppDe
 
 Below is a brief example of initializing Profile, logging the user into Facebook, and sharing a story on the user's Facebook wall. To see a full example, check out the [iOS Profile Example](https://github.com/soomla/ios-profile/tree/master/SoomlaiOSProfileExample).
 
-To learn about the different entities and functionality of Profile, see [Main Classes & Operations](/ios/profile/Profile_MainClasses).
+To learn about the different entities and functionality of Profile, see [Main Classes & Operations](/soomla/ios/profile/Profile_MainClasses).
 
 <br>
 Initialize `SoomlaProfile`.

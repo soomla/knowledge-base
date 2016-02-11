@@ -29,23 +29,23 @@ With State & Economy Sync you can:
 
 ## Integration
 
-<div class="info-box">GROW's State & Economy Sync is included in [GrowSpend](/cocos2dx/js/grow/GrowSpend_GettingStarted#SetupGrowSpend).</div>
+<div class="info-box">GROW's State & Economy Sync is included in [GrowSpend](/cocos2dx/js/GrowSpend_GettingStarted#SetupGrowSpend).</div>
 
 
 1. Initialize `GrowSync` according to the instructions of your relevant bundle.
 
 * Create event handler functions in order to be notified about (and handle) GROW Sync related events. See
-[Events](/cocos2dx/js/grow/Grow_Sync/#Events) for more information.
+[Events](/cocos2dx/js/Grow_Sync/#Events) for more information.
 
 * Once initialized, Sync will start syncing the player's state and game model, depending on the integrated modules.
 Synchronization is done with a unique identifier for every device.
 
-* If [Profile](/cocos2dx/js/profile/Profile_GettingStarted) is integrated, once the player logs into a social network
+* If [Profile](/soomla/cocos2dx/js/profile/Profile_GettingStarted) is integrated, once the player logs into a social network
 the game state will be synched across all of the player's devices, on which he/she is logged in with the same profile
 for that social provider.
 
 <div class="warning-box">Make sure to start gameplay or change local state only **after**
-[`EVENT_STATE_SYNC_FINISHED`](/cocos2dx/js/grow/Grow_Sync#OnStateSyncFinished) event is triggered. </div>
+[`EVENT_STATE_SYNC_FINISHED`](/cocos2dx/js/Grow_Sync#OnStateSyncFinished) event is triggered. </div>
 
 ## Observing & Handling Events
 

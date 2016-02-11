@@ -27,7 +27,7 @@ GrowSoomla includes:
 
 - [Whales Report](/university/articles/Grow_WhalesReport)
 
-- [Insights](/cocos2dx/js/grow/Grow_Insights)
+- [Insights](/cocos2dx/js/Grow_Insights)
 
 ## Integrating GrowSoomla
 
@@ -229,12 +229,12 @@ Refer to the following sections for more information:
 - **Insights** - Getting in-game information about your users in real-time used to be a dream. Now it's here. Insights
 will tell you things about your users (as seen in other games) inside the code so you can take actions when it matters.
 This is the power of the GROW data network.  
-[API](/cocos2dx/js/grow/Grow_Insights#MainClasses&Methods) | [Events](/cocos2dx/js/grow/Grow_Insights#Events)
+[API](/cocos2dx/js/Grow_Insights#MainClasses&Methods) | [Events](/cocos2dx/js/Grow_Insights#Events)
 
 ## Example
 
 Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and their
-entities in SOOMLA's Knowledge Base:  [Insights](/cocos2dx/js/grow/Grow_Insights).
+entities in SOOMLA's Knowledge Base:  [Insights](/cocos2dx/js/Grow_Insights).
 
 ### Initialization
 

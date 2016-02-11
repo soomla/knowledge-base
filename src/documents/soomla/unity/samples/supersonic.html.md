@@ -225,14 +225,14 @@ https://www.supersonic.com/lp/roam/lp_m1/?utm_source=Soomla%20Promotion&utm_medi
     <a href="http://developers.supersonic.com/hc/en-us/articles/201481051-Getting-Started-with-the-Supersonic-Android-SDK" target="_blank">Android</a>
 
 4. Integrate SOOMLA Store and LevelUp.  Follow all steps in the platform specific getting started guides: <br>
-    <a href="/unity/store/store_gettingstarted/" target="_blank">Unity Store</a> |
+    <a href="/soomla/unity/store/Store_GettingStarted/" target="_blank">Unity Store</a> |
     <a href="/unity/levelup/levelup_gettingstarted/" target="_blank">Unity LevelUp</a> |
-    <a href="/android/store/store_gettingstarted/" target="_blank">Android Store</a> |
-    <a href="/ios/store/store_gettingstarted/" target="_blank">iOS Store</a>
+    <a href="/soomla/android/store/store_gettingstarted/" target="_blank">Android Store</a> |
+    <a href="/soomla/ios/store/store_gettingstarted/" target="_blank">iOS Store</a>
 
 
 <div class="samples-title">Additional tips and recommendations</div>
 
 1. Combine 2 or 3 Video ad networks for increased coverage.<br> Working with a single provider could lead to inventory problems where there are no ads available.
 
-2. Adding <a href="/unity/grow/grow_gettingstarted/" target="_blank">GROW</a> will allow your users to backup their balances and will give you more tools to analyze their behavior.
+2. Adding <a href="/unity/grow_gettingstarted/" target="_blank">GROW</a> will allow your users to backup their balances and will give you more tools to analyze their behavior.

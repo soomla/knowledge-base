@@ -97,7 +97,7 @@ function ExampleAssets {
 
 <br>
 
-After you’ve implemented your version of `IStoreAssets`, you’ll need to initialize `Soomla.SoomlaStore` with the implementation you just created (also explained in the [Getting Started](/cocos2dx/js/store/Store_GettingStarted) tutorial).
+After you’ve implemented your version of `IStoreAssets`, you’ll need to initialize `Soomla.SoomlaStore` with the implementation you just created (also explained in the [Getting Started](/soomla/cocos2dx/js/store/Store_GettingStarted) tutorial).
 
 ``` js
     var assets = ExampleAssets();
@@ -105,7 +105,7 @@ After you’ve implemented your version of `IStoreAssets`, you’ll need to init
                                                             // Getting Started tutorial
 ```
 
-`IStoreAssets` is transformed into metadata in JSON format and saved in a local SQLite database on the device. After that, the economy is always loaded from the database. More about this in [Storage](/cocos2dx/js/store/Store_Storage).
+`IStoreAssets` is transformed into metadata in JSON format and saved in a local SQLite database on the device. After that, the economy is always loaded from the database. More about this in [Storage](/soomla/cocos2dx/js/store/Store_Storage).
 
 ## Fields
 

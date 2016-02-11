@@ -29,7 +29,7 @@ platform: 'ios'
 
       ![alt text](/img/tutorial_img/ios_iab/productTypes.png "Product Types")
 
-    - Insert a Product ID for your product. In the [Getting Started](/ios/store/Store_GettingStarted) tutorial you were to define product IDs for the products you wanted to sell in the App Store. Now, when you define the product IDs in the App Store, they should be EXACTLY the same as you defined them in the code.
+    - Insert a Product ID for your product. In the [Getting Started](/soomla/ios/store/Store_GettingStarted) tutorial you were to define product IDs for the products you wanted to sell in the App Store. Now, when you define the product IDs in the App Store, they should be EXACTLY the same as you defined them in the code.
 
       ![alt text](/img/tutorial_img/ios_iab/productIDs.png "Product IDs")
 

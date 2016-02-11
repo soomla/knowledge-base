@@ -70,7 +70,7 @@ In order to define the way your various virtual items (Coins, swords, hats...) a
 
 ## Example
 
-Create your own implementation of `IStoreAssets`; See the article about [IStoreAssets](/ios/store/Store_IStoreAssets), which includes a code example and explanations.
+Create your own implementation of `IStoreAssets`; See the article about [IStoreAssets](/soomla/ios/store/Store_IStoreAssets), which includes a code example and explanations.
 
 Then, initialize `SoomlaStore` with your implementation of `IStoreAssets`:
 
@@ -91,6 +91,6 @@ Then, initialize `SoomlaStore` with your implementation of `IStoreAssets`:
 
 When your users buy products, iOS-store knows how to contact the App Store for you and redirect the users to their purchasing system to complete the transaction.
 
-Don't forget to subscribe to events of successful or failed purchases - See [Event Handling](/ios/store/Store_Events).
+Don't forget to subscribe to events of successful or failed purchases - See [Event Handling](/soomla/ios/store/Store_Events).
 
-<div class="info-box">To read about iTunes Connect in-app-purchase setup and integration with SOOMLA see our [iOS IAB tutorial](/ios/store/Store_AppStoreIAB).</div>
+<div class="info-box">To read about iTunes Connect in-app-purchase setup and integration with SOOMLA see our [iOS IAB tutorial](/soomla/ios/store/Store_AppStoreIAB).</div>

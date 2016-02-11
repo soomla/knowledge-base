@@ -68,9 +68,9 @@ public static final VirtualCurrencyPack THOUSANDMUFF_PACK = new VirtualCurrencyP
 
 For more info on how to declare your items in the Market, see one of our tutorials on In-app Billing:
 
-- [Google Play IAB](/android/store/Store_GooglePlayIAB)
+- [Google Play IAB](/soomla/android/store/Store_GooglePlayIAB)
 
-- [Amazon IAB](/android/store/Store_AmazonIAB)
+- [Amazon IAB](/soomla/android/store/Store_AmazonIAB)
 
 
 ### PurchaseWithVirtualItem <a href="https://github.com/soomla/android-store/blob/master/SoomlaAndroidStore/src/com/soomla/store/purchaseTypes/PurchaseWithVirtualItem.java" target="_blank"><img class="link-icon-small" src="/img/tutorial_img/linkImg.png"></a>

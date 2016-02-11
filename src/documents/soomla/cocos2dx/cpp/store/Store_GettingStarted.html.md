@@ -76,7 +76,7 @@ platform: 'cocos2dx'
 	<div class="warning-box">Choose the secret wisely. You can't change it after you launch your game!
 	Initialize `CCSoomlaStore` ONLY ONCE when your application loads.</div>
 
-6. You'll need to subscribe to store events to get notified about in-app purchasing related events. refer to the [Event Handling](/cocos2dx/cpp/store/Store_Events) section for more information.
+6. You'll need to subscribe to store events to get notified about in-app purchasing related events. refer to the [Event Handling](/soomla/cocos2dx/cpp/store/Store_Events) section for more information.
 
 **The next steps are different according to which platform you're using.**
 
@@ -190,7 +190,7 @@ SOOMLA's cocos2dx-store knows how to contact Google Play, Amazon Appstore, or Ap
 	</application>
 	```
 
-3. Read our [tutorial](/android/store/Store_GooglePlayIAB) on how to define your in-app products in Google Play.
+3. Read our [tutorial](/soomla/android/store/Store_GooglePlayIAB) on how to define your in-app products in Google Play.
 
 4. Start IAB Service in background **(optional)**
 
@@ -213,7 +213,7 @@ SOOMLA's cocos2dx-store knows how to contact Google Play, Amazon Appstore, or Ap
     <div class="info-box">Don't forget to close the Iab Service when your store is closed.</div>
 
 5. In case you want to turn on Fraud Protection you need to get clientId, clientSecret and refreshToken as explained in
-[Google Play Purchase Verification](/android/store/Store_GooglePlayVerification) and use them like this:
+[Google Play Purchase Verification](/soomla/android/store/Store_GooglePlayVerification) and use them like this:
 
 	``` cpp
 	storeParams->setObject(__String::create(<YOU_CLIENT_ID>), "clientId");
@@ -237,11 +237,11 @@ SOOMLA's cocos2dx-store knows how to contact Google Play, Amazon Appstore, or Ap
 	<meta-data android:name="billing.service" android:value="amazon.AmazonIabService" />
 	```
 
-3. Read our [tutorial](/android/store/Store_AmazonIAB) on how to define your in-app products in the Amazon Appstore.
+3. Read our [tutorial](/soomla/android/store/Store_AmazonIAB) on how to define your in-app products in the Amazon Appstore.
 
 ### Apple App Store
 
-1. Read our [tutorial](/ios/store/Store_AppStoreIAB) on how to define your in-app products in the App Store.
+1. Read our [tutorial](/soomla/ios/store/Store_AppStoreIAB) on how to define your in-app products in the App Store.
 
 2. Use SOOMLA's Fraud Protection **(Optional)**
 
@@ -285,7 +285,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 }
 ```
 
-And that's it! cocos2dx-store knows how to contact Google Play or the App Store for you and will redirect your users to the purchasing system to complete the transaction. Don't forget to subscribe to store events in order to get notified of successful or failed purchases - See [Event Handling](/cocos2dx/cpp/store/Store_Events).
+And that's it! cocos2dx-store knows how to contact Google Play or the App Store for you and will redirect your users to the purchasing system to complete the transaction. Don't forget to subscribe to store events in order to get notified of successful or failed purchases - See [Event Handling](/soomla/cocos2dx/cpp/store/Store_Events).
 
 ## **Working with sources**
 

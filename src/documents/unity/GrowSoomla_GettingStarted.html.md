@@ -22,7 +22,7 @@ GrowSoomla includes:
 
 - [Whales Report](/university/articles/Grow_WhalesReport)
 
-- [Insights](/unity/grow/Grow_Insights)
+- [Insights](/unity/Grow_Insights)
 
 ## Integrating GrowSoomla
 
@@ -96,11 +96,11 @@ The next step is to create your game specific implementation for each of the mod
 In order to be notified about (and handle) SOOMLA-related events, you will also need to create event-handling functions. Refer to the following sections for more information:
 
  - **Insights** - Getting in-game information about your users in real-time used to be a dream. Now it's here. Insights will tell you things about your users (as seen in other games) inside the code so you can take actions when it matters. This is the power of the GROW data network.  
-[API](/unity/grow/Grow_Insights#MainClasses&Methods) | [Events](/unity/grow/Grow_Insights#Events)
+[API](/unity/Grow_Insights#MainClasses&Methods) | [Events](/unity/Grow_Insights#Events)
 
 ## Example
 
-Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and their entities in SOOMLA's Knowledge Base:  [Insights](/unity/grow/Grow_Insights).
+Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and their entities in SOOMLA's Knowledge Base:  [Insights](/unity/Grow_Insights).
 
 ### Initialization
 

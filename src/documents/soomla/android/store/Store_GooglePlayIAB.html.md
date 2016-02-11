@@ -32,7 +32,7 @@ platform: 'android'
 
     To learn more about Google’s Managed/Unmanaged products please see [In-app Billing Version 3 - Product Types](http://developer.android.com/google/play/billing/api.html).
 
-  - If you followed the steps in the [Getting Started](/android/store/Store_GettingStarted) tutorial, you created product IDs for the items you wanted to sell in Google Play. Now you need to insert the EXACT product IDs here. Remember that once you choose a product ID you cannot change it.
+  - If you followed the steps in the [Getting Started](/soomla/android/store/Store_GettingStarted) tutorial, you created product IDs for the items you wanted to sell in Google Play. Now you need to insert the EXACT product IDs here. Remember that once you choose a product ID you cannot change it.
 
     <div class="info-box">For testing use [Google's test product IDs](http://developer.android.com/google/play/billing/billing_testing.html#billing-testing-static) for your product IDs.</div>
 
@@ -42,7 +42,7 @@ platform: 'android'
 
     <div class="info-box">SOOMLA is all about free-to-play mobile games, so we recommend you choose the “Free” option in the “Pricing & Distribution” tab.</div>
 
-4. Go to the “Services & APIs” tab and make note of your license key. You need to insert it into the code (see step 3 of the Google Play Dev Console section in [Getting Started](/android/store/Store_GettingStarted)).
+4. Go to the “Services & APIs” tab and make note of your license key. You need to insert it into the code (see step 3 of the Google Play Dev Console section in [Getting Started](/soomla/android/store/Store_GettingStarted)).
 
     ![alt text](/img/tutorial_img/google_play_iab/licenseKey.png "License key")
 

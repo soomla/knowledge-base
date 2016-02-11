@@ -53,7 +53,7 @@ Read more about this <a href="http://www.gamesbrief.com/2011/11/whales-dolphins-
 
 2. Add your app to the Chartboost dashboard and download the latest SDK. See <a href="https://answers.chartboost.com/hc/en-us/categories/200356615-SDKs-and-Integrations">Unity instructions</a>.
 
-3. Integrate the SOOMLA <a href="/unity/grow/growultimate_gettingstarted/" target="_blank">GrowUltimate bundle</a>.
+3. Integrate the SOOMLA <a href="/unity/growultimate_gettingstarted/" target="_blank">GrowUltimate bundle</a>.
 
 4. Load user pay insights by handling the Grow event `OnInsightsRefreshFinished` and caching the `PayRankByGenre`.
 

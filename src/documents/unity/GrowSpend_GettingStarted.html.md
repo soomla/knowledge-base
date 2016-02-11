@@ -18,19 +18,19 @@ GrowSpend is the perfect virtual economy solution for your game. If you want Fra
 
 GrowSpend includes:
 
-- SOOMLA's open-source module - [Store](/unity/store/Store_GettingStarted)
+- SOOMLA's open-source module - [Store](/soomla/unity/store/Store_GettingStarted)
 
-- [State & Economy Sync](/unity/grow/Grow_Sync)
+- [State & Economy Sync](/unity/Grow_Sync)
 
-- [IAP Fraud Protection](/unity/grow/Grow_FraudProtection)
+- [IAP Fraud Protection](/unity/Grow_FraudProtection)
 
 - [Analytics](/university/articles/Grow_Analytics)
 
 - [Whales Report](/university/articles/Grow_WhalesReport)
 
-- [Insights](/unity/grow/Grow_Insights)
+- [Insights](/unity/Grow_Insights)
 
-**Note:** Cross-device SYNC is using the Profile module which allows your users to login with their social provider. If you want that, [integrate Profile](/unity/profile/Profile_GettingStarted) as well.
+**Note:** Cross-device SYNC is using the Profile module which allows your users to login with their social provider. If you want that, [integrate Profile](/soomla/unity/store/Profile_GettingStarted) as well.
 
 
 ## Integrating GrowSpend
@@ -109,7 +109,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
 
 	- Check the "Receipt Validation" option under the relevant platform (Android - Google Play / iOS).
 
-	- (Google Play only) Fill in the clientId, clientSecret and refreshToken fields by following the instructions posted [here](/android/store/Store_GooglePlayVerification).
+	- (Google Play only) Fill in the clientId, clientSecret and refreshToken fields by following the instructions posted [here](/soomla/android/store/Store_GooglePlayVerification).
 
 ### Initialize modules
 
@@ -156,14 +156,14 @@ The next step is to create your game specific implementation for each of the mod
 In order to be notified about (and handle) SOOMLA-related events, you will also need to create event-handling functions. Refer to the following sections for more information:
 
 - **Store** - With Store you create your in-game virtual economy. It'll allow you to easily setup IAP and safely store your users' balances.  
-[API](/unity/store/Store_Model) | [Main classes](/unity/store/Store_MainClasses) | [Events](/unity/store/Store_Events)
+[API](/soomla/unity/store/Store_Model) | [Main classes](/soomla/unity/store/Store_MainClasses) | [Events](/soomla/unity/store/Store_Events)
 
 - **State & Economy Sync** - Your users want to get their balances, levels and other game state parameters when they switch devices. Now you can let them do it.  
-[Events](/unity/grow/Grow_Sync#Events)
+[Events](/unity/Grow_Sync#Events)
 
 ## Example
 
-Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and their entities in SOOMLA's Knowledge Base: [Store](/unity/store/Store_Model) and [State & Economy Sync](/unity/grow/Grow_Sync).
+Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and their entities in SOOMLA's Knowledge Base: [Store](/soomla/unity/store/Store_Model) and [State & Economy Sync](/unity/Grow_Sync).
 
 ### IStoreAssets
 

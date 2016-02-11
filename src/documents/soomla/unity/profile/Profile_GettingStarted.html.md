@@ -20,7 +20,7 @@ platform: 'unity'
 
 	**NOTE:** If you already have Store integrated make sure to avoid importing Core again.
 
-	If you want to use Store-related rewards you'll need to go over the instructions of [Store](/unity/store/Store_GettingStarted).
+	If you want to use Store-related rewards you'll need to go over the instructions of [Store](/soomla/unity/store/Store_GettingStarted).
 
 	<div class="info-box">Starting from `SOOMLA Unity3D Profile 2.2.0`, SOOMLA changed the location of binaries in `Plugins` directory. If you're updating from a version lower than 2.2.0, please remove the following binaries manually:
         <ul>
@@ -73,7 +73,7 @@ platform: 'unity'
 
 5. Call all the social functions you can from the `SoomlaProfile` class (not from the social provider class). Otherwise, you won't be able to work with SOOMLA correctly. You can still call functions from the social provider, such as the `FB` class, but only those that are not provided by `SoomlaProfile`.
 
-6. You'll need event handlers in order to be notified about in-app purchasing-related events and social-related events. Refer to the [Event Handling](/unity/profile/Profile_Events) document for more information.
+6. You'll need event handlers in order to be notified about in-app purchasing-related events and social-related events. Refer to the [Event Handling](/soomla/unity/profile/Profile_Events) document for more information.
 
 And that's it! unity3d-profile knows how to contact the social provider (Facebook, Twitter, Google+ etc.) and perform social actions with the information you provide.
 
@@ -200,7 +200,7 @@ There are some settings you can define which applies in all social providers par
 
 Below is a brief example of initializing Profile, logging the user into Facebook, and sharing a story on the user's Facebook wall. To see a full example, check out the [Muffin Rush Example](https://github.com/soomla/unity3d-profile/tree/master/Soomla/Assets/Examples/MuffinRush) that comes with unity3d-profile when you download it.
 
-To learn about the different entities and functionality of Profile, see [Main Classes & Operations](/unity/profile/Profile_MainClasses).
+To learn about the different entities and functionality of Profile, see [Main Classes & Operations](/soomla/unity/profile/Profile_MainClasses).
 
 <br>
 Initialize `SoomlaProfile`.

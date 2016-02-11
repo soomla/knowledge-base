@@ -23,7 +23,7 @@ GrowSoomla includes:
 
 - [Whales Report](/university/articles/Grow_WhalesReport)
 
-- [Insights](/cocos2dx/cpp/grow/Grow_Insights)
+- [Insights](/cocos2dx/cpp/Grow_Insights)
 
 ## Integrating GrowSoomla
 
@@ -188,13 +188,13 @@ In order to be notified about (and handle) SOOMLA-related events, you will also 
 
 
  - **Insights** - Getting in-game information about your users in real-time used to be a dream. Now it's here. Insights will tell you things about your users (as seen in other games) inside the code so you can take actions when it matters. This is the power of the GROW data network.  
-[API](/cocos2dx/cpp/grow/Grow_Insights#MainClasses&Methods) | [Events](/cocos2dx/cpp/grow/Grow_Insights#Events)
+[API](/cocos2dx/cpp/Grow_Insights#MainClasses&Methods) | [Events](/cocos2dx/cpp/Grow_Insights#Events)
 
 
 
 ## Example
 
-Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and their entities in SOOMLA's Knowledge Base:  [Insights](/cocos2dx/cpp/grow/Grow_Insights).
+Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and their entities in SOOMLA's Knowledge Base:  [Insights](/cocos2dx/cpp/Grow_Insights).
 
 ### Initialization
 

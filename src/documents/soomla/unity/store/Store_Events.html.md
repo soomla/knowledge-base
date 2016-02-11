@@ -18,7 +18,7 @@ SOOMLA allows you to subscribe to store events, be notified when they occur, and
 
 ### Tips & Reminders
 
-As mentioned in [Getting Started](/unity/store/Store_GettingStarted), make sure you add the event prefabs (StoreEvents and CoreEvents) to your earliest loading scene.
+As mentioned in [Getting Started](/soomla/unity/store/Store_GettingStarted), make sure you add the event prefabs (StoreEvents and CoreEvents) to your earliest loading scene.
 
 
 ## How it works

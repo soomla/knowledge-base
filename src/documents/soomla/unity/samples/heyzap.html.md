@@ -68,7 +68,7 @@ public class Initializer : MonoBehaviour {
 
 2. Download and integrate the HeyZap Unity SDK. <a href="https://developers.heyzap.com/docs/unity_sdk_setup_and_requirements" target="_blank">(Instructions)</a>.
 
-3. Integrate SOOMLA Store.  Follow all steps in the Unity Store <a href="/unity/store/store_gettingstarted/" target="_blank">getting started guide</a>.
+3. Integrate SOOMLA Store.  Follow all steps in the Unity Store <a href="/soomla/unity/store/Store_GettingStarted/" target="_blank">getting started guide</a>.
 
 
 <div class="samples-title">Additional tips and recommendations</div>

@@ -63,12 +63,12 @@ Good news! Today you do not need such a server at all. SOOMLA provides a receipt
 
 The way to configure Fraud protection depends on a platform you use:
 
-* [Unity3d](/unity/grow/Grow_FraudProtection.html)
+* [Unity3d](/unity/Grow_FraudProtection.html)
 
-* [Cocos2d-x](/cocos2dx/cpp/grow/Grow_FraudProtection.html)
+* [Cocos2d-x](/cocos2dx/cpp/Grow_FraudProtection.html)
 
-* [Cocos2d-js](/cocos2dx/js/grow/Grow_FraudProtection.html)
+* [Cocos2d-js](/cocos2dx/js/Grow_FraudProtection.html)
 
-* [Android](/android/store/Grow_FraudProtection.html)
+* [Android](/soomla/android/store/Grow_FraudProtection.html)
 
-* [iOS](/ios/store/Grow_FraudProtection.html)
+* [iOS](/soomla/ios/store/Grow_FraudProtection.html)

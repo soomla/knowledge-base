@@ -34,7 +34,7 @@ automatically verified in case of network failures during the verification proce
 *Google Play*
 
 For Google Play you need to get clientId, clientSecret and refreshToken as explained in
-[Google Play Purchase Verification](/android/store/Store_GooglePlayVerification) and use them like this:
+[Google Play Purchase Verification](/soomla/android/store/Store_GooglePlayVerification) and use them like this:
 
 	``` cpp
 	storeParams->setObject(__String::create(<YOU_CLIENT_ID>), "clientId");

@@ -19,24 +19,24 @@ GrowSpend is the perfect virtual economy solution for your game. If you want Fra
 and remote economy configurator then this bundle is for you. GrowSpend connects you to GROW, SOOMLA's flagship - a
 community-driven data network. Mobile game studios can take advantage of the different GROW products in order to get
 valuable insights about their games' performance and increase retention and monetization.
-[Read more...](/cocos2dx/js/grow/Grow_About)
+[Read more...](/cocos2dx/js/Grow_About)
 
 GrowSpend includes:
 
-- SOOMLA's open-source module - [Store](/cocos2dx/js/store/Store_GettingStarted)
+- SOOMLA's open-source module - [Store](/soomla/cocos2dx/js/store/Store_GettingStarted)
 
-- [State & Economy Sync](/cocos2dx/js/grow/Grow_Sync)
+- [State & Economy Sync](/cocos2dx/js/Grow_Sync)
 
-- [IAP Fraud Protection](/cocos2dx/js/grow/Grow_FraudProtection)
+- [IAP Fraud Protection](/cocos2dx/js/Grow_FraudProtection)
 
-- [Analytics](/cocos2dx/js/grow/Grow_Analytics)
+- [Analytics](/cocos2dx/js/Grow_Analytics)
 
-- [Whales Report](/cocos2dx/js/grow/Grow_WhalesReport)
+- [Whales Report](/cocos2dx/js/Grow_WhalesReport)
 
-- [Insights](/cocos2dx/js/grow/Grow_Insights)
+- [Insights](/cocos2dx/js/Grow_Insights)
 
 **Note:** Cross-device SYNC is using the Profile module which allows your users to login with their social provider. If
-you want that, [integrate Profile](/cocos2dx/js/profile/Profile_GettingStarted) as well.
+you want that, [integrate Profile](/soomla/cocos2dx/js/profile/Profile_GettingStarted) as well.
 
 ## Integrating GrowSpend
 
@@ -284,9 +284,9 @@ That's it! Now all you have to do is build your XCode project and run your game.
 
 5. Connect the Store module to your desired billing service:
 
-  - [Google Play](/cocos2dx/js/store/Store_GettingStarted#google-play)
+  - [Google Play](/soomla/cocos2dx/js/store/Store_GettingStarted#google-play)
 
-  - [Amazon Appstore](/cocos2dx/js/store/Store_GettingStarted#amazon)
+  - [Amazon Appstore](/soomla/cocos2dx/js/store/Store_GettingStarted#amazon)
 
 That's it! Don't forget to run the **build_native.py** script so that SOOMLA sources will be built with cocos2d-x.
 
@@ -299,17 +299,17 @@ Refer to the following sections for more information:
 
 - **Store** - With Store you create your in-game virtual economy. It'll allow you to easily setup IAP and safely store
 your users' balances.  
-[API](/cocos2dx/js/store/Store_Model) | [Main classes](/cocos2dx/js/store/Store_MainClasses) | [Events](/cocos2dx/js/store/Store_Events)
+[API](/soomla/cocos2dx/js/store/Store_Model) | [Main classes](/soomla/cocos2dx/js/store/Store_MainClasses) | [Events](/soomla/cocos2dx/js/store/Store_Events)
 
 - **State & Economy Sync** - Your users want to get their balances, levels and other game state parameters when they
 switch devices. Now you can let them do it.  
-[Events](/cocos2dx/js/grow/Grow_Sync#Events)
+[Events](/cocos2dx/js/Grow_Sync#Events)
 
 ## Example
 
 Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and
-their entities in SOOMLA's Knowledge Base: [Store](/cocos2dx/js/store/Store_Model) and
-[State & Economy Sync](/cocos2dx/js/grow/Grow_Sync).
+their entities in SOOMLA's Knowledge Base: [Store](/soomla/cocos2dx/js/store/Store_Model) and
+[State & Economy Sync](/cocos2dx/js/Grow_Sync).
 
 ### IStoreAssets
 

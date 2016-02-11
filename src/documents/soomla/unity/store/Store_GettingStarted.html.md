@@ -53,12 +53,12 @@ platform: 'unity'
 
   - **Soomla Secret** - This is an encryption secret you provide that will be used to secure your data. (If you used versions before v1.5.2 this secret MUST be the same as Custom Secret)
 
-  - **Public Key** - If your billing service provider is Google Play, you'll need to insert the public key given to you from Google. (Learn more in step 4 [here](/android/store/Store_GooglePlayIAB)). **Choose both secrets wisely. You can't change them after you launch your game!**
+  - **Public Key** - If your billing service provider is Google Play, you'll need to insert the public key given to you from Google. (Learn more in step 4 [here](/soomla/android/store/Store_GooglePlayIAB)). **Choose both secrets wisely. You can't change them after you launch your game!**
 
   - **Fraud Protection** - If your billing service provider supports Fraud Protection, you can turn on this option and provide needed data.
     Optionally, you can turn on `Verify On Server Failure` if you want to get purchases automatically verified in case of network failures during the verification process.
 
-    > In order to get clientId, clientSecret and refreshToken for Google Play go over [Google Play Purchase Verification](/android/store/Store_GooglePlayVerification).
+    > In order to get clientId, clientSecret and refreshToken for Google Play go over [Google Play Purchase Verification](/soomla/android/store/Store_GooglePlayVerification).
 
     ![alt text](/img/tutorial_img/unity_getting_started/soomlaSettings.png "Soomla Settings")
 
@@ -78,7 +78,7 @@ platform: 'unity'
 
     <div class="warning-box">Initialize SoomlaStore ONLY ONCE when your application loads.</div>
 
-6. You'll need an event handler in order to be notified about in-app purchasing related events. Refer to the document about [Event Handling](/unity/store/Store_Events) for more information.
+6. You'll need an event handler in order to be notified about in-app purchasing related events. Refer to the document about [Event Handling](/soomla/unity/store/Store_Events) for more information.
 
 That's it! You now have storage and in-app purchasing capabilities ALL-IN-ONE!
 
@@ -126,7 +126,7 @@ latency and setup routines you could have done silently in the background.
 
 ## Example
 
-Create your own implementation of `IStoreAssets`, and initialize `SoomlaStore`. See the article about [IStoreAssets](/unity/store/Store_IStoreAssets), which includes a code example and explanations.
+Create your own implementation of `IStoreAssets`, and initialize `SoomlaStore`. See the article about [IStoreAssets](/soomla/unity/store/Store_IStoreAssets), which includes a code example and explanations.
 
 ## In-app Billing
 
@@ -138,12 +138,12 @@ Define your economy in Google Play or Amazon Appstore.
 
 See our tutorials:
 
-- [Google Play](/android/store/Store_GooglePlayIAB)
+- [Google Play](/soomla/android/store/Store_GooglePlayIAB)
 
-- [Amazon Appstore](/android/store/Store_AmazonIAB)
+- [Amazon Appstore](/soomla/android/store/Store_AmazonIAB)
 
 ### iOS
 
 Define your economy in the App Store.
 
-See our tutorial: [App Store](/ios/store/Store_AppStoreIAB)
+See our tutorial: [App Store](/soomla/ios/store/Store_AppStoreIAB)

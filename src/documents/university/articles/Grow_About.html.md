@@ -16,15 +16,15 @@ platform: 'university'
 
 GROW is a new and innovative data network. You can use Grow to gain valuable insights about your users  and enrich your in-game experience through an amazing set of backend services that completes the client side open-source framework into a perfect solution every F2P game needs.  At the end, GROW provides you with tools to increase monetization and engagement of VIP users and easily get your in-game experience to a next level.
 
-GROW uses all of SOOMLA's modules: [Store](/unity/store/) and [Profile](/unity/profile/) to collect in-game data and render value for you. Studios may choose to use only specific modules, however, to benefit from the full power of GROW analytics we recommend that you integrate all three.
+GROW uses all of SOOMLA's modules: [Store](/soomla/unity/store/) and [Profile](/soomla/unity/profile/) to collect in-game data and render value for you. Studios may choose to use only specific modules, however, to benefit from the full power of GROW analytics we recommend that you integrate all three.
 
 To get started with GROW, you can follow each one of different GROW bundles' tutorials:
 
-- [GrowUltimate](/unity/grow/GrowUltimate_GettingStarted)
+- [GrowUltimate](/unity/GrowUltimate_GettingStarted)
 
-- [GrowSpend](/unity/grow/GrowSpend_GettingStarted)
+- [GrowSpend](/unity/GrowSpend_GettingStarted)
 
-- [GrowSoomla](/unity/grow/GrowSoomla_GettingStarted)
+- [GrowSoomla](/unity/GrowSoomla_GettingStarted)
 
 
 ### Why use GROW?

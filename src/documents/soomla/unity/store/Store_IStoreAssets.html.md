@@ -110,13 +110,13 @@ public class ExampleAssets : IStoreAssets{
 }
 ```
 
-After you’ve implemented your version of `IStoreAssets`, you’ll need to initialize `SoomlaStore` with the implementation you just created (also explained in the [Getting Started](/unity/store/Store_GettingStarted) tutorial).
+After you’ve implemented your version of `IStoreAssets`, you’ll need to initialize `SoomlaStore` with the implementation you just created (also explained in the [Getting Started](/soomla/unity/store/Store_GettingStarted) tutorial).
 
 ``` cs
 SoomlaStore.Initialize(new ExampleAssets());
 ```
 
-`IStoreAssets` is transformed into metadata in JSON format and saved in a local SQLite database on the device. After that, the economy is always loaded from the database. More about this in [Storage](/unity/store/Store_Storage).
+`IStoreAssets` is transformed into metadata in JSON format and saved in a local SQLite database on the device. After that, the economy is always loaded from the database. More about this in [Storage](/soomla/unity/store/Store_Storage).
 
 ## Functions
 

@@ -27,15 +27,15 @@ With State & Economy Sync you can:
 
 ## Integration
 
-1. Initialize `GrowSpend` according to the [instructions](/unity/grow/GrowSpend_GettingStarted).
+1. Initialize `GrowSpend` according to the [instructions](/unity/GrowSpend_GettingStarted).
 
-* Create event handler functions in order to be notified about (and handle) GROW Sync related events. See [Events](/unity/grow/Grow_Sync/#Events) for more information.
+* Create event handler functions in order to be notified about (and handle) GROW Sync related events. See [Events](/unity/Grow_Sync/#Events) for more information.
 
 * Once initialized, Sync will start syncing the player's state and game model, depending on the integrated modules. Synchronization is done with a unique identifier for every device.
 
-* If [Profile](/unity/profile/Profile_GettingStarted) is integrated, once the player logs into a social network the game state will be synched across all of the player's devices, on which he/she is logged in with the same profile for that social provider.
+* If [Profile](/soomla/unity/store/Profile_GettingStarted) is integrated, once the player logs into a social network the game state will be synched across all of the player's devices, on which he/she is logged in with the same profile for that social provider.
 
-<div class="warning-box">Make sure to start gameplay or change local state only **after** [`OnStateSyncFinished`](/unity/grow/Grow_Sync#OnStateSyncFinished) event is triggered. </div>
+<div class="warning-box">Make sure to start gameplay or change local state only **after** [`OnStateSyncFinished`](/unity/Grow_Sync#OnStateSyncFinished) event is triggered. </div>
 
 ## Events
 

@@ -22,7 +22,7 @@ GROW Includes:
 
 - [Whales Report](/university/articles/Grow_WhalesReport)
 
-- [Insights](/unity/grow/Grow_Insights)
+- [Insights](/unity/Grow_Insights)
 
 ## Integrating Grow with Facebook
 

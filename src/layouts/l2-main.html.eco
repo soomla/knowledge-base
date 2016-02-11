@@ -17,7 +17,7 @@ layout: 'knowledge-base'
 <div class="nav-options-sm">
   <div class="container">
     <% for doc in @getCollection(@document.collection).toJSON(): %>
-        <%- @partial('l2-grid-option', {image: "/img/level2/Icon-#{doc.image}.png", link:doc.url,title: doc.title,text: doc.text, subjectclass:@document.theme}) %>
+        <%- @partial('l2-grid-option', {image: "/img/Icon-#{doc.image}.png", link:doc.url,title: doc.title,text: doc.text, subjectclass:@document.theme}) %>
     <% end %>
   </div>
 </div>

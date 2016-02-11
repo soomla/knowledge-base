@@ -235,7 +235,7 @@ public class MainActivity extends Activity {
     <a href="/ios/" target="_blank">iOS</a> |
     <a href="/android/" target="_blank">Android</a>
 
-4. To use Grow Insights, follow the <a href="/unity/grow/grow_insights/" target="_blank">Grow Insights Unity Instructions</a>.
+4. To use Grow Insights, follow the <a href="/unity/grow_insights/" target="_blank">Grow Insights Unity Instructions</a>.
 
 
 <div class="samples-title">Sample projects</div>

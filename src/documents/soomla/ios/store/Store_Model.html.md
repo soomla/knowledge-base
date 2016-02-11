@@ -61,7 +61,7 @@ _1000_MUFFINS_PACK = [[VirtualCurrencyPack alloc]
         andPrice:8.99]];
 ```
 
-For more info on how to declare your items in the Market, see our tutorial on App Store [In-app billing](/ios/store/Store_AppStoreIAB).
+For more info on how to declare your items in the Market, see our tutorial on App Store [In-app billing](/soomla/ios/store/Store_AppStoreIAB).
 
 ### PurchaseWithVirtualItem <a href="https://github.com/soomla/ios-store/blob/master/SoomlaiOSStore/PurchaseTypes/PurchaseWithVirtualItem.h" target="_blank"><img class="link-icon-small" src="/img/tutorial_img/linkImg.png"></a>
 
@@ -360,7 +360,7 @@ RED_CAR = [[LifetimeVG alloc]
 
 Let's say a user purchases both cars. Even if the game's local storage is deleted, the user will still own the red car and will receive it upon `refreshInventory` process. However, the user will not own the blue car any longer.
 
-<div class="info-box">IMPORTANT: When defining a `LifetimeVG` in the App Store, you MUST define its type as a Non-Consumable! For more information see our guide for [defining IAP products in the App Store](/ios/store/Store_AppStoreIAB).</div>
+<div class="info-box">IMPORTANT: When defining a `LifetimeVG` in the App Store, you MUST define its type as a Non-Consumable! For more information see our guide for [defining IAP products in the App Store](/soomla/ios/store/Store_AppStoreIAB).</div>
 
 <br>
 

@@ -34,18 +34,18 @@ Currently, Insights supports PayInsights which categorizes users according to th
 
 ## Integration
 
-<div class="info-box">GROW Insights is included in the GROW bundles: [GrowUltimate](/cocos2dx/cpp/grow/GrowUltimate_GettingStarted), [GrowSpend](/cocos2dx/js/grow/GrowSpend_GettingStarted#SetupGrowSpend) and
-[GrowSoomla](/cocos2dx/js/grow/GrowSoomla_GettingStarted#SetupGrowSoomla) and. Please refer to the relevant
+<div class="info-box">GROW Insights is included in the GROW bundles: [GrowUltimate](/cocos2dx/cpp/GrowUltimate_GettingStarted), [GrowSpend](/cocos2dx/js/GrowSpend_GettingStarted#SetupGrowSpend) and
+[GrowSoomla](/cocos2dx/js/GrowSoomla_GettingStarted#SetupGrowSoomla) and. Please refer to the relevant
 bundle for initialization instructions.</div>
 
 
 1. Initialize `GrowInsights` according to the instructions of your relevant bundle.
 
 * Create event handler functions in order to be notified about (and handle) GROW Insights related events. See
-[Events](/cocos2dx/js/grow/Grow_Insights/#Events) for more information.
+[Events](/cocos2dx/js/Grow_Insights/#Events) for more information.
 
 3. Once initialized, GROW Insights will automatically retrieve relevant insights from the server. Once the insights are
-ready (see [`EVENT_INSIGHTS_REFRESH_FINISHED`](/cocos2dx/js/grow/Grow_Insights/#EVENT_INSIGHTS_REFRESH_FINISHED)) you
+ready (see [`EVENT_INSIGHTS_REFRESH_FINISHED`](/cocos2dx/js/Grow_Insights/#EVENT_INSIGHTS_REFRESH_FINISHED)) you
 can access them as explained below.
 
 ## Observing & Handling Events
@@ -144,7 +144,7 @@ refresh outcome.
 
 **`GrowInsights.getUserInsights()`**
 
-Returns the [User-Insights](/cocos2dx/js/grow/Grow_Insights/#UserInsights) received from the server.
+Returns the [User-Insights](/cocos2dx/js/Grow_Insights/#UserInsights) received from the server.
 
 <div class="info-box">GROW Insights caches its data on the device so that it's accessible even when there is no internet
 connection.</div>
@@ -158,7 +158,7 @@ Located in `GrowInsights` and can be accessed using `Soomla.growInsights.getUser
 
 **`UserInsights.getPayInsights()`**
 
-Returns the [Pay-Insights](/cocos2dx/js/grow/Grow_Insights/#PayInsights) received from the server.
+Returns the [Pay-Insights](/cocos2dx/js/Grow_Insights/#PayInsights) received from the server.
 
 ### PayInsights
 
@@ -169,7 +169,7 @@ Located in `Soomla.Models.UserInsights` and can be accessed using `userInsights.
 
 **`PayInsights.getPayRankForGenre(genre)`**
 
-Returns the user's pay-rank for the given [genre](/cocos2dx/js/grow/Grow_Insights/#Genre)
+Returns the user's pay-rank for the given [genre](/cocos2dx/js/Grow_Insights/#Genre)
 
 ##### Possible return values
 
@@ -193,7 +193,7 @@ Returns the user's pay-rank for the given [genre](/cocos2dx/js/grow/Grow_Insight
 <br/>
 
 **`PayInsights.getTimeOfPurchase(quarter)`**
-Returns a number between 0 to 1 per [DayQuarter](/unity/grow/Grow_Insights#DayQuarter) which indicates the user's likelihood to pay in that specific quarter.
+Returns a number between 0 to 1 per [DayQuarter](/unity/Grow_Insights#DayQuarter) which indicates the user's likelihood to pay in that specific quarter.
 
 ### Genre
 

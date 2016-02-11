@@ -14,7 +14,7 @@ platform: 'unity'
 
 ## About this document
 
-This article is related to [Creating a billing service for android-store](/android/store/Store_CreateBillingPlugins). Please go over that document first and then come back to read this one.
+This article is related to [Creating a billing service for android-store](/soomla/android/store/Store_CreateBillingPlugins). Please go over that document first and then come back to read this one.
 
 Writing a billing service is nice but if you don't make it available to developers on their actual game engines it'll be pretty hard to use. In this article we'll describe how to make your android-store billing service available to unity3d-store developers.
 

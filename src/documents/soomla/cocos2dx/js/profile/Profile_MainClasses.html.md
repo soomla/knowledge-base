@@ -91,7 +91,7 @@ authentication operations for users. After Profile initialized the instance of t
 `Soomla.soomlaProfile`. The Profile module will work with the social and authentication plugins of the integrated social
 provider (FB, G+, Twitter, etc..).
 
-<div class="info-box">Most of the functions in this class call relevant functions from the social provider's SDK, and do NOT return a value, but rather fire appropriate events that contain the return values. Read more about [Event Handling](/cocos2dx/js/profile/Profile_Events).</div>
+<div class="info-box">Most of the functions in this class call relevant functions from the social provider's SDK, and do NOT return a value, but rather fire appropriate events that contain the return values. Read more about [Event Handling](/soomla/cocos2dx/js/profile/Profile_Events).</div>
 
 <br>
 The diagram below depicts the flow that takes place when a `SoomlaProfile` function is called. In the diagram, the example function shown is `login`, but this principle holds for all functions.

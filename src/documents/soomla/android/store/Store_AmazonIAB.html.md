@@ -28,7 +28,7 @@ platform: 'android'
 
     - Fill in the mandatory fields.
 
-    - Insert a product ID for your product in the SKU field. If you followed the steps in the [Getting Started](/unity/store/Store_GettingStarted) tutorial, you created product IDs for the items you wanted to sell for money. Now you need to insert the EXACT product IDs here.
+    - Insert a product ID for your product in the SKU field. If you followed the steps in the [Getting Started](/soomla/unity/store/Store_GettingStarted) tutorial, you created product IDs for the items you wanted to sell for money. Now you need to insert the EXACT product IDs here.
 
     ![alt text](/img/tutorial_img/amazon_iab/productIDs.png "Product IDs")
 

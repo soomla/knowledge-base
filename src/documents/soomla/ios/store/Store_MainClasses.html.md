@@ -18,7 +18,7 @@ Here you can find descriptions of some of the main classes and interfaces of iOS
 
 SoomlaStore holds the basic assets needed to operate the Store. You can use it to purchase products from the App Store. It provides you with functionality such as starting/stopping the in-app billing service in the background, querying the inventory for information, or starting a purchase process in the App Store.
 
-<div class="info-box">This is the only class you need to initialize in order to use the SOOMLA SDK. More about this in [Getting Started](/ios/store/Store_GettingStarted).</div>
+<div class="info-box">This is the only class you need to initialize in order to use the SOOMLA SDK. More about this in [Getting Started](/soomla/ios/store/Store_GettingStarted).</div>
 
 Taken from AppDelegate.m of our Muffin Rush [Example](https://github.com/soomla/ios-store/tree/master/SoomlaiOSStoreExample/SoomlaiOSStoreExample):
 
@@ -69,7 +69,7 @@ int greenHatsBalance = [[[StorageManager getInstance] virtualGoodStorage] balanc
 
 **`+ (void)buyItemWithItemId:(NSString*)itemId`**
 
-Buys the item that has the given `itemId` according to its purchase type - either with real money ($$) or with other virtual items. Read more about PurchaseTypes in [Economy Model](/ios/store/Store_Model).
+Buys the item that has the given `itemId` according to its purchase type - either with real money ($$) or with other virtual items. Read more about PurchaseTypes in [Economy Model](/soomla/ios/store/Store_Model).
 
 <br>
 **`+ (void)giveAmount:(int)amount ofItem:(NSString*)itemId`**
@@ -110,7 +110,7 @@ The configurations of your store will be kept in `StoreConfig`.
 
 `StoreConfig`’s configurations:
 
-- `STORE_DEBUG_LOG` - Tells iOS-store if to print debug messages or not. [Learn more...](/ios/store/Store_Debugging)
+- `STORE_DEBUG_LOG` - Tells iOS-store if to print debug messages or not. [Learn more...](/soomla/ios/store/Store_Debugging)
 
 - `METADATA_VERSION` - This value defines the version of the metadata located in your database. Never change the value of this variable!
 

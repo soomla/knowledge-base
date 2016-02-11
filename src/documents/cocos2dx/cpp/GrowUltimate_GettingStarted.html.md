@@ -19,12 +19,12 @@ GrowUltimate is the perfect All In One solution for your game. If you want your 
 
 GrowUltimate includes:
 
-- SOOMLA's open-source modules - [Store](/cocos2dx/cpp/store/Store_GettingStarted) and [Profile](/cocos2dx/cpp/profile/Profile_GettingStarted)
-- [State & Economy Sync](/cocos2dx/cpp/grow/Grow_Sync)
-- [IAP Fraud Protection](/cocos2dx/cpp/grow/Grow_FraudProtection)
-- [Analytics](/cocos2dx/cpp/grow/Grow_Analytics)
-- [Whales Report](/cocos2dx/cpp/grow/Grow_WhalesReport)
-- [Insights](/cocos2dx/cpp/grow/Grow_Insights)
+- SOOMLA's open-source modules - [Store](/soomla/cocos2dx/cpp/store/Store_GettingStarted) and [Profile](/soomla/cocos2dx/cpp/profile/Profile_GettingStarted)
+- [State & Economy Sync](/cocos2dx/cpp/Grow_Sync)
+- [IAP Fraud Protection](/cocos2dx/cpp/Grow_FraudProtection)
+- [Analytics](/cocos2dx/cpp/Grow_Analytics)
+- [Whales Report](/cocos2dx/cpp/Grow_WhalesReport)
+- [Insights](/cocos2dx/cpp/Grow_Insights)
 
 ## Integrating GrowUltimate
 
@@ -184,11 +184,11 @@ In your XCode project, perform the following steps:
 
 6. Connect the Profile module to a social network provider:
 
-  - [Facebook](/cocos2dx/cpp/profile/Profile_GettingStarted#facebook-for-ios)
+  - [Facebook](/soomla/cocos2dx/cpp/profile/Profile_GettingStarted#facebook-for-ios)
 
-  - [Google+](/cocos2dx/cpp/profile/Profile_GettingStarted#google-for-ios)
+  - [Google+](/soomla/cocos2dx/cpp/profile/Profile_GettingStarted#google-for-ios)
 
-  - [Twitter](/cocos2dx/cpp/profile/Profile_GettingStarted#twitter-for-ios)
+  - [Twitter](/soomla/cocos2dx/cpp/profile/Profile_GettingStarted#twitter-for-ios)
 
 That's it! Now all you have to do is build your XCode project and run your game.
 
@@ -252,17 +252,17 @@ That's it! Now all you have to do is build your XCode project and run your game.
 
 4. Connect the Store module to your desired billing service:
 
-  - [Google Play](/cocos2dx/cpp/store/Store_GettingStarted#google-play)
+  - [Google Play](/soomla/cocos2dx/cpp/store/Store_GettingStarted#google-play)
 
-  - [Amazon Appstore](/cocos2dx/cpp/store/Store_GettingStarted#amazon)
+  - [Amazon Appstore](/soomla/cocos2dx/cpp/store/Store_GettingStarted#amazon)
 
 5. Connect the Profile module to a social network provider:
 
-  - [Facebook](/cocos2dx/cpp/profile/Profile_GettingStarted#facebook-for-android)
+  - [Facebook](/soomla/cocos2dx/cpp/profile/Profile_GettingStarted#facebook-for-android)
 
-  - [Google+](/cocos2dx/cpp/profile/Profile_GettingStarted#google-for-android)
+  - [Google+](/soomla/cocos2dx/cpp/profile/Profile_GettingStarted#google-for-android)
 
-  - [Twitter](/cocos2dx/cpp/profile/Profile_GettingStarted#twitter-for-android)
+  - [Twitter](/soomla/cocos2dx/cpp/profile/Profile_GettingStarted#twitter-for-android)
 
 That's it! Don't forget to run the **build_native.py** script so that SOOMLA sources will be built with cocos2d-x.
 
@@ -272,20 +272,20 @@ The next step is to create your game specific implementation for each of the mod
 In order to be notified about (and handle) SOOMLA-related events, you will also need to create event-handling functions. Refer to the following sections for more information:
 
 - **Store** - With Store you create your in-game virtual economy. It'll allow you to easily setup IAP and safely store your users' balances.  
-[API](/cocos2dx/cpp/store/Store_Model) | [Main classes](/cocos2dx/cpp/store/Store_MainClasses) | [Events](/cocos2dx/cpp/store/Store_Events)
+[API](/soomla/cocos2dx/cpp/store/Store_Model) | [Main classes](/soomla/cocos2dx/cpp/store/Store_MainClasses) | [Events](/soomla/cocos2dx/cpp/store/Store_Events)
 
 - **Profile** - This module will make your life extremely easy when it comes to connecting your users to Social Networks.  
-[API](/cocos2dx/cpp/profile/Profile_MainClasses) | [Events](/cocos2dx/cpp/profile/Profile_Events)
+[API](/soomla/cocos2dx/cpp/profile/Profile_MainClasses) | [Events](/soomla/cocos2dx/cpp/profile/Profile_Events)
 
 - **Insights** - Getting in-game information about your users in real-time used to be a dream. Now it's here. Insights will tell you things about your users (as seen in other games) inside the code so you can take actions when it matters. This is the power of the GROW data network.  
-[API](/cocos2dx/cpp/grow/Grow_Insights#MainClasses&Methods) | [Events](/cocos2dx/cpp/grow/Grow_Insights#Events)
+[API](/cocos2dx/cpp/Grow_Insights#MainClasses&Methods) | [Events](/cocos2dx/cpp/Grow_Insights#Events)
 
 - **State & Economy Sync** - Your users want to get their balances, levels and other game state parameters when they switch devices. Now you can let them do it.  
-[Events](/cocos2dx/cpp/grow/Grow_Sync#Events)
+[Events](/cocos2dx/cpp/Grow_Sync#Events)
 
 ## Example
 
-Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and their entities in SOOMLA's Knowledge Base: [Store](/cocos2dx/cpp/store/Store_Model), [Profile](/cocos2dx/cpp/profile/Profile_MainClasses), [State & Economy Sync](/cocos2dx/cpp/grow/Grow_Sync) and [Insights](/cocos2dx/cpp/grow/Grow_Insights).
+Below is a short example of how to initialize SOOMLA's modules. We suggest you read about the different modules and their entities in SOOMLA's Knowledge Base: [Store](/soomla/cocos2dx/cpp/store/Store_Model), [Profile](/soomla/cocos2dx/cpp/profile/Profile_MainClasses), [State & Economy Sync](/cocos2dx/cpp/Grow_Sync) and [Insights](/cocos2dx/cpp/Grow_Insights).
 
 ### CCStoreAssets
 

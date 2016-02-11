@@ -68,9 +68,9 @@ public static VirtualCurrencyPack THOUSANDMUFF_PACK = new VirtualCurrencyPack(
 
 For more info on how to declare your items in the Market, see one of our tutorials on In-app Billing:
 
-- For Android: [Google Play IAB](/android/store/Store_GooglePlayIAB) or [Amazon IAB](/android/store/Store_AmazonIAB)
+- For Android: [Google Play IAB](/soomla/android/store/Store_GooglePlayIAB) or [Amazon IAB](/soomla/android/store/Store_AmazonIAB)
 
-- For iOS: [App Store IAB](/ios/store/Store_AppStoreIAB)
+- For iOS: [App Store IAB](/soomla/ios/store/Store_AppStoreIAB)
 
 ### PurchaseWithVirtualItem <a href="https://github.com/soomla/unity3d-store/blob/master/Soomla/Assets/Plugins/Soomla/Store/purchaseTypes/PurchaseWithVirtualItem.cs" target="_blank"><img class="link-icon-small" src="/img/tutorial_img/linkImg.png"></a>
 
@@ -367,7 +367,7 @@ public static VirtualGood RED_CAR = new LifetimeVG(
 
 Let's say a user purchases both cars. Even if the game's local storage is deleted, the user will still own the red car and will receive it upon `refreshInventory` process. However, the user will not own the blue car any longer.
 
-<div class="info-box">IMPORTANT: When defining a `LifetimeVG` in the App Store (iOS), you MUST define its type as a Non-Consumable! For more information see our guide for [defining IAP products in the App Store](/ios/store/Store_AppStoreIAB).</div>
+<div class="info-box">IMPORTANT: When defining a `LifetimeVG` in the App Store (iOS), you MUST define its type as a Non-Consumable! For more information see our guide for [defining IAP products in the App Store](/soomla/ios/store/Store_AppStoreIAB).</div>
 
 <br>
 

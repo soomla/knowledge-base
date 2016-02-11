@@ -20,4 +20,4 @@ network failures during the verification process.
 
 Additionally you need to provide specific params needed for your billing service provider.
 
-  For Google Play go over to [Google Play Purchase Verification](/android/store/Store_GooglePlayVerification).
+  For Google Play go over to [Google Play Purchase Verification](/soomla/android/store/Store_GooglePlayVerification).

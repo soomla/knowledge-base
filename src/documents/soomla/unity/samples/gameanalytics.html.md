@@ -281,6 +281,6 @@ public class GA_Soomla : MonoBehaviour
     <a href="https://guides.gameanalytics.com/content/sdk?page=ios" target="_blank">iOS</a> |
     <a href="https://guides.gameanalytics.com/content/sdk?page=android" target="_blank">Android</a>
 
-4. Integrate SOOMLA Store and LevelUp. Follow all steps in the platform specific getting started guides: <a href="http://know.soom.la/unity/store/store_gettingstarted/" target="_blank">Unity Store</a> | <a href="http://know.soom.la/ios/store/store_gettingstarted/" target="_blank">iOS Store</a> | <a href="http://know.soom.la/android/store/store_gettingstarted/" target="_blank">Android Store</a> | <a href="http://know.soom.la/unity/levelup/levelup_gettingstarted/" target="_blank">Unity LevelUp</a>
+4. Integrate SOOMLA Store and LevelUp. Follow all steps in the platform specific getting started guides: <a href="http://know.soom.la/soomla/unity/store/Store_GettingStarted/" target="_blank">Unity Store</a> | <a href="http://know.soom.la/soomla/ios/store/store_gettingstarted/" target="_blank">iOS Store</a> | <a href="http://know.soom.la/soomla/android/store/store_gettingstarted/" target="_blank">Android Store</a> | <a href="http://know.soom.la/unity/levelup/levelup_gettingstarted/" target="_blank">Unity LevelUp</a>
 
-5. Integrate Grow Insights - follow the <a href="/unity/grow/grow_insights/" target="_blank">Grow Insights Unity Instructions</a>.
+5. Integrate Grow Insights - follow the <a href="/unity/grow_insights/" target="_blank">Grow Insights Unity Instructions</a>.

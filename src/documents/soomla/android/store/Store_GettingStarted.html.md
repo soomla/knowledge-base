@@ -70,7 +70,7 @@ You must select a billing service for android-store to work properly. The integr
 
 ### [Google Play](https://github.com/soomla/android-store-google-play)
 
-Once you complete the following steps, see the [Google Play IAB](/android/store/Store_GooglePlayIAB) tutorial for information about in-app-purchase setup, integration with SOOMLA, and how to define your in-app purchase items.
+Once you complete the following steps, see the [Google Play IAB](/soomla/android/store/Store_GooglePlayIAB) tutorial for information about in-app-purchase setup, integration with SOOMLA, and how to define your in-app purchase items.
 
 1. Add `AndroidStoreGooglePlay.jar` from the folder `billing-services/google-play` to your project.
 
@@ -115,7 +115,7 @@ Once you complete the following steps, see the [Google Play IAB](/android/store/
   }
   ```
 
-5. In case you want to turn on _Fraud Protection_ you need to get clientId, clientSecret and refreshToken as explained in [Google Play Purchase Verification](/android/store/Store_GooglePlayVerification) and use them like this:
+5. In case you want to turn on _Fraud Protection_ you need to get clientId, clientSecret and refreshToken as explained in [Google Play Purchase Verification](/soomla/android/store/Store_GooglePlayVerification) and use them like this:
 
   ``` java
       GooglePlayIabService.getInstance().configVerifyPurchases(new HashMap<String, Object>() {{
@@ -147,7 +147,7 @@ SoomlaStore.getInstance().stopIabServiceInBg();
 
 ### [Amazon](https://github.com/soomla/android-store-amazon)
 
-Once you complete the following steps, see the [Amazon IAB](/android/store/Store_AmazonIAB) tutorial for information about in-app-purchase setup, integration with SOOMLA, and how to define your in-app purchase items.
+Once you complete the following steps, see the [Amazon IAB](/soomla/android/store/Store_AmazonIAB) tutorial for information about in-app-purchase setup, integration with SOOMLA, and how to define your in-app purchase items.
 
 1. Add `in-app-purchasing-2.0.1.jar` and `AndroidStoreAmazon.jar` from the folder `billing-services/amazon` to your project.
 
@@ -167,7 +167,7 @@ Once you complete the following steps, see the [Amazon IAB](/android/store/Store
 
 ## Example
 
-Create your own implementation of `IStoreAssets`; See the article about [IStoreAssets](/android/store/Store_IStoreAssets), which includes a code example and explanations.
+Create your own implementation of `IStoreAssets`; See the article about [IStoreAssets](/soomla/android/store/Store_IStoreAssets), which includes a code example and explanations.
 
 Then initialize `SoomlaStore` with your implementation of `IStoreAssets`:
 

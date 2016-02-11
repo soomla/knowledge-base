@@ -32,14 +32,14 @@ Currently, Insights supports PayInsights which categorizes users according to th
 
 ## Integration
 
-<div class="info-box">GROW Insights is included in the GROW bundles: [GrowUltimate](/cocos2dx/cpp/grow/GrowUltimate_GettingStarted), [GrowSpend](/cocos2dx/cpp/grow/GrowSpend_GettingStarted#SetupGrowSpend) and [GrowSoomla](/cocos2dx/cpp/grow/GrowSoomla_GettingStarted#SetupGrowSoomla). Please refer to the relevant bundle for initialization instructions.</div>
+<div class="info-box">GROW Insights is included in the GROW bundles: [GrowUltimate](/cocos2dx/cpp/GrowUltimate_GettingStarted), [GrowSpend](/cocos2dx/cpp/GrowSpend_GettingStarted#SetupGrowSpend) and [GrowSoomla](/cocos2dx/cpp/GrowSoomla_GettingStarted#SetupGrowSoomla). Please refer to the relevant bundle for initialization instructions.</div>
 
 
 1. Initialize `CCGrowInsights` according to the instructions of your relevant bundle.
 
-* Create event handler functions in order to be notified about (and handle) GROW Insights related events. See [Events](/cocos2dx/cpp/grow/Grow_Insights/#Events) for more information.
+* Create event handler functions in order to be notified about (and handle) GROW Insights related events. See [Events](/cocos2dx/cpp/Grow_Insights/#Events) for more information.
 
-3. Once initialized, GROW Insights will automatically retrieve relevant insights from the server. Once the insights are ready (see [`EVENT_INSIGHTS_REFRESH_FINISHED`](/cocos2dx/cpp/grow/Grow_Insights/#EVENT_INSIGHTS_REFRESH_FINISHED)) you can access them as explained below.
+3. Once initialized, GROW Insights will automatically retrieve relevant insights from the server. Once the insights are ready (see [`EVENT_INSIGHTS_REFRESH_FINISHED`](/cocos2dx/cpp/Grow_Insights/#EVENT_INSIGHTS_REFRESH_FINISHED)) you can access them as explained below.
 
 ## Observing & Handling Events
 
@@ -159,7 +159,7 @@ Manually refresh the insights. The `EVENT_INSIGHTS_REFRESH_STARTED` event is tri
 
 **`CCGrowInsights::getUserInsights()`**
 
-Returns the [User-Insights](/cocos2dx/cpp/grow/Grow_Insights/#CCUserInsights) received from the server.
+Returns the [User-Insights](/cocos2dx/cpp/Grow_Insights/#CCUserInsights) received from the server.
 
 <div class="info-box">GROW Insights caches its data on the device so that it's accessible even when there is no internet connection.</div>
 
@@ -172,7 +172,7 @@ Located in `CCGrowInsights` and can be accessed using `CCGrowInsights::getUserIn
 
 **`CCUserInsights::getPayInsights()`**
 
-Returns the [Pay-Insights](/cocos2dx/cpp/grow/Grow_Insights/#CCPayInsights) received from the server.
+Returns the [Pay-Insights](/cocos2dx/cpp/Grow_Insights/#CCPayInsights) received from the server.
 
 ### CCPayInsights
 
@@ -183,7 +183,7 @@ Located in `CCUserInsights` and can be accessed using `CCUserInsights::getPayIns
 
 **`CCPayInsights::getPayRankForGenre(grow::Genre genre)`**
 
-Returns the user's pay-rank for the given [genre](/cocos2dx/cpp/grow/Grow_Insights/#Genre)
+Returns the user's pay-rank for the given [genre](/cocos2dx/cpp/Grow_Insights/#Genre)
 
 ##### Possible return values
 
@@ -208,7 +208,7 @@ Returns the user's pay-rank for the given [genre](/cocos2dx/cpp/grow/Grow_Insigh
 
 **`CCPayInsights::getTimeOfPurchase(grow::DayQuarter quarter)`**
 
-Returns a number between 0 to 1 per [DayQuarter](/unity/grow/Grow_Insights#DayQuarter) which indicates the user's likelihood to pay in that specific quarter.
+Returns a number between 0 to 1 per [DayQuarter](/unity/Grow_Insights#DayQuarter) which indicates the user's likelihood to pay in that specific quarter.
 
 ### Genre
 

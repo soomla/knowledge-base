@@ -40,14 +40,14 @@ All integrations can be found in the integrations page in the [Dashboard](https:
 All integrations include the *Highway* agent which is responsible for sending events to the GROW servers and dashboard. Highway also sends session events so that your Daily/Monthly Active Users, Sessions, Average Session Duration and other metrics can be calculated and displayed in the dashboard.
 
 To get started you can go to the relevant integration for you:
-- [Prime31](http://know.soom.la/unity/grow/Grow_Prime31_GettingStarted)
-- [Stan’s Assets](http://know.soom.la/unity/grow/Grow_StansAssets_GettingStarted)
-- [UnityIAP](http://know.soom.la/unity/grow/GrowIntegration_UnityIAP)
-- [Facebook](http://know.soom.la/unity/grow/GrowIntegration_Facebook)
-- [GrowSoomla](http://know.soom.la/unity/grow/GrowSoomla_GettingStarted)
-- [SDKBox (Cocos2d-x cpp)](http://know.soom.la/cocos2dx/cpp/grow/grow_sdkbox_gettingstarted)
-- [SDKBox (Cocos2d-x js)](http://know.soom.la/cocos2dx/js/grow/grow_sdkbox_gettingstarted)
+- [Prime31](/unity/Grow_Prime31_GettingStarted)
+- [Stan’s Assets](/unity/Grow_StansAssets_GettingStarted)
+- [UnityIAP](/unity/GrowIntegration_UnityIAP)
+- [Facebook](/unity/GrowIntegration_Facebook)
+- [GrowSoomla](/unity/GrowSoomla_GettingStarted)
+- [SDKBox (Cocos2d-x cpp)](/cocos2dx/cpp/Grow_SDKBox_GettingStarted)
+- [SDKBox (Cocos2d-x js)](/cocos2dx/js/Grow_SDKBox_SettingStarted)
 
 <br/><br/>
 
-Be sure to also check out the [GROW University](http://know.soom.la/university/videos) section for our video tutorials.
+Be sure to also check out the [GROW University](/university/videos) section for our video tutorials.

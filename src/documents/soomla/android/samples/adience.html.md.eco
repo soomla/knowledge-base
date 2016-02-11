@@ -38,4 +38,4 @@ This article shows an example of how to report Soomla Store in-game events to Ad
 
 1. Contact Adience <a href="mailto:business@adience.com" target="_blank">business@adience.com</a> to get your unique app key, Adience SDK and integration documentation.
 
-2. Integrate SOOMLA Store. Follow all steps in the platform specific getting started guides: <a href="http://know.soom.la/unity/store/store_gettingstarted/" target="_blank">Unity Store</a> | <a href="http://know.soom.la/android/store/store_gettingstarted/" target="_blank">Android Store</a>
+2. Integrate SOOMLA Store. Follow all steps in the platform specific getting started guides: <a href="http://know.soom.la/soomla/unity/store/Store_GettingStarted/" target="_blank">Unity Store</a> | <a href="http://know.soom.la/soomla/android/store/store_gettingstarted/" target="_blank">Android Store</a>

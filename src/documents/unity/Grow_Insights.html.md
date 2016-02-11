@@ -33,9 +33,9 @@ Currently, Insights supports PayInsights which categorizes users according to th
 
 1. Initialize `GrowInsights` according to the instructions of your relevant integration.
 
-* Create event handler functions in order to be notified about (and handle) GROW Insights related events. See [Events](/unity/grow/Grow_Insights/#Events) for more information.
+* Create event handler functions in order to be notified about (and handle) GROW Insights related events. See [Events](/unity/Grow_Insights/#Events) for more information.
 
-* Once initialized, GROW Insights will automatically retrieve relevant insights from the server. Once the insights are ready (see [`OnGrowInsightsRefreshFinished`](/unity/grow/Grow_Insights/#OnInsightsRefreshFinished)) you can access them as explained below.
+* Once initialized, GROW Insights will automatically retrieve relevant insights from the server. Once the insights are ready (see [`OnGrowInsightsRefreshFinished`](/unity/Grow_Insights/#OnInsightsRefreshFinished)) you can access them as explained below.
 
 ## Events
 
@@ -111,7 +111,7 @@ Manually refresh the insights. The `OnInsightsRefreshStarted` event is triggered
 
 **`UserInsights`**
 
-The [User-Insights](/unity/grow/Grow_Insights/#UserInsights) received from the server.
+The [User-Insights](/unity/Grow_Insights/#UserInsights) received from the server.
 
 <div class="info-box">GROW Insights caches its data on the device so that it's accessible even when there is no internet connection.</div>
 
@@ -124,7 +124,7 @@ Located in `GrowInsights` and can be accessed using `GrowInsights.UserInsights`.
 
 **`PayInsights`**
 
-The [Pay-Insights](/unity/grow/Grow_Insights/#PayInsights) received from the server.
+The [Pay-Insights](/unity/Grow_Insights/#PayInsights) received from the server.
 
 ### PayInsights
 
@@ -134,7 +134,7 @@ Located in `UserInsights` and can be accessed using `GrowInsights.UserInsights.P
 
 **`PayRankByGenre`**
 
-A `Dictionary` providing the user's pay-rank by [Genre](/unity/grow/Grow_Insights/#Genre)
+A `Dictionary` providing the user's pay-rank by [Genre](/unity/Grow_Insights/#Genre)
 
 ##### Possible return values
 
@@ -159,7 +159,7 @@ A `Dictionary` providing the user's pay-rank by [Genre](/unity/grow/Grow_Insight
 
 **`TimeOfPurchase`**
 
-A `Dictionary` providing the user's preferred time of purchase in the day by [DayQuarter](/unity/grow/Grow_Insights#DayQuarter), returns a number between 0 to 1 per quarter, which indicates the user's likelihood to pay in that specific quarter.
+A `Dictionary` providing the user's preferred time of purchase in the day by [DayQuarter](/unity/Grow_Insights#DayQuarter), returns a number between 0 to 1 per quarter, which indicates the user's likelihood to pay in that specific quarter.
 
 ### Genre
 

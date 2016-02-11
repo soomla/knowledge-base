@@ -14,13 +14,13 @@ platform: 'unity'
 
 Here you can find descriptions of some of the main classes and interfaces of unity3d-store. These classes contain functionality for store-related operations such as purchasing, billing, inventory querying and storage.
 
-To see more usage examples of the functions of these classes see [Economy Model](/unity/store/Store_Model).
+To see more usage examples of the functions of these classes see [Economy Model](/soomla/unity/store/Store_Model).
 
 ## SoomlaStore <a href="https://github.com/soomla/unity3d-store/blob/master/Soomla/Assets/Plugins/Soomla/Store/SoomlaStore.cs" target="_blank"><img class="link-icon" src="/img/tutorial_img/linkImg.png"></a>
 
 SoomlaStore holds the basic assets needed to operate the Store. You can use it to purchase products from the Market. It provides you with functionality such as querying the inventory for information, and starting a purchase process with the market (Google Play, Amazon Appstore, App Store).
 
-<div class="info-box">This is the only class you need to initialize in order to use the SOOMLA SDK. More about this in [Getting Started](/unity/store/Store_GettingStarted).</div>
+<div class="info-box">This is the only class you need to initialize in order to use the SOOMLA SDK. More about this in [Getting Started](/soomla/unity/store/Store_GettingStarted).</div>
 
 Taken from our Muffin Rush [Example](https://github.com/soomla/unity3d-store/tree/master/Soomla/Assets/Examples/MuffinRush):
 
@@ -80,7 +80,7 @@ UpgradeVG firstUpgrade = StoreInfo.GetFirstUpgradeForVirtualGood("strength");
 
 **`BuyItem(string itemId)`**
 
-Buys the item that has the given itemId according to its purchase type - either with real money ($$$) or with other virtual items. Read more about PurchaseTypes in [Economy Model](/unity/store/Store_Model#purchase-types).
+Buys the item that has the given itemId according to its purchase type - either with real money ($$$) or with other virtual items. Read more about PurchaseTypes in [Economy Model](/soomla/unity/store/Store_Model#purchase-types).
 
 **Example:** Buy a virtual item with `itemId` "blue_hat":
 

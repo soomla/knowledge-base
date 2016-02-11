@@ -91,4 +91,4 @@ Developers usually feel better with using a prebuilt jar file in their project. 
 
 * Add inline documentation inside the code. Explain what your methods do and why. See SOOMLA's [Android inline documentation guidelines](https://github.com/soomla/android-store/blob/master/documentation.md).
 
-Your billing service is ready for *android-store*? Great! Now it's time to [Make your Android billing service available on unity3d-store](/unity/store/Store_CreateBillingPlugins).
+Your billing service is ready for *android-store*? Great! Now it's time to [Make your Android billing service available on unity3d-store](/soomla/unity/store/Store_CreateBillingPlugins).

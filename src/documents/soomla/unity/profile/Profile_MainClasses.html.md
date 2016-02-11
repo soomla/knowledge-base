@@ -110,9 +110,9 @@ This class holds information about a score which was returned by `GetScores` or 
 
 ## SoomlaProfile <a href="https://github.com/soomla/unity3d-profile/blob/master/Soomla/Assets/Plugins/Soomla/Profile/SoomlaProfile.cs" target="_blank"><img class="link-icon" src="/img/tutorial_img/linkImg.png"></a>
 
-This is the main class that controls the entire SOOMLA Profile module. Use this class to perform various social and authentication operations for users. The Profile module will work with the social and authentication plugins, as you supply in the SOOMLA settings, described in step 3b of the [Getting Started](/docs/platforms/unity/Profile_GettingStarted#getting-started) tutorial.
+This is the main class that controls the entire SOOMLA Profile module. Use this class to perform various social and authentication operations for users. The Profile module will work with the social and authentication plugins, as you supply in the SOOMLA settings, described in step 3b of the [Getting Started](/docs/platforms/soomla/unity/profile_GettingStarted#getting-started) tutorial.
 
-**NOTE:** Most of the functions in this class call relevant functions from the social provider's SDK, and do NOT return a value, but rather fire appropriate events that contain the return values. Read more about [Events](/docs/platforms/unity/Profile_Events).
+**NOTE:** Most of the functions in this class call relevant functions from the social provider's SDK, and do NOT return a value, but rather fire appropriate events that contain the return values. Read more about [Events](/docs/platforms/soomla/unity/profile_Events).
 
 The diagram below depicts the flow that takes place when a `SoomlaProfile` function is called. In the diagram, the example function shown is `Login`, but this principle holds for all functions.
 
@@ -121,7 +121,7 @@ The diagram below depicts the flow that takes place when a `SoomlaProfile` funct
 <br>
 ### `Initialize`
 
-`SoomlaProfile` is the class that needs to be initialized in order to begin using Profile. This is covered in unity3d-profile's [Getting Started](/unity/profile/Profile_GettingStarted) tutorial.
+`SoomlaProfile` is the class that needs to be initialized in order to begin using Profile. This is covered in unity3d-profile's [Getting Started](/soomla/unity/store/Profile_GettingStarted) tutorial.
 
 ```cs
 SoomlaProfile.Initialize();
