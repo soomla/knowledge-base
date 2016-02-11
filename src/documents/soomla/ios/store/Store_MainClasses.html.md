@@ -4,7 +4,7 @@ image: "Tutorial"
 title: "Main Classes"
 text: "The main classes of ios-store contain functionality for store-related operations such as purchasing, billing, inventory querying and storage."
 position: 4
-theme: 'soomla-ios'
+theme: 'soomla'
 collection: 'soomla_ios_store'
 module: 'store'
 platform: 'ios'

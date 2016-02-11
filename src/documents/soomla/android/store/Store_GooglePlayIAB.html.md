@@ -4,7 +4,7 @@ image: "InAppPurchase"
 title: "Google Play In-app Billing"
 text: "Google Play in-app-purchase setup and integration with SOOMLA - define your game's in-app products."
 position: 8
-theme: 'soomla-android'
+theme: 'soomla'
 collection: 'soomla_android_store'
 module: 'store'
 platform: 'android'

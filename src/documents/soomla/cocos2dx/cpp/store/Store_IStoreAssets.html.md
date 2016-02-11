@@ -4,7 +4,7 @@ image: "Game"
 title: "CCStoreAssets"
 text: "To use SOOMLA, you'll need to create your own implementation of CCStoreAssets, an interface that represents your game’s economy."
 position: 2
-theme: 'soomla-cocos2dx'
+theme: 'soomla'
 collection: 'soomla_cocos2dx_store'
 module: 'store'
 lang: 'cpp'

@@ -4,7 +4,7 @@ image: "Modeling"
 title: "Economy Model & API"
 text: "Every game economy can be based on SOOMLA's economy model. Learn the building blocks of creating a virtual economy with currencies and virtual goods."
 position: 3
-theme: 'soomla-unity'
+theme: 'soomla'
 collection: 'soomla_unity_store'
 module: 'store'
 platform: 'unity'

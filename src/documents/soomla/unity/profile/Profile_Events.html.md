@@ -4,7 +4,7 @@ image: "Events"
 title: "Events"
 text: "Learn how to observe and handle social events triggered by unity3d-profile to customize your game-specific behavior."
 position: 3
-theme: 'soomla-unity'
+theme: 'soomla'
 collection: 'soomla_unity_profile'
 module: 'profile'
 platform: 'unity'

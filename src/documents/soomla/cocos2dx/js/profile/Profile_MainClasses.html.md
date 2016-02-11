@@ -4,7 +4,7 @@ image: "Modeling"
 title: "Main Classes & Operations"
 text: "Read descriptions of the various social entities cocos2dx-profile provides, and see usage examples of operations that can be done to the different entities."
 position: 2
-theme: 'soomla-cocos2dx'
+theme: 'soomla'
 collection: 'soomla_cocos2djs_profile'
 module: 'profile'
 lang: 'js'

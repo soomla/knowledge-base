@@ -4,7 +4,7 @@ image: "Tutorial"
 title: "Main Classes"
 text: "The main classes of unity3d-store contain functionality for store-related operations such as purchasing, billing, inventory querying and storage."
 position: 4
-theme: 'soomla-unity'
+theme: 'soomla'
 collection: 'soomla_unity_store'
 module: 'store'
 platform: 'unity'

@@ -4,7 +4,7 @@ image: "Tutorial"
 title: "Main Classes"
 text: "The main classes of cocos2dx-store contain functionality for store-related operations such as purchasing, billing, inventory querying and storage."
 position: 4
-theme: 'soomla-cocos2dx'
+theme: 'soomla'
 collection: 'soomla_cocos2djs_store'
 module: 'store'
 lang: 'js'

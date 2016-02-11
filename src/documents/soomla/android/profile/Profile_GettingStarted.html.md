@@ -4,7 +4,7 @@ image: "Tutorial"
 title: "Getting Started"
 text: "Get started with android-profile. Here you can find integration instructions and a basic example of initialization."
 position: 1
-theme: 'soomla-android'
+theme: 'soomla'
 collection: 'soomla_android_profile'
 module: 'profile'
 platform: 'android'

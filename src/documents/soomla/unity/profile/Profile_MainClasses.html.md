@@ -4,7 +4,7 @@ image: "Modeling"
 title: "Main Classes & Operations"
 text: "Read descriptions of the various social entities unity3d-profile provides, and see usage examples of operations that can be done to the different entities."
 position: 2
-theme: 'soomla-unity'
+theme: 'soomla'
 collection: 'soomla_unity_profile'
 module: 'profile'
 platform: 'unity'

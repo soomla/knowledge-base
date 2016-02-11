@@ -4,7 +4,7 @@ image: "Wrench"
 title: "Debugging"
 text: "Debugging methods and tips for iOS-store."
 position: 6
-theme: 'soomla-ios'
+theme: 'soomla'
 collection: 'soomla_ios_store'
 module: 'store'
 platform: 'ios'

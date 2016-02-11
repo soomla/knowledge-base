@@ -4,7 +4,7 @@ image: "Tutorial"
 title: "Getting Started"
 text: "Get started with cocos2dx-store. Here you can find a basic example of initialization, economy framework integration, and links to downloads and IAP setup."
 position: 1
-theme: 'soomla-cocos2dx'
+theme: 'soomla'
 collection: 'soomla_cocos2djs_store'
 module: 'store'
 lang: 'js'

@@ -4,7 +4,7 @@ image: "Wrench"
 title: "Debugging"
 text: "Debugging methods and tips for android-store."
 position: 6
-theme: 'soomla-android'
+theme: 'soomla'
 collection: 'soomla_android_store'
 module: 'store'
 platform: 'android'

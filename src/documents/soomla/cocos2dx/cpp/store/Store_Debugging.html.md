@@ -4,7 +4,7 @@ image: "Wrench"
 title: "Debugging"
 text: "Debugging methods and tips for cocos2dx-store."
 position: 6
-theme: 'soomla-cocos2dx'
+theme: 'soomla'
 collection: 'soomla_cocos2dx_store'
 module: 'store'
 lang: 'cpp'

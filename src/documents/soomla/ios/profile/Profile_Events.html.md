@@ -4,7 +4,7 @@ image: "Events"
 title: "Events"
 text: "Learn how to observe and handle social events triggered by ios-profile to customize your game-specific behavior."
 position: 3
-theme: 'soomla-ios'
+theme: 'soomla'
 collection: 'soomla_ios_profile'
 module: 'profile'
 platform: 'ios'

@@ -1,7 +1,7 @@
 ---
 title: 'Unity'
 layout: 'soomla-platform'
-theme: 'soomla-unity'
+theme: 'soomla'
 collection: 'soomla_unity_profile'
 platform: 'unity'
 module: 'profile'

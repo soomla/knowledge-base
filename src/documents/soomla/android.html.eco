@@ -1,7 +1,7 @@
 ---
 layout: 'knowledge-base'
 title: 'Soomla'
-theme: 'soomla-android'
+theme: 'soomla'
 platform: 'android'
 ---
 <div class="jumbotron" id="know-soomla">

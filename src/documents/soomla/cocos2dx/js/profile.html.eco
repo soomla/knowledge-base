@@ -1,7 +1,7 @@
 ---
 title: 'Cocos2dx'
 layout: 'soomla-platform'
-theme: 'soomla-cocos2dx'
+theme: 'soomla'
 collection: 'soomla_cocos2djs_profile'
 platform: 'cocos2dx'
 lang: 'js'

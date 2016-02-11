@@ -6,7 +6,7 @@ layout: 'knowledge-base'
     <div id="jumbo-main-text">
         <div id="hierarchy-nav">
           <%- @partial('nav-menu-l1', {current: 'soomla'}) %>
-          <%- @partial('nav-menu-soomla', {platform: 'unity', theme: 'soomla-unity'}) %>
+          <%- @partial('nav-menu-soomla', {platform: 'unity', theme: 'soomla'}) %>
           <%- @partial('nav-menu-l2', {collection:@document.collection, platform: @document.platform, lang: @document.lang, module: @document.module, theme: @document.theme}) %>
         </div>
         WHAT WOULD YOU LIKE TO KNOW?

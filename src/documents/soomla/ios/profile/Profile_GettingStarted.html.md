@@ -4,7 +4,7 @@ image: "Tutorial"
 title: "Getting Started"
 text: "Get started with ios-profile. Here you can find integration instructions and a basic example of initialization."
 position: 1
-theme: 'soomla-ios'
+theme: 'soomla'
 collection: 'soomla_ios_profile'
 module: 'profile'
 platform: 'ios'

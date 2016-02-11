@@ -1,7 +1,7 @@
 ---
 title: 'iOS'
 layout: 'soomla-platform'
-theme: 'soomla-ios'
+theme: 'soomla'
 collection: 'soomla_ios_profile'
 platform: 'ios'
 module: 'profile'

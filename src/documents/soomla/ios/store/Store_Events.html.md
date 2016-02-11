@@ -4,7 +4,7 @@ image: "Events"
 title: "Events"
 text: "Learn how to observe and handle economy events triggered by ios-store to customize your game-specific behavior."
 position: 5
-theme: 'soomla-ios'
+theme: 'soomla'
 collection: 'soomla_ios_store'
 module: 'store'
 platform: 'ios'

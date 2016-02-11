@@ -4,7 +4,7 @@ image: "Tutorial"
 title: "Main Classes"
 text: "The main classes of android-store contain functionality for store-related operations such as purchasing, billing, inventory querying and storage."
 position: 4
-theme: 'soomla-android'
+theme: 'soomla'
 collection: 'soomla_android_store'
 module: 'store'
 platform: 'android'

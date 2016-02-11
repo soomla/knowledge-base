@@ -4,7 +4,7 @@ image: "Tutorial"
 title: "Getting Started"
 text: "Get started with iOS-store. Here you can find a basic example of initialization, economy framework integration, and links to downloads and IAP setup."
 position: 1
-theme: 'soomla-ios'
+theme: 'soomla'
 collection: 'soomla_ios_store'
 module: 'store'
 platform: 'ios'

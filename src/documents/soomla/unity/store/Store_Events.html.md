@@ -4,7 +4,7 @@ image: "Events"
 title: "Events"
 text: "Learn how to observe and handle economy events triggered by unity3d-store to customize your game-specific behavior."
 position: 5
-theme: 'soomla-unity'
+theme: 'soomla'
 collection: 'soomla_unity_store'
 module: 'store'
 platform: 'unity'

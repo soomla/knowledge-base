@@ -1,7 +1,7 @@
 ---
 title: 'Cocos2dx'
 layout: 'knowledge-base'
-theme: 'soomla-cocos2dx'
+theme: 'soomla'
 collection: 'soomla_cocos2dx_samples'
 platform: 'cocos2dx'
 lang: 'cpp'
@@ -11,9 +11,9 @@ module: 'samples'
 <div class="jumbotron" id="know-soomla">
     <div id="jumbo-main-text">
         <div id="hierarchy-nav">
-          <%- @partial('nav-menu-l1', {current: 'soomla'}) %>
+          <%- @partial('nav-menu-l1', {current: @document.theme}) %>
           <%- @partial('nav-menu-soomla', {platform: @document.platform, theme: @document.theme}) %>
-          <%- @partial('nav-menu-platform-module', {collection:@document.collection, platform: @document.platform, module: @document.module, theme: @document.theme}) %>          
+          <%- @partial('nav-menu-platform-module', {collection:@document.collection, platform: @document.platform, module: @document.module, theme: @document.theme}) %>
         </div>
         SAMPLES
     </div>

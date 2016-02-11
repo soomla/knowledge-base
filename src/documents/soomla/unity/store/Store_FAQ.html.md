@@ -4,7 +4,7 @@ image: "Tutorial"
 title: "FAQ"
 text: "Frequently asked questions about unity3d-store"
 position: 9
-theme: 'soomla-unity'
+theme: 'soomla'
 collection: 'soomla_unity_store'
 module: 'store'
 platform: 'unity'

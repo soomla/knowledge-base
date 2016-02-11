@@ -4,7 +4,7 @@ image: "Tutorial"
 title: "Getting Started"
 text: "Get started with unity3d-store. Here you can find a basic example of initialization, economy framework integration, and links to downloads and IAP setup."
 position: 1
-theme: 'soomla-unity'
+theme: 'soomla'
 collection: 'soomla_unity_store'
 module: 'store'
 platform: 'unity'

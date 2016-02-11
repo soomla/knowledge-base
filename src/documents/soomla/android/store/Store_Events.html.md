@@ -4,7 +4,7 @@ image: "Events"
 title: "Events"
 text: "Learn how to observe and handle economy events triggered by android-store to customize your game-specific behavior."
 position: 5
-theme: 'soomla-android'
+theme: 'soomla'
 collection: 'soomla_android_store'
 module: 'store'
 platform: 'android'

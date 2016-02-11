@@ -4,7 +4,7 @@ image: "InAppPurchase"
 title: "Google Play In-app Verification"
 text: "Google Play in-app-purchase setup and integration with SOOMLA - set up verification."
 position: 8
-theme: 'soomla-android'
+theme: 'soomla'
 collection: 'soomla_android_store'
 module: 'store'
 platform: 'android'

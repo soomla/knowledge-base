@@ -4,7 +4,7 @@ image: "Modeling"
 title: "Main Classes & Operations"
 text: "Read descriptions of the various social entities ios-profile provides, and see usage examples of operations that can be done to the different entities."
 position: 2
-theme: 'soomla-ios'
+theme: 'soomla'
 collection: 'soomla_ios_profile'
 module: 'profile'
 platform: 'ios'

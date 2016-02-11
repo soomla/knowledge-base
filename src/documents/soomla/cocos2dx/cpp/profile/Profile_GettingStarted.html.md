@@ -4,7 +4,7 @@ image: "Tutorial"
 title: "Getting Started"
 text: "Get started with cocos2dx-profile. Here you can find integration instructions and a basic example of initialization."
 position: 1
-theme: 'soomla-cocos2dx'
+theme: 'soomla'
 collection: 'soomla_cocos2dx_profile'
 module: 'profile'
 lang: 'cpp'

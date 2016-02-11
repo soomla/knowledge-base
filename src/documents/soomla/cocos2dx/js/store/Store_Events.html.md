@@ -4,7 +4,7 @@ image: "Events"
 title: "Events"
 text: "Learn how to observe and handle economy events triggered by cocos2dx-store to customize your game-specific behavior."
 position: 5
-theme: 'soomla-cocos2dx'
+theme: 'soomla'
 collection: 'soomla_cocos2djs_store'
 module: 'store'
 lang: 'js'

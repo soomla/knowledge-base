@@ -4,7 +4,7 @@ image: "Tutorial"
 title: "Getting Started"
 text: "Get started with unity3d-profile. Here you can find integration instructions and a basic example of initialization."
 position: 1
-theme: 'soomla-unity'
+theme: 'soomla'
 collection: 'soomla_unity_profile'
 module: 'profile'
 platform: 'unity'

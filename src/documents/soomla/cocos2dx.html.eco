@@ -1,7 +1,7 @@
 ---
 layout: 'knowledge-base'
 title: 'Soomla'
-theme: 'soomla-cocos2dx'
+theme: 'soomla'
 platform: 'cocos2dx'
 ---
 

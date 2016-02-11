@@ -4,7 +4,7 @@ image: "FraudProtection"
 title: "Fraud Protection"
 text: "Get started with Grow Fraud Protection."
 position: 18
-theme: 'soomla-ios'
+theme: 'soomla'
 collection: 'soomla_ios_store'
 module: 'store'
 platform: 'ios'
