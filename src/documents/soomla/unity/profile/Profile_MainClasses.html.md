@@ -121,7 +121,7 @@ The diagram below depicts the flow that takes place when a `SoomlaProfile` funct
 <br>
 ### `Initialize`
 
-`SoomlaProfile` is the class that needs to be initialized in order to begin using Profile. This is covered in unity3d-profile's [Getting Started](/soomla/unity/store/Profile_GettingStarted) tutorial.
+`SoomlaProfile` is the class that needs to be initialized in order to begin using Profile. This is covered in unity3d-profile's [Getting Started](/soomla/unity/profile/Profile_GettingStarted) tutorial.
 
 ```cs
 SoomlaProfile.Initialize();

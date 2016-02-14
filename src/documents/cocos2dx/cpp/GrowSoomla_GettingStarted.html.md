@@ -2,7 +2,7 @@
 layout: "content"
 image: "Bundle"
 title: "GrowSoomla"
-text: "The perfect solution for your game if you have already integrated any of the SOOMLA open-source modules into it. If you just want to get Analytics, Whales Report and Grow Insights then this bundle is for you."
+text: "The perfect solution for your game if you have already integrated any of the SOOMLA open-source modules into it. If you just want to get Analytics, Whales Report and Grow Insights then this integration is for you."
 position: 15
 theme: 'platforms'
 collection: 'cocos2dx_grow'
@@ -11,11 +11,11 @@ lang: 'cpp'
 platform: 'cocos2dx'
 ---
 
-# GrowSoomla - Bundle
+# GrowSoomla
 
 ## Overview
 
-GrowSoomla is the perfect solution for your game if you have already integrated any of the SOOMLA open-source modules into it. If you just want to get Analytics Whales Report and Grow Insights then this bundle is for you. GrowSoomla connects you to GROW, SOOMLA's flagship - a community-driven data network. Mobile game studios can take advantage of the different GROW products in order to get valuable insights about their games' performance and increase retention and monetization. [Read more...](/university/articles/Grow_About)
+GrowSoomla is the perfect solution for your game if you have already integrated any of the SOOMLA open-source modules into it. If you just want to get Analytics Whales Report and Grow Insights then this integration is for you. GrowSoomla connects you to GROW, SOOMLA's flagship - a community-driven data network. Mobile game studios can take advantage of the different GROW products in order to get valuable insights about their games' performance and increase retention and monetization. [Read more...](/university/articles/Grow_About)
 
 GrowSoomla includes:
 
@@ -37,7 +37,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
 
 	  ![alt text](/img/tutorial_img/cocos_grow/addNewApp.png "Add new app")
 
-	Once you created your game, you'll be redirected to a quick start process to download any of the GROW bundles (You can also click "Downloads" on the top right corner of the screen). Click on **GrowSoomla**. You'll see an instructions screen, you can continue with that or stay here for the extended version.  
+	Once you created your game, you'll be redirected to a quick start process to download any of the GROW integrations (You can also click "Downloads" on the top right corner of the screen). Click on **GrowSoomla**. You'll see an instructions screen, you can continue with that or stay here for the extended version.  
 
 2. Unzip the downloaded file and copy its contents into the cocos2d directory located at the root of your Cocos2d-x project.
 
@@ -129,7 +129,7 @@ In your XCode project, perform the following steps:
   - Security
 
   - libsqlite3.0.dylib
-  
+
   - libz.dylib
 
   - StoreKit
@@ -175,7 +175,7 @@ That's it! Now all you have to do is build your XCode project and run your game.
   ``` xml
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  
+
   ```
 
 That's it! Don't forget to run the **build_native.py** script so that SOOMLA sources will be built with cocos2d-x.

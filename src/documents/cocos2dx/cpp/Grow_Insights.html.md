@@ -32,10 +32,10 @@ Currently, Insights supports PayInsights which categorizes users according to th
 
 ## Integration
 
-<div class="info-box">GROW Insights is included in the GROW bundles: [GrowUltimate](/cocos2dx/cpp/GrowUltimate_GettingStarted), [GrowSpend](/cocos2dx/cpp/GrowSpend_GettingStarted#SetupGrowSpend) and [GrowSoomla](/cocos2dx/cpp/GrowSoomla_GettingStarted#SetupGrowSoomla). Please refer to the relevant bundle for initialization instructions.</div>
+<div class="info-box">GROW Insights is included in the GROW integrations: [GrowUltimate](/cocos2dx/cpp/GrowUltimate_GettingStarted), [GrowSpend](/cocos2dx/cpp/GrowSpend_GettingStarted#SetupGrowSpend) and [GrowSoomla](/cocos2dx/cpp/GrowSoomla_GettingStarted#SetupGrowSoomla). Please refer to the relevant integration for initialization instructions.</div>
 
 
-1. Initialize `CCGrowInsights` according to the instructions of your relevant bundle.
+1. Initialize `CCGrowInsights` according to the instructions of your relevant integration.
 
 * Create event handler functions in order to be notified about (and handle) GROW Insights related events. See [Events](/cocos2dx/cpp/Grow_Insights/#Events) for more information.
 

@@ -2,7 +2,7 @@
 layout: "content"
 image: "Bundle"
 title: "GrowSpend"
-text: "The perfect virtual economy solution for your game. If you want Fraud Protection, cross-device balance SYNC and remote economy configurator then this bundle is for you."
+text: "The perfect virtual economy solution for your game. If you want Fraud Protection, cross-device balance SYNC and remote economy configurator then this integration is for you."
 position: 6
 theme: 'platforms'
 collection: 'unity_grow'
@@ -10,11 +10,11 @@ module: 'grow'
 platform: 'unity'
 ---
 
-# GrowSpend - Bundle
+# GrowSpend
 
 ## Overview
 
-GrowSpend is the perfect virtual economy solution for your game. If you want Fraud Protection, cross-device balance SYNC and remote economy configurator then this bundle is for you. GrowSpend connects you to GROW - a community-driven data network. Mobile game studios can take advantage of the different GROW products in order to get valuable insights about their games' performance and increase retention and monetization. [Read more...](/university/articles/Grow_About)
+GrowSpend is the perfect virtual economy solution for your game. If you want Fraud Protection, cross-device balance SYNC and remote economy configurator then this integration is for you. GrowSpend connects you to GROW - a community-driven data network. Mobile game studios can take advantage of the different GROW products in order to get valuable insights about their games' performance and increase retention and monetization. [Read more...](/university/articles/Grow_About)
 
 GrowSpend includes:
 
@@ -30,7 +30,7 @@ GrowSpend includes:
 
 - [Insights](/unity/Grow_Insights)
 
-**Note:** Cross-device SYNC is using the Profile module which allows your users to login with their social provider. If you want that, [integrate Profile](/soomla/unity/store/Profile_GettingStarted) as well.
+**Note:** Cross-device SYNC is using the Profile module which allows your users to login with their social provider. If you want that, [integrate Profile](/soomla/unity/profile/Profile_GettingStarted) as well.
 
 
 ## Integrating GrowSpend
@@ -43,7 +43,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
 
 	  ![alt text](/img/tutorial_img/unity_grow/addNewApp.png "Add new app")
 
-	Once you created your game, you'll be redirected to a quick start process to download any of the GROW bundles. Click on **GrowSpend**. You'll see an instructions screen, you can continue with that or stay here for the extended version.  
+	Once you created your game, you'll be redirected to a quick start process to download any of the GROW integrations. Click on **GrowSpend**. You'll see an instructions screen, you can continue with that or stay here for the extended version.  
 
 2. Double-click on the downloaded Unity package, it'll import all the necessary files into your Unity project.
 
@@ -74,17 +74,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
         </ul>
       </div>
 
-
-3. ~~Open your earliest loading scene.  Drag the `CoreEvents`, `StoreEvents` and `HighwayEvents` Prefabs from `Assets/Soomla/Prefabs` into the scene. You should see them listed in the "Hierarchy" panel.~~
-
-	<div class="info-box">This step is no longer required starting from: <br>
-	Core    v1.2.0 <br>
-	Store   v1.9.0 <br>
-	Highway v2.1.0</div>
-
-	![alt text](/img/tutorial_img/unity_grow/prefabsStoreAndHighway.png "Prefabs")
-
-4. In the menu bar go to **Window > Soomla > Edit Settings**:
+3. In the menu bar go to **Window > Soomla > Edit Settings**:
 
 	![alt text](/img/tutorial_img/unity_grow/soomlaSettingsStoreAndHighway.png "SOOMLA Settings")
 
@@ -100,7 +90,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
 
 	c. If you're building for Android, click on the "Android Settings" option, and choose your billing provider. If you choose Google Play, you need to provide the Public Key, which is given to you from Google.
 
-5. Fraud Protection (<u>RECOMMENDED</u>):
+4. Fraud Protection (<u>RECOMMENDED</u>):
 
 	Fraud Protection is using SOOMLA's validation service to validate the receipt of every purchase made in your game. By using Fraud Protection you also get **Advanced Receipt Verification** to fully protect your game from fraudsters.
 	To activate Fraud Protection:

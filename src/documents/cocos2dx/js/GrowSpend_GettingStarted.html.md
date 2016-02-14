@@ -2,7 +2,7 @@
 layout: "content"
 image: "Bundle"
 title: "GrowSpend"
-text: "The perfect virtual economy solution for your game. If you want Fraud Protection, cross-device balance SYNC and remote economy configurator then this bundle is for you."
+text: "The perfect virtual economy solution for your game. If you want Fraud Protection, cross-device balance SYNC and remote economy configurator then this integration is for you."
 position: 11
 theme: 'platforms'
 collection: 'cocos2djs_grow'
@@ -11,12 +11,12 @@ lang: 'js'
 platform: 'cocos2dx'
 ---
 
-# GrowSpend - Bundle
+# GrowSpend
 
 ## Overview
 
 GrowSpend is the perfect virtual economy solution for your game. If you want Fraud Protection, cross-device balance SYNC
-and remote economy configurator then this bundle is for you. GrowSpend connects you to GROW, SOOMLA's flagship - a
+and remote economy configurator then this integration is for you. GrowSpend connects you to GROW, SOOMLA's flagship - a
 community-driven data network. Mobile game studios can take advantage of the different GROW products in order to get
 valuable insights about their games' performance and increase retention and monetization.
 [Read more...](/cocos2dx/js/Grow_About)
@@ -29,9 +29,9 @@ GrowSpend includes:
 
 - [IAP Fraud Protection](/cocos2dx/js/Grow_FraudProtection)
 
-- [Analytics](/cocos2dx/js/Grow_Analytics)
+- [Analytics](/university/articles/Grow_Analytics)
 
-- [Whales Report](/cocos2dx/js/Grow_WhalesReport)
+- [Whales Report](/university/articles/Grow_WhalesReport)
 
 - [Insights](/cocos2dx/js/Grow_Insights)
 
@@ -54,7 +54,7 @@ on the "+" button underneath the "Create your first game" label in the middle of
 
 	  ![alt text](/img/tutorial_img/unity_grow/addNewApp.png "Add new app")
 
-	* Once you created your game, you'll be redirected to download **GrowSpend**. You'll see an 
+	Once you created your game, you'll be redirected to download **GrowSpend**. You'll see an
 	instructions screen, you can continue with that or stay here for the extended version.  
 
 2. Unzip the downloaded file and copy its contents into the cocos2d directory located at the root of your Cocos2d-x project.
@@ -216,7 +216,7 @@ ln -s <your-cocos2d-js-path>/frameworks/js-bindings/cocos2d-x frameworks/runtime
   - Security
 
   - libsqlite3.0.dylib
-  
+
   - libz.dylib
 
   - StoreKit
@@ -279,7 +279,7 @@ That's it! Now all you have to do is build your XCode project and run your game.
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="com.android.vending.BILLING"/>
-  
+
   ```
 
 5. Connect the Store module to your desired billing service:

@@ -36,7 +36,7 @@ once you start using Grow.
 > Once you created a new App, you'll see your game and environment keys. Use them in the following instructions. (You
 can ignore other installation instructions on the dashboard as you're only using SDKBOX).
 
-2. Install `soomla-grow` package on SDKBOX as explained [here](http://soom.la).
+2. Install `soomla-grow` package on SDKBOX as explained [here](http://docs.sdkbox.com/en/plugins/soomlagrow/v3-js/).
 
 3. Once you finished installation, add "Game Key" and "Env Key" from the GROW dashboard to SDKBOX's configuration json:
 
@@ -94,7 +94,7 @@ sure to check "create group").
 1. Add the AFNetworking dependency to your project:
 
   - Add the static library (from `frameworks/runtime-src/Classes/cocos2dx-highway/build/ios/libAFNetworking.a`) to **Build Phases->Link Binary With Libraries**.  Achieve this by clicking the + icon, and then "Add Other", and browse for the file.
-  
+
   - Add `$(SRCROOT)/../Classes/cocos2dx-highway/build/ios/` to **Build Settings->Library Search Paths** (non-recursive)
 
 1. Add the `-ObjC` to the **Build Setting->Other Linker Flags**
@@ -104,17 +104,17 @@ sure to check "create group").
 1. Make sure you have these 7 Frameworks linked to your XCode project:
 
   - Security
-  
+
   - libsqlite3.0.dylib
-  
+
   - StoreKit
-  
+
   - CFNetwork
-  
+
   - libicucore
-  
+
   - SystemConfguration
-  
+
   - AdSupport
 
 That's it!

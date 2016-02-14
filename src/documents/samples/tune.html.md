@@ -547,10 +547,10 @@ public class TuneSoomlaInsightsScript : MonoBehaviour {
         // Add event listeners - Make sure to set the event handlers before you initialize
         HighwayEvents.OnInsightsInitialized += OnSoomlaInsightsInitialized;
         HighwayEvents.OnInsightsRefreshFinished += OnSoomlaInsightsRefreshFinished;
-        
+
         // Initialize GrowHighway
         GrowHighway.Initialize();
-        
+
         // Initialize GrowInsights
         GrowInsights.Initialize();
     }
@@ -561,11 +561,11 @@ public class TuneSoomlaInsightsScript : MonoBehaviour {
             MATBinding.MeasureSession();
         }
     }
-    
+
     void OnSoomlaInsightsInitialized () {
         Debug.Log("Soomla insights has been initialized.");
     }
-    
+
     void OnSoomlaInsightsRefreshFinished (){
         if (GrowInsights.UserInsights.PayInsights.PayRankByGenre[Genre.Educational] > 0) {
             // Set in TUNE SDK that user is a paying user for a given genre
@@ -589,12 +589,12 @@ public class TuneSoomlaInsightsScript : MonoBehaviour {
 
 2. Download and integrate the <a href="https://developers.mobileapptracking.com/mobile-sdks/" target="_blank">TUNE SDK</a>.
 
-3. Integrate SOOMLA Store and LevelUp.  Follow all steps in the platform specific getting started guides: <br>
+3. Integrate SOOMLA Store.  Follow all steps in the platform specific getting started guides: <br>
     <a href="/unity/" target="_blank">Unity</a> |
     <a href="/ios/" target="_blank">iOS</a> |
     <a href="/android/" target="_blank">Android</a>
-    
-4. To use Grow Insights, follow the <a href="/unity/grow_insights/" target="_blank">Grow Insights Unity Instructions</a>.
+
+4. To use Grow Insights, follow the <a href="/unity/Grow_Insights/" target="_blank">Grow Insights Unity Instructions</a>.
 
 
 <div class="samples-title">Sample projects</div>

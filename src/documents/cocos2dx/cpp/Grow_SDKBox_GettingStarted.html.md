@@ -29,7 +29,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
 
 	  ![alt text](/img/tutorial_img/cocos_grow/addNewApp.png "Add new app")
 
-	* Once you created your game, you'll be redirected to a quick start process to download any of the GROW bundles. Click on any bundle to see your game's envKey and gameKey (You can ignore other installation instructions on the dashboard as you're only using SDKBOX).
+	* Once you created your game, you'll be redirected to a quick start process to download any of the GROW integrations. Click on any integration to see your game's envKey and gameKey (You can ignore other installation instructions on the dashboard as you're only using SDKBOX).
 
 2. Install `soomla-grow` package on SDKBOX as explained [here](http://sdkbox-doc.github.io/en/plugins/soomlagrow/v3-cpp/).
 

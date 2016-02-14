@@ -55,9 +55,9 @@ Follow the directions below to see a great use case for how OneSignal can be int
 
 2. Integrate SOOMLA Store.  Follow all steps in the platform specific getting started guides: <br>
     <a href="/soomla/unity/store/Store_GettingStarted/" target="_blank">Unity</a> |
-    <a href="/cocos2dx/store/store_gettingstarted/" target="_blank">Cocos2d-x</a> |
-    <a href="/soomla/ios/store/store_gettingstarted/" target="_blank">iOS</a> |
-    <a href="/soomla/android/store/store_gettingstarted/" target="_blank">Android</a> |
+    <a href="/soomla/cocos2dx/cpp/store/Store_GettingStarted/" target="_blank">Cocos2d-x</a> |
+    <a href="/soomla/ios/store/Store_GettingStarted/" target="_blank">iOS</a> |
+    <a href="/soomla/android/store/Store_GettingStarted/" target="_blank">Android</a> |
 
 3. Add the sample code above into your game.
 

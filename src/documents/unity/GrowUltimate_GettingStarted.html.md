@@ -2,7 +2,7 @@
 layout: "content"
 image: "Bundle"
 title: "GrowUltimate"
-text: "The perfect All In One solution for your game. If you want your users to have the perfect experience in your game then this bundle is for you."
+text: "The perfect All In One solution for your game. If you want your users to have the perfect experience in your game then this integration is for you."
 position: 5
 theme: 'platforms'
 collection: 'unity_grow'
@@ -10,19 +10,24 @@ module: 'grow'
 platform: 'unity'
 ---
 
-# GrowUltimate - Bundle
+# GrowUltimate
 
 ## Overview
 
-GrowUltimate is the perfect All In One solution for your game. If you want your users to have the perfect experience in your game then this bundle is for you. GrowUltimate connects you to GROW - a community-driven data network. Mobile game studios can take advantage of the different GROW products in order to get valuable insights about their games' performance and increase retention and monetization. [Read more...](/university/articles/Grow_About)
+GrowUltimate is the perfect All In One solution for your game. If you want your users to have the perfect experience in your game then this integration is for you. GrowUltimate connects you to GROW - a community-driven data network. Mobile game studios can take advantage of the different GROW products in order to get valuable insights about their games' performance and increase retention and monetization. [Read more...](/university/articles/Grow_About)
 
 GrowUltimate includes:
 
-- SOOMLA's open-source modules - [Store](/soomla/unity/store/Store_GettingStarted) and [Profile](/soomla/unity/store/Profile_GettingStarted)
+- SOOMLA's open-source modules - [Store](/soomla/unity/store/Store_GettingStarted) and [Profile](/soomla/unity/profile/Profile_GettingStarted)
+
 - [State & Economy Sync](/unity/Grow_Sync)
+
 - [IAP Fraud Protection](/unity/Grow_FraudProtection)
-- [Analytics](/unity/Grow_Analytics)
-- [Whales Report](/unity/Grow_WhalesReport)
+
+- [Analytics](/university/articles/Grow_Analytics)
+
+- [Whales Report](/university/articles/Grow_WhalesReport)
+
 - [Insights](/unity/Grow_Insights)
 
 ## Integrating GrowUltimate
@@ -80,17 +85,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
         </ul>
       </div>
 
-3. ~~Open your earliest loading scene.  Drag the `CoreEvents`, `StoreEvents`, `ProfileEvents` and `HighwayEvents` Prefabs from `Assets/Soomla/Prefabs` into the scene. You should see them listed in the "Hierarchy" panel.~~
-
-	<div class="info-box">This step is no longer required starting from: <br>
-	Core    v1.2.0 <br>
-	Store   v1.9.0 <br>
-	Profile v2.2.0 <br>
-	Highway v2.1.0</div>
-
-	![alt text](/img/tutorial_img/unity_grow/prefabsAll.png "Prefabs")
-
-4. In the menu bar go to **Window > Soomla > Edit Settings**:
+3. In the menu bar go to **Window > Soomla > Edit Settings**:
 
 	![alt text](/img/tutorial_img/unity_grow/soomlaSettingsStoreAndHighway.png "SOOMLA Settings")
 
@@ -104,11 +99,11 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
 
 	<img src="/img/tutorial_img/unity_grow/dashboardKeys.png" alt="Game key and Env key" style="border:0;">
 
-	c. **Choose your social platform** by toggling Facebook, twitter or Google in the settings. Follow the instructions for integrating [Facebook](/soomla/unity/store/Profile_GettingStarted#facebook), [Twitter](/soomla/unity/store/Profile_GettingStarted#twitter) or [Google+](/soomla/unity/store/Profile_GettingStarted#google-).
+	c. **Choose your social platform** by toggling Facebook, twitter or Google in the settings. Follow the instructions for integrating [Facebook](/soomla/unity/profile/Profile_GettingStarted#facebook), [Twitter](/soomla/unity/profile/Profile_GettingStarted#twitter) or [Google+](/soomla/unity/profile/Profile_GettingStarted#google-).
 
 	d. If you're building for Android, click on the "Android Settings" option, and choose your billing provider. If you choose Google Play, you need to provide the Public Key, which is given to you from Google.
 
-5. Fraud Protection (<u>RECOMMENDED</u>):
+4. Fraud Protection (<u>RECOMMENDED</u>):
 
 	Fraud Protection is using SOOMLA's validation service to validate the receipt of every purchase made in your game. By using Fraud Protection you also get **Advanced Receipt Verification** to fully protect your game from fraudsters.
 	To activate Fraud Protection:

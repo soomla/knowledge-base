@@ -2,7 +2,7 @@
 layout: "content"
 image: "Bundle"
 title: "GrowUltimate"
-text: "The perfect All In One solution for your game. If you want your users to have the perfect experience in your game then this bundle is for you."
+text: "The perfect All In One solution for your game. If you want your users to have the perfect experience in your game then this integration is for you."
 position: 14
 theme: 'platforms'
 collection: 'cocos2dx_grow'
@@ -11,19 +11,24 @@ lang: 'cpp'
 platform: 'cocos2dx'
 ---
 
-# GrowUltimate - Bundle
+# GrowUltimate
 
 ## Overview
 
-GrowUltimate is the perfect All In One solution for your game. If you want your users to have the perfect experience in your game then this bundle is for you. GrowUltimate connects you to GROW, SOOMLA's flagship - a community-driven data network. Mobile game studios can take advantage of the different GROW products in order to get valuable insights about their games' performance and increase retention and monetization. [Read more...](/university/articles/Grow_About)
+GrowUltimate is the perfect All In One solution for your game. If you want your users to have the perfect experience in your game then this integration is for you. GrowUltimate connects you to GROW, SOOMLA's flagship - a community-driven data network. Mobile game studios can take advantage of the different GROW products in order to get valuable insights about their games' performance and increase retention and monetization. [Read more...](/university/articles/Grow_About)
 
 GrowUltimate includes:
 
 - SOOMLA's open-source modules - [Store](/soomla/cocos2dx/cpp/store/Store_GettingStarted) and [Profile](/soomla/cocos2dx/cpp/profile/Profile_GettingStarted)
+
 - [State & Economy Sync](/cocos2dx/cpp/Grow_Sync)
+
 - [IAP Fraud Protection](/cocos2dx/cpp/Grow_FraudProtection)
-- [Analytics](/cocos2dx/cpp/Grow_Analytics)
-- [Whales Report](/cocos2dx/cpp/Grow_WhalesReport)
+
+- [Analytics](/university/articles/Grow_Analytics)
+
+- [Whales Report](/university/articles/Grow_WhalesReport)
+
 - [Insights](/cocos2dx/cpp/Grow_Insights)
 
 ## Integrating GrowUltimate
@@ -38,7 +43,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
 
 	  ![alt text](/img/tutorial_img/cocos_grow/addNewApp.png "Add new app")
 
-	Once you created your game, you'll be redirected to a quick start process to download any of the GROW bundles (You can also click "Downloads" on the top right corner of the screen). Click on **GrowUltimate**. You'll see an instructions screen, you can continue with that or stay here for the extended version.  
+	Once you created your game, you'll be redirected to a quick start process to download any of the GROW integrations (You can also click "Downloads" on the top right corner of the screen). Click on **GrowUltimate**. You'll see an instructions screen, you can continue with that or stay here for the extended version.  
 
 2. Unzip the downloaded file and copy its contents into the cocos2d directory located at the root of your Cocos2d-x project.
 
@@ -165,7 +170,7 @@ In your XCode project, perform the following steps:
   - Security
 
   - libsqlite3.0.dylib
-  
+
   - libz.dylib
 
   - StoreKit
@@ -247,7 +252,7 @@ That's it! Now all you have to do is build your XCode project and run your game.
 
   <!-- optional: required for uploadImage from SD card -->
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  
+
   ```
 
 4. Connect the Store module to your desired billing service:

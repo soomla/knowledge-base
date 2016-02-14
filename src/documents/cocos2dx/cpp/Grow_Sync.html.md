@@ -31,7 +31,7 @@ With State & Economy Sync you can:
 <div class="info-box">GROW's State & Economy Sync is included in [GrowSpend](/cocos2dx/cpp/GrowSpend_GettingStarted#SetupGrowSpend).</div>
 
 
-1. Initialize `CCGrowSync` according to the instructions of your relevant bundle.
+1. Initialize `CCGrowSync` according to the instructions of your relevant integration.
 
 * Create event handler functions in order to be notified about (and handle) GROW Sync related events. See [Events](/cocos2dx/cpp/Grow_Sync/#Events) for more information.
 

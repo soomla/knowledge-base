@@ -33,7 +33,7 @@ With State & Economy Sync you can:
 
 * Once initialized, Sync will start syncing the player's state and game model, depending on the integrated modules. Synchronization is done with a unique identifier for every device.
 
-* If [Profile](/soomla/unity/store/Profile_GettingStarted) is integrated, once the player logs into a social network the game state will be synched across all of the player's devices, on which he/she is logged in with the same profile for that social provider.
+* If [Profile](/soomla/unity/profile/Profile_GettingStarted) is integrated, once the player logs into a social network the game state will be synched across all of the player's devices, on which he/she is logged in with the same profile for that social provider.
 
 <div class="warning-box">Make sure to start gameplay or change local state only **after** [`OnStateSyncFinished`](/unity/Grow_Sync#OnStateSyncFinished) event is triggered. </div>
 

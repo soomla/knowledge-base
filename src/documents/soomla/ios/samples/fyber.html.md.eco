@@ -41,11 +41,11 @@ This article shows an example of how to integrate Fyber Ads together with Soomla
 
 4. Integrate SOOMLA Store.  Follow all steps in the platform specific getting started guides: <br>
     <a href="/soomla/unity/store/Store_GettingStarted/" target="_blank">Unity</a> |
-    <a href="/soomla/ios/store/store_gettingstarted/" target="_blank">iOS</a> |
-    <a href="/soomla/android/store/store_gettingstarted/" target="_blank">Android</a> |
+    <a href="/soomla/ios/store/Store_GettingStarted/" target="_blank">iOS</a> |
+    <a href="/soomla/android/store/Store_GettingStarted/" target="_blank">Android</a> |
 
 <div class="samples-title">Additional tips and recommendations</div>
 
 1. Using multiple networks through Fyber Mediation will help you increase both your fill rate and revenue!
 
-2. Adding <a href="http://know.soom.la/unity/grow_gettingstarted/" target="_blank">GROW</a> will allow your users to backup their balances and will give you more tools to analyze their behavior.
+2. Adding <a href="/university/articles/Grow_About/" target="_blank">GROW</a> will allow your users to backup their balances and will give you more tools to analyze their behavior.

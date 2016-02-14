@@ -2,7 +2,7 @@
 layout: "content"
 image: "Tutorial"
 title: "Facebook"
-text: "Add GROW to your existing project with Facebook integration"
+text: "Get started with integrating GROW Analytics, Whales Report and Insights for Unity3D with Facebook. This integration includes Highway and GrowInsights."
 position: 4
 theme: 'platforms'
 collection: 'unity_grow'
@@ -42,7 +42,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
 
 3. In the menu bar go to **Window > GROW Settings**:
 
-	![alt text](/img/tutorial_img/unity_grow/soomlaSettingsStoreAndHighway.png "SOOMLA Settings")
+	![alt text](/img/tutorial_img/unity_grow/soomlaSettingsStoreAndHighway.png "GROW Settings")
 
 	a. **Copy the "Game Key" and "Environment Key"** given to you from the [dashboard](http://dashboard.soom.la) into the fields in the settings pane of the Unity Editor. At this point, you're probably testing your integration and you want to use the **Sandbox** environment key.
 

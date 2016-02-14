@@ -2,7 +2,7 @@
 layout: "content"
 image: "Bundle"
 title: "GrowSoomla"
-text: "The perfect solution for your game if you have already integrated any of the SOOMLA open-source modules into it. If you just want to get Analytics, Whales Report and Grow Insights then this bundle is for you."
+text: "The perfect solution for your game if you have already integrated any of the SOOMLA open-source modules into it. If you just want to get Analytics, Whales Report and Grow Insights then this integration is for you."
 position: 15
 theme: 'platforms'
 collection: 'cocos2djs_grow'
@@ -11,12 +11,12 @@ lang: 'js'
 platform: 'cocos2dx'
 ---
 
-# GrowSoomla - Bundle
+# GrowSoomla
 
 ## Overview
 
 GrowSoomla is the perfect solution for your game if you have already integrated any of the SOOMLA open-source modules
-into it. If you just want to get Analytics Whales Report and Grow Insights then this bundle is for you. GrowSoomla
+into it. If you just want to get Analytics Whales Report and Grow Insights then this integration is for you. GrowSoomla
 connects you to GROW, SOOMLA's flagship - a community-driven data network. Mobile game studios can take advantage of
 the different GROW products in order to get valuable insights about their games' performance and increase retention and
 monetization. [Read more...](/university/articles/Grow_About)
@@ -45,7 +45,7 @@ the "+" button underneath the "Create your first game" label in the middle of th
 
 	  ![alt text](/img/tutorial_img/unity_grow/addNewApp.png "Add new app")
 
-	Once you created your game, you'll be redirected to a quick start process to download any of the GROW bundles (You
+	Once you created your game, you'll be redirected to a quick start process to download any of the GROW integrations (You
 	can also click "Downloads" on the top right corner of the screen). Click on **GrowSoomla**. You'll see an
 	instructions screen, you can continue with that or stay here for the extended version.  
 
@@ -168,7 +168,7 @@ ln -s <your-cocos2d-js-path>/frameworks/js-bindings/cocos2d-x frameworks/runtime
   - Security
 
   - libsqlite3.0.dylib
-  
+
   - libz.dylib
 
   - StoreKit
@@ -214,7 +214,7 @@ That's it! Now all you have to do is build your XCode project and run your game.
   ``` xml
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  
+
   ```
 
 That's it! Don't forget to run the **build_native.py** script so that SOOMLA sources will be built with cocos2d-x.
@@ -226,7 +226,7 @@ create better in-game economy, social interactions, game design and user experie
 In order to be notified about (and handle) SOOMLA-related events, you will also need to create event-handling functions.
 Refer to the following sections for more information:
 
-- **Insights** - Getting in-game information about your users in real-time used to be a dream. Now it's here. Insights
+**Insights** - Getting in-game information about your users in real-time used to be a dream. Now it's here. Insights
 will tell you things about your users (as seen in other games) inside the code so you can take actions when it matters.
 This is the power of the GROW data network.  
 [API](/cocos2dx/js/Grow_Insights#MainClasses&Methods) | [Events](/cocos2dx/js/Grow_Insights#Events)

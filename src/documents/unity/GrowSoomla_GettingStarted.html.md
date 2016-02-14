@@ -2,7 +2,7 @@
 layout: "content"
 image: "Bundle"
 title: "GrowSoomla"
-text: "The perfect solution for your game if you have already integrated any of the SOOMLA open-source modules into it. If you just want to get Analytics, Whales Report and Grow Insights then this bundle is for you."
+text: "The perfect solution for your game if you have already integrated any of the SOOMLA open-source modules into it. If you just want to get Analytics, Whales Report and Grow Insights then this integration is for you."
 position: 7
 theme: 'platforms'
 collection: 'unity_grow'
@@ -10,11 +10,11 @@ module: 'grow'
 platform: 'unity'
 ---
 
-# GrowSoomla - Bundle
+# GrowSoomla
 
 ## Overview
 
-GrowSoomla is the perfect solution for your game if you have already integrated any of the SOOMLA open-source modules into it. If you just want to get Analytics Whales Report and Grow Insights then this bundle is for you. GrowSoomla connects you to GROW - a community-driven data network. Mobile game studios can take advantage of the different GROW products in order to get valuable insights about their games' performance and increase retention and monetization. [Read more...](/university/articles/Grow_About)
+GrowSoomla is the perfect solution for your game if you have already integrated any of the SOOMLA open-source modules into it. If you just want to get Analytics Whales Report and Grow Insights then this integration is for you. GrowSoomla connects you to GROW - a community-driven data network. Mobile game studios can take advantage of the different GROW products in order to get valuable insights about their games' performance and increase retention and monetization. [Read more...](/university/articles/Grow_About)
 
 GrowSoomla includes:
 
@@ -50,15 +50,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
         </ul>		    
       </div>
 
-3. ~~Open your earliest loading scene.  Drag the `HighwayEvents` Prefab from `Assets/Soomla/Prefabs` into the scene. You should see it listed in the "Hierarchy" panel.~~
-
-	<div class="info-box">This step is no longer required starting from: <br>
-	Core    v1.2.0 <br>
-	Highway v2.1.0</div>
-
-	![alt text](/img/tutorial_img/unity_grow/prefabsStoreAndHighway.png "Prefabs")
-
-4. In the menu bar go to **Window > Soomla > Edit Settings**:
+3. In the menu bar go to **Window > Soomla > Edit Settings**:
 
 	![alt text](/img/tutorial_img/unity_grow/soomlaSettingsStoreAndHighway.png "SOOMLA Settings")
 

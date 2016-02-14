@@ -20,7 +20,7 @@ Profile allows you to subscribe to events, be notified when they occur, and impl
 
 ### Tips & Reminders
 
-As mentioned in [Getting Started](/soomla/unity/store/Profile_GettingStarted), make sure you add the event prefabs (ProfileEvents and CoreEvents) to your earliest loading scene.
+As mentioned in [Getting Started](/soomla/unity/profile/Profile_GettingStarted), make sure you add the event prefabs (ProfileEvents and CoreEvents) to your earliest loading scene.
 
 
 

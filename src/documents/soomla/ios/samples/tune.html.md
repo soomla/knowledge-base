@@ -250,12 +250,12 @@ public class MainActivity extends Activity {
 
 2. Download and integrate the <a href="https://developers.mobileapptracking.com/mobile-sdks/" target="_blank">TUNE SDK</a>.
 
-3. Integrate SOOMLA Store and LevelUp.  Follow all steps in the platform specific getting started guides: <br>
+3. Integrate SOOMLA Store.  Follow all steps in the platform specific getting started guides: <br>
     <a href="/unity/" target="_blank">Unity</a> |
     <a href="/ios/" target="_blank">iOS</a> |
     <a href="/android/" target="_blank">Android</a>
 
-4. To use Grow Insights, follow the <a href="/unity/grow_insights/" target="_blank">Grow Insights Unity Instructions</a>.
+4. To use Grow Insights, follow the <a href="/unity/Grow_Insights/" target="_blank">Grow Insights Unity Instructions</a>.
 
 
 <div class="samples-title">Sample projects</div>

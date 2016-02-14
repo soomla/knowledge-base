@@ -41,15 +41,7 @@ platform: 'unity'
     	</ul>
     </div>
 
-2. ~~Drag the "StoreEvents" and "CoreEvents" Prefabs from `Assets/Soomla/Prefabs` into your scene. You should see them listed in the "Hierarchy" panel.~~
-
-    <div class="info-box">This step is no longer required starting from: <br>
-    Core    v1.2.0 <br>
-    Store   v1.9.0 </div>
-
-  ![alt text](/img/tutorial_img/unity_getting_started/prefabs.png "Prefabs")
-
-3. On the menu bar click **Window > Soomla > Edit Settings** and change the values for "Soomla Secret" and "Public Key":
+2. On the menu bar click **Window > Soomla > Edit Settings** and change the values for "Soomla Secret" and "Public Key":
 
   - **Soomla Secret** - This is an encryption secret you provide that will be used to secure your data. (If you used versions before v1.5.2 this secret MUST be the same as Custom Secret)
 
@@ -62,13 +54,13 @@ platform: 'unity'
 
     ![alt text](/img/tutorial_img/unity_getting_started/soomlaSettings.png "Soomla Settings")
 
-4. Create your own implementation of `IStoreAssets` in order to describe your game's specific assets.
+3. Create your own implementation of `IStoreAssets` in order to describe your game's specific assets.
 
   - For a brief example, see the [example](#example) at the bottom.
 
   - For a more detailed example, see our MuffinRush [example](https://github.com/soomla/unity3d-store/blob/master/Soomla/Assets/Examples/MuffinRush/MuffinRushAssets.cs).
 
-5. Initialize `SoomlaStore` with the class you just created:
+4. Initialize `SoomlaStore` with the class you just created:
 
     ``` cs
     SoomlaStore.Initialize(new YourStoreAssetsImplementation());
@@ -78,7 +70,7 @@ platform: 'unity'
 
     <div class="warning-box">Initialize SoomlaStore ONLY ONCE when your application loads.</div>
 
-6. You'll need an event handler in order to be notified about in-app purchasing related events. Refer to the document about [Event Handling](/soomla/unity/store/Store_Events) for more information.
+5. You'll need an event handler in order to be notified about in-app purchasing related events. Refer to the document about [Event Handling](/soomla/unity/store/Store_Events) for more information.
 
 That's it! You now have storage and in-app purchasing capabilities ALL-IN-ONE!
 
