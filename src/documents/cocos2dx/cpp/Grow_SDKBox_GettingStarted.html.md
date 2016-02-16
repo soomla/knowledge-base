@@ -1,6 +1,6 @@
 ---
 layout: "content"
-image: "Tutorial"
+image: "Integrations"
 title: "SDKBOX"
 text: "Get started with integrating GROW Analytics, Whales Report and Insights for Cocos2d-x with SDKBOX. Doesn't Include any of SOOMLA's opensource modules, only Highway and GrowInsights."
 position: 1

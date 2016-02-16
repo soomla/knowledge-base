@@ -20,7 +20,7 @@ platform: 'cocos2dx'
 
 <div id="platform-options">
   <div class="container">
-    <%- @partial('platform-selection', {firstOfTwo: true,image:"/img/Level2-Cocos2dx.png",link:"/soomla/cocos2dx/cpp",title: "C++",text: "Cocos2d-x"}) %>
-    <%- @partial('platform-selection', {image:"/img/Level2-Cocos2dx.png",link:"/soomla/cocos2dx/js",title: "JS",text: "Cocos2d-js"}) %>
+    <%- @partial('platform-selection', {firstOfTwo: true,image:"/img/Level2-Soomla-Cocos2dx.png",link:"/soomla/cocos2dx/cpp",title: "C++",text: "Cocos2d-x"}) %>
+    <%- @partial('platform-selection', {image:"/img/Level2-Soomla-Cocos2dx.png",link:"/soomla/cocos2dx/js",title: "JS",text: "Cocos2d-js"}) %>
   </div>
 </div>

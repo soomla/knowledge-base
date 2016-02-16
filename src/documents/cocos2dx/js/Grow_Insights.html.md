@@ -3,7 +3,7 @@ layout: "content"
 image: "Insights"
 title: "Insights"
 text: "Get started with GROW Insights for Unity. Here you can find initialization instructions, event handling and usage examples."
-position: 6
+position: 4
 theme: 'platforms'
 collection: 'cocos2djs_grow'
 module: 'grow'

@@ -1,6 +1,6 @@
 ---
 layout: "content"
-image: "Tutorial"
+image: "Integrations"
 title: "Stan's Assets"
 text: "Get started with integrating GROW Analytics, Whales Report and Insights for Unity3D with Stan's Assets. Doesn't Include any of SOOMLA's opensource modules, only Highway and GrowInsights."
 position: 2

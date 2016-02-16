@@ -18,9 +18,9 @@ theme: 'soomla'
 <div id="platform-options">
 
   <div class="container">
-    <%- @partial('platform-selection', {image:"img/Level2-Unity.png", link:"/soomla/unity", title: "Unity3D", big: false}) %>
-    <%- @partial('platform-selection', {image:"img/Level2-Cocos2dx.png", link:"/soomla/cocos2dx", title: "Cocos2d-x", big: false}) %>
-    <%- @partial('platform-selection', {image:"img/Level2-Android.png", link:"/soomla/android", title: "Android", big: false}) %>
-    <%- @partial('platform-selection', {image:"img/Level2-iOS.png", link:"/soomla/ios", title: "iOS", big: false}) %>
+    <%- @partial('platform-selection', {image:"img/Level2-Soomla-Unity.png", link:"/soomla/unity", title: "Unity3D", big: false}) %>
+    <%- @partial('platform-selection', {image:"img/Level2-Soomla-Cocos2dx.png", link:"/soomla/cocos2dx", title: "Cocos2d-x", big: false}) %>
+    <%- @partial('platform-selection', {image:"img/Level2-Soomla-Android.png", link:"/soomla/android", title: "Android", big: false}) %>
+    <%- @partial('platform-selection', {image:"img/Level2-Soomla-iOS.png", link:"/soomla/ios", title: "iOS", big: false}) %>
   </div>
 </div>

@@ -3,7 +3,7 @@ layout: "content"
 image: "Bundle"
 title: "GrowSpend"
 text: "The perfect virtual economy solution for your game. If you want Fraud Protection, cross-device balance SYNC and remote economy configurator then this integration is for you."
-position: 11
+position: 6
 theme: 'platforms'
 collection: 'cocos2djs_grow'
 module: 'grow'

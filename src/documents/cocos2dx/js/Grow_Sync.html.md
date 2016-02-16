@@ -3,7 +3,7 @@ layout: "content"
 image: "Sync"
 title: "State & Economy Sync"
 text: "Get started with GROW State & Economy Sync for Unity. Here you can find initialization instructions, event handling and usage examples."
-position: 3
+position: 5
 theme: 'platforms'
 collection: 'cocos2djs_grow'
 module: 'grow'

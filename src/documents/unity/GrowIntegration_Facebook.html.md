@@ -1,6 +1,6 @@
 ---
 layout: "content"
-image: "Tutorial"
+image: "Integrations"
 title: "Facebook"
 text: "Get started with integrating GROW Analytics, Whales Report and Insights for Unity3D with Facebook. This integration includes Highway and GrowInsights."
 position: 4
