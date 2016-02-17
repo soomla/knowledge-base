@@ -1,8 +1,0 @@
----
-title: 'iOS'
-layout: 'l2-main'
-theme: 'platforms'
-collection: 'ios_store'
-platform: 'ios'
-module: 'store'
----

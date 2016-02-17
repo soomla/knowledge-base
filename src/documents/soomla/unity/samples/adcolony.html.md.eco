@@ -1,0 +1,45 @@
+---
+layout: "sample"
+image: "adcolony_logo"
+title: "AdColony"
+text: "Reward users with coins for watching video-for-virtual-currency (V4VC)"
+position: 1
+relates: ["supersonic", "unity_ads"]
+collection: 'samples'
+navicon: "nav-icon-adcolony.png"
+backlink: "http://www.adcolony.com/"
+theme: 'samples'
+---
+
+# AdColony Integration
+
+<div>
+    <div role="tabpanel" class="tab-pane active" id="sample-unity">
+      <pre>
+```
+<%- @include('/samples/adcolony/adcolony_example.cs') or {} %>
+```
+      </pre>
+    </div>
+
+</div>
+
+<div class="samples-title">Getting started</div>
+
+1. Create an account with AdColony <a href="https://clients.adcolony.com/signup" target="_blank">here</a>.
+
+2. Setup a new app in the AdColony dashboard and claim your App ID and Zone ID. <a href="http://support.adcolony.com/customer/portal/articles/692646-getting-started-with-sdk-integration" target="_blank">(Instructions)</a>.
+
+3. Download and integrate the <a href="https://github.com/AdColony/AdColony-Unity-SDK" target="_blank">AdColony Unity SDK</a>.
+
+4. Integrate SOOMLA Store.  Follow all steps in the Unity Store <a href="/soomla/unity/store/Store_GettingStarted/" target="_blank">getting started guide</a>.
+
+<div class="samples-title">Additional tips and recommendations</div>
+
+1. AdColony V4VC also supports sending callbacks to your game server if you track your users' balances in the server side.
+
+2. Adding <a href="/university/articles/Grow_About/" target="_blank">GROW</a> will allow your users to backup their balances and will give you more tools to analyze their behavior.
+
+<div class="samples-title">Credits</div>
+
+This code sample was contributed by SOOMLA community developer <a href="https://twitter.com/deepnavy" target="_blank">Alexander Petrov</a> of <a href="http://petrovgames.com/" target="_blank">Petrov Games</a>.

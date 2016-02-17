@@ -48,7 +48,7 @@ An example of the popular "Remove Ads" monetization scheme. When the user purcha
 
 3. Follow <a href="https://github.com/googleads/googleads-mobile-unity/tree/master/unity" target="_blank">Admob integration instructions for Unity</a>.
 
-4. Integrate <a href="/unity/store/store_gettingstarted/" target="_blank">SOOMLA Store</a>.
+4. Integrate <a href="/soomla/unity/store/Store_GettingStarted/" target="_blank">SOOMLA Store</a>.
 
 5. Add the above implementation of `IStoreAssets` containing the "Remove Ads" lifetime good.
 

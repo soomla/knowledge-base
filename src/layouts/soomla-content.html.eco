@@ -1,0 +1,25 @@
+---
+layout: 'knowledge-base'
+---
+<div id="nav">
+</div>
+<div id="main-container" class="container">
+  <div class="row">
+    <div class="col-md-9" 132>
+      <div id="hierarchy-nav">
+        <%- @partial('nav-menu-l1', {current:'soomla'}) %>
+        <%- @partial('nav-menu-soomla', {platform: @document.platform, theme: @document.theme}) %>
+        <%- @partial('nav-menu-platform-module', {platform: @document.platform, lang: @document.lang, module: @document.module, theme: @document.theme}) %>
+        <%- @partial('nav-menu-l3', {collection:@document.collection, icon:@document.image}) %>
+
+      </div>
+    </div>
+  </div>
+<div id="doc-container" class="article-content clearfix">
+  <div class="row">
+    <div class="col-md-8">
+      <%- @content %>
+    </div>
+  </div>
+</div>
+</div>

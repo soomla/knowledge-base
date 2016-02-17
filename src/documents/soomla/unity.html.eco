@@ -1,0 +1,27 @@
+---
+layout: 'knowledge-base'
+title: 'Soomla'
+theme: 'soomla'
+platform: 'unity'
+---
+
+<div class="jumbotron" id="know-soomla">
+    <div id="jumbo-main-text">
+        <div id="hierarchy-nav">
+          <%- @partial('nav-menu-l1', {current:'soomla'}) %>
+          <%- @partial('nav-menu-soomla', {platform: @document.platform, theme: @document.theme}) %>
+        </div>
+        CHOOSE YOUR MODULE
+    </div>
+    <div id="jumbo-small-text">
+        SOOMLA provides several open-source products.
+    </div>
+</div>
+
+<div class="nav-options">
+  <div class="container">
+    <%- @partial('grid-option', {image:"/img/Level2-Soomla-Store.png",link:"/soomla/unity/store",title: "STORE",text: "SOOMLA provides the building blocks for all free-to-play games. Read about them here."}) %>
+    <%- @partial('grid-option', {image:"/img/Level2-Soomla-Profile.png",link:"/soomla/unity/profile",title: "PROFILE",text: "SOOMLA offers a complete social-based solution to integrate with your in-game economy."}) %>
+    <%- @partial('grid-option', {image:"/img/Level2-Soomla-Samples.png",link:"/soomla/unity/samples",title: "SAMPLES",text: "SOOMLA provides the building blocks for all free-to-play games. Read about them here."}) %>
+  </div>
+</div>

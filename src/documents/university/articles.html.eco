@@ -1,7 +1,7 @@
 ---
 title: 'Articles'
 layout: 'l2-main'
-theme: 'platforms'
+theme: 'university'
 collection: 'university_articles'
 platform: 'university'
 module: 'articles'

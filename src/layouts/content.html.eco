@@ -8,7 +8,6 @@ layout: 'knowledge-base'
     <div class="col-md-9">
       <div id="hierarchy-nav">
         <%- @partial('nav-menu-l1', {current: @document.platform, lang: @document.lang}) %>
-        <%- @partial('nav-menu-l2', {collection:@document.collection, platform: @document.platform, lang: @document.lang, module: @document.module, theme: @document.theme}) %>
         <%- @partial('nav-menu-l3', {collection:@document.collection, icon:@document.image}) %>
       </div>
     </div>
