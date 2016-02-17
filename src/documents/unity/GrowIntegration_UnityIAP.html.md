@@ -1,6 +1,6 @@
 ---
 layout: "content"
-image: "Integrations"
+image: "Plugins"
 title: "UnityIAP"
 text: "Get started with integrating GROW Analytics, Whales Report and Insights for Unity3D with UnityIAP. This integration includes Highway and GrowInsights."
 position: 3

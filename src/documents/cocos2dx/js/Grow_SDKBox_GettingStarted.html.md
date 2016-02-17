@@ -1,6 +1,6 @@
 ---
 layout: "content"
-image: "Integrations"
+image: "Plugins"
 title: "Getting Started (SDKBOX)"
 text: "Get started with GROW open analytics (and Whales Report) for Cocos2d-x with SDKBOX. Doesn't Include any of SOOMLA's opensource modules, only Highway and GrowInsights."
 position: 1

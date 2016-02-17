@@ -1,6 +1,6 @@
 ---
 layout: "content"
-image: "Integrations"
+image: "Plugins"
 title: "GrowSoomla"
 text: "The perfect solution for your game if you have already integrated any of the SOOMLA open-source modules into it. If you just want to get Analytics, Whales Report and Grow Insights then this integration is for you."
 position: 7
