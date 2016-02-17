@@ -1,6 +1,6 @@
 ---
 layout: 'knowledge-base'
-title: 'Soomla University'
+title: 'GROW University'
 theme: 'platforms'
 module: 'videos'
 platform: 'university'
@@ -8,8 +8,8 @@ collection: 'university_articles'
 ---
 
 
-<!-- SOOMLA UNIVERSITY LOGO -->
-<img id="university-logo" src="/img/Logo-university.png" alt="Soomla University">
+<!-- GROW UNIVERSITY LOGO -->
+<img id="university-logo" src="/img/Logo-university.png" alt="GROW University">
 
 <!-- VIDEO LIST TITLE -->
 <div id="know-soomla">
@@ -18,7 +18,7 @@ collection: 'university_articles'
       <%- @partial('nav-menu-l1', {current: @document.platform}) %>
       <%- @partial('nav-menu-l2', {collection:@document.collection, platform: @document.platform, lang: @document.lang, module: @document.module, theme: @document.theme}) %>
     </div>
-    Learn how to get started with SOOMLA, integrate SOOMLA into your projects, and more!
+    Learn how to integrate GROW into your projects and more!
   </div>
 </div>
 

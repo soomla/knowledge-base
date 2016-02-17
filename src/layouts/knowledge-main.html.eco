@@ -6,20 +6,20 @@ title: 'Soomla Knowledge Base'
 <div class="jumbotron" id="know-soomla">
 
     <div id="jumbo-main-text">
-        KNOW SOOMLA
+        KNOW GROW
     </div>
     <div id="jumbo-small-text">
-        Choose your platform to get started with SOOMLA and related services
+        Choose your platform to get started with GROW Analytics and related services
     </div>
 </div>
 
 <div id="platform-options">
 
   <div class="container">
-    <%- @partial('platform-selection', {image:"img/Level2-Unity.png", link:"/unity", title: "Unity3D"}) %>
-    <%- @partial('platform-selection', {image:"img/Level2-Cocos2dx.png", link:"/cocos2dx", title: "Cocos2d-x"}) %>
-    <%- @partial('platform-selection', {image:"img/Level2-iOS.png", link:"/ios", title: "iOS"}) %>
-    <%- @partial('platform-selection', {image:"img/Level2-Android.png", link:"/android", title: "Android"}) %>
+  <div class="col-md-3"></div>
+    <%- @partial('platform-selection', {image:"img/Level2-Unity170.png", link:"/unity", title: "Unity3D", big: true}) %>
+    <%- @partial('platform-selection', {image:"img/Level2-Cocos2dx170.png", link:"/cocos2dx", title: "Cocos2d-x", big: true}) %>
+  <div class="col-md-3"></div>
   </div>
 </div>
 
@@ -28,23 +28,23 @@ title: 'Soomla Knowledge Base'
   <div class="container">
     <div class="col-lg-4 col-md-4 menu-option">
       <a href="http://dashboard.soom.la/downloads" class="link-container">
-        <div class="option-image" style="background-image: url('img/Level1-Downloads.png')"></div>
+        <div class="option-image" style="background-image: url('img/Downloads.png')"></div>
         <div class="option-head-text">DOWNLOADS</div>
-        <div class="option-text">All of SOOMLA's SDKs bundled and packaged for getting started. Come and get'em!</div>
+        <div class="option-text">All of GROW's integrations packaged for getting started. Come and get'em!</div>
       </a>
     </div>
     <div class="col-lg-4 col-md-4 menu-option">
       <a href="/university" class="link-container">
-        <div class="option-image" style="background-image: url('img/Level1-University-green.png')"></div>
+        <div class="option-image" style="background-image: url('img/University-green.png')"></div>
         <div class="option-head-text">UNIVERSITY</div>
-        <div class="option-text">Watch our new video tutorials to get started with SOOMLA. More videos coming soon!</div>
+        <div class="option-text">Watch our new video tutorials to get started with GROW. More videos coming soon!</div>
       </a>
     </div>
     <div class="col-lg-4 col-md-4 menu-option">
-      <a href="/integrations" class="link-container">
-        <div class="option-image" style="background-image: url('img/Level1-integrations-orange.png')"></div>
-        <div class="option-head-text">INTEGRATIONS</div>
-        <div class="option-text">Integrate SOOMLA with 3rd party SDKs for monetization, analytics and attribution</div>
+      <a href="/soomla" class="link-container">
+        <div class="option-image" style="background-image: url('img/Soomla.png')"></div>
+        <div class="option-head-text">SOOMLA</div>
+        <div class="option-text">SOOMLA's open source modules along with Samples to integrate SOOMLA with 3rd party SDKs for monetization, analytics and attribution.</div>
       </a>
     </div>
   </div>

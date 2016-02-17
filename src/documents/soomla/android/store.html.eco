@@ -1,0 +1,8 @@
+---
+title: 'Android'
+layout: 'soomla-platform'
+theme: 'soomla'
+collection: 'soomla_android_store'
+platform: 'android'
+module: 'store'
+---

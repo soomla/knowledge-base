@@ -18,7 +18,7 @@ docpadConfig = {
 		site:
 		# The production url of our website
 		# If not set, will default to the calculated site URL (e.g. http://localhost:9778)
-			url: "http://website.com"
+			url: "http://know.soom.la"
 
 		# Here are some old site urls that you would like to redirect from
 			oldUrls: [
@@ -27,11 +27,12 @@ docpadConfig = {
 			]
 
 		# The default title of our website
-			title: "SOOMLA Knowledge Base"
+			title: "GROW Knowledge Base"
 
 		# The website description (for SEO)
 			description: """
-        Game programming framework for free to play mobile games. Easily develop: virtual economy, in-app purchase (IAP), levels, worlds, scores and social functions.
+				GROW Analytics platform knowledge base website to teach you everything you need to know about GROW. Easy integration with your favorite mobile SDKs and God Mode Analytics to allow you to compare to others.
+				Also, docs for SOOMLA - the open source framework that allows you to easily develop: virtual economy, in-app purchase (IAP), and social functions.
         """
 
 		# The website keywords (for SEO) separated by commas
@@ -70,16 +71,6 @@ docpadConfig = {
 				link: '/cocos2dx'
 			}
 			{
-				id: 'ios',
-				title: 'iOS',
-				link: '/ios'
-			}
-			{
-				id: 'android',
-				title: 'Android',
-				link: '/android'
-			}
-			{
 				id: 'university',
 				title: 'University',
 				link: '/university'
@@ -90,72 +81,45 @@ docpadConfig = {
 				link: 'http://dashboard.soom.la/downloads'
 			}
 			{
-				id: 'integrations',
-				title: 'Integrations',
-				link: '/integrations'
+				id: 'soomla',
+				title: 'Soomla',
+				link: '/soomla'
 			}
 		]
 
-		soomlaModules: {
-			'unity': [
-				{
-					id: 'store',
-					title: 'Store'
-				}
-				{
-					id: 'profile',
-					title: 'Profile'
-				}
-				{
-					id: 'grow',
-					title: 'GROW'
-				}
-			],
-			'cocos2dx': [
-				{
-					id: 'store',
-					title: 'Store'
-				}
-				{
-					id: 'profile',
-					title: 'Profile'
-				}
-				{
-					id: 'grow',
-					title: 'GROW'
-				}
-			],
-			'ios': [
-				{
-					id: 'store',
-					title: 'Store'
-				}
-				{
-					id: 'profile',
-					title: 'Profile'
-				}
-			],
-			'android': [
-				{
-					id: 'store',
-					title: 'Store'
-				}
-				{
-					id: 'profile',
-					title: 'Profile'
-				}
-			],
-			'university': [
-				{
-					id: 'articles',
-					title: 'Articles'
-				},
-				{
-					id: 'videos',
-					title: 'Videos'
-				}
-			]
-		}
+		soomlaModulesNames: [
+			{
+				id: 'unity',
+				title: 'Unity'
+			}
+			{
+				id: 'cocos2dx',
+				title: 'Cocos2dx'
+			}
+			{
+				id: 'ios',
+				title: 'iOS'
+			}
+			{
+				id: 'android',
+				title: 'Android'
+			}
+		]
+
+		soomlaModules: [
+			{
+				id: 'store',
+				title: 'Store'
+			}
+			{
+				id: 'profile',
+				title: 'Profile'
+			}
+			{
+				id: 'samples',
+				title: 'Samples'
+			}
+		]
 
 
 
@@ -218,65 +182,63 @@ docpadConfig = {
 
 # That contains all the documents that will be going to the out path posts
 	collections:
-		downloads: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('docs','downloads')},[position:1])
-
-		platforms: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('docs','platforms')},[position:1])
 
 		soomla: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('docs','soomla')},[position:1])
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla')},[position:1])
 
-		university: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('docs','university')},[position:1])
+		soomla_unity_store: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','unity','store')},[position:1])
 
-		ios_store: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('ios','store')},[position:1])
+		soomla_unity_profile: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','unity','profile')},[position:1])
 
-		ios_profile: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('ios','profile')},[position:1])
+		soomla_unity_samples: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','unity','samples')},[position:1])
 
-		android_store: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('android','store')},[position:1])
+		soomla_ios_store: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla', 'ios', 'store')},[position:1])
 
-		android_profile: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('android','profile')},[position:1])
+		soomla_ios_profile: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','ios','profile')},[position:1])
 
-		cocos2dx_store: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','cpp','store')},[position:1])
+		soomla_ios_samples: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','ios','samples')},[position:1])
 
-		cocos2dx_profile: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','cpp','profile')},[position:1])
+		soomla_android_store: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','android','store')},[position:1])
 
-		cocos2dx_grow: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','cpp','grow')},[position:1])
+		soomla_android_profile: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','android','profile')},[position:1])
 
-		cocos2djs_store: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','js','store')},[position:1])
+		soomla_android_samples: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','android','samples')},[position:1])
 
-		cocos2djs_profile: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','js','profile')},[position:1])
+		soomla_cocos2dx_store: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','cocos2dx','cpp','store')},[position:1])
+
+		soomla_cocos2dx_profile: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','cocos2dx','cpp','profile')},[position:1])
+
+		soomla_cocos2dx_samples: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','cocos2dx','cpp','samples')},[position:1])
+
+		soomla_cocos2djs_store: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','cocos2dx','js','store')},[position:1])
+
+		soomla_cocos2djs_profile: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','cocos2dx','js','profile')},[position:1])
+
+		soomla_cocos2djs_samples: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('soomla','cocos2dx','js','samples')},[position:1])
 
 		cocos2djs_grow: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','js','grow')},[position:1])
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','js')},[position:1])
 
-		unity_store: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('unity','store')},[position:1])
-
-		unity_profile: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('unity','profile')},[position:1])
+		cocos2dx_grow: ->
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('cocos2dx','cpp')},[position:1])
 
 		unity_grow: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('unity','grow')},[position:1])
-
-		soomla_store: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('docs','soomla', 'store')},[position:1])
-
-		soomla_highway: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('docs','soomla', 'highway')},[position:1])
-
-		soomla_storefront: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('docs','soomla', 'storefront')},[position:1])
+			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('unity')},[position:1])
 
 		university_articles: ->
 			@getCollection('documents').findAllLive({relativeOutDirPath: path.join('university','articles')},[position:1])

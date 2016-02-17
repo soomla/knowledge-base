@@ -1,0 +1,38 @@
+---
+layout: 'knowledge-base'
+title: 'Android'
+theme: 'soomla'
+collection: 'soomla_android_samples'
+platform: 'android'
+module: 'samples'
+---
+
+<div class="jumbotron" id="know-soomla">
+    <div id="jumbo-main-text">
+        <div id="hierarchy-nav">
+          <%- @partial('nav-menu-l1', {current: @document.theme}) %>
+          <%- @partial('nav-menu-soomla', {platform: @document.platform, theme: @document.theme}) %>
+          <%- @partial('nav-menu-platform-module', {collection:@document.collection, platform: @document.platform, module: @document.module, theme: @document.theme}) %>
+        </div>
+        SAMPLES
+    </div>
+    <div id="jumbo-small-text">
+        3rd party integration examples and docs
+    </div>
+</div>
+
+<div id="samples-options">
+    <div class="nav-options nav-options-bottom">
+        <div class="container samples-page">
+            <div class="row">
+                <% for doc in @getCollection('soomla_android_samples').toJSON(): %>
+                <div class="col-centered col-xs-6 col-md-3 <%= if doc.featured then 'featured' %>">
+                    <div class="circle-sample">
+                        <%- @partial('sample-item', {image: "/img/samples/Icon2-#{doc.image}.png", link: doc.url, featured: doc.featured}) %>
+                    </div>
+                </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

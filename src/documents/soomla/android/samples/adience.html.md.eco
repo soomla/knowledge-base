@@ -1,0 +1,41 @@
+---
+layout: "sample"
+image: "adience_logo"
+title: "Adience Mediation"
+text: "Target ads according to in-app purchasing behavior and personas"
+position: 2
+relates: ["fyber", "supersonic", "heyzap"]
+collection: 'samples'
+navicon: "nav-icon-adience.png"
+backlink: "http://www.adience.com/"
+theme: 'samples'
+---
+
+# Adience Mediation Integration
+
+Adience Mediation aggregates campaigns from multiple ad networks, mediating ads according to the demographic data and persona behind each impression. The end result is a significant ad revenue uplift and optimized fill-rates.  Also included is our 'Insights Dashboard' which displays demographic data on your users and specifically in-app purchasers.
+
+This article shows an example of how to report Soomla Store in-game events to Adience. This will provide two main benefits:
+
+1. Enables us to display the demographic parameters and personas of your in-app purchasers in our 'Insights Dashboard'.
+
+2. Allows Adience Mediation to add 'in-app purchasing behavior' as additional parameters in its targeting algorithm.
+
+<br>
+
+<div>
+    <div role="tabpanel" class="tab-pane" id="sample-android">
+      <pre>
+```
+<%- @include('/samples/adience/adience_example.java') %>
+```
+      </pre>
+    </div>
+</div>
+
+
+<div class="samples-title">Getting started</div>
+
+1. Contact Adience <a href="mailto:business@adience.com" target="_blank">business@adience.com</a> to get your unique app key, Adience SDK and integration documentation.
+
+2. Integrate SOOMLA Store. Follow all steps in the platform specific getting started guides: <a href="/soomla/android/store/Store_GettingStarted/" target="_blank">Android Store</a>

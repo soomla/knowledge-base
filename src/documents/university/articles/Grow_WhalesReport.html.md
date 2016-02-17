@@ -3,7 +3,7 @@ layout: "content"
 image: "Whales"
 title: "Whales Report"
 text: "Ever wanted to learn what the different parts of the Whales Report mean? This doc will tell you just that."
-position: 3
+position: 6
 theme: 'platforms'
 collection: 'university_articles'
 module: 'articles'
@@ -86,4 +86,4 @@ The whales report includes many metrics, some measured across the past week and 
 #### Use the Whales Report to track your game's growth and see how well it does in relation to the GROW network week over week.
 
 ### How to get it?
-You can get in the GROW network and start receiving the Whales Report weekly by integrating any of the GROW bundles on the [Soomla dashboard's downloads page](http://dashboard.soom.la/downloads).
+You can get in the GROW network and start receiving the Whales Report weekly by integrating any of the GROW Integrations on the [GROW Dashboard Integrations Page](http://dashboard.soom.la/downloads).
