@@ -1,6 +1,6 @@
 <div class="dropdown dropdown-container">
   <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-    <img class="dropdown-menu-icon" src="/img/level1-topmenu/level1-<%= @current %>.png"/>
+    <img class="dropdown-menu-icon" src="/img/topmenu/<%= @current %>.png"/>
   </a>
   <ul id="nav-list" class="dropdown-menu <%= @document.theme %>" role="menu">
     <% for item in @topLevelNavItems: %>

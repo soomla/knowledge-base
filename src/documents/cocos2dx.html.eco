@@ -7,10 +7,10 @@ theme: 'platforms'
 <div class="jumbotron" id="know-soomla">
     <div id="jumbo-main-text">
         <div id="hierarchy-nav"><%- @partial('nav-menu-l1', {current:'cocos2dx'}) %></div>
-        CHOOSE YOUR FRAMEWORK
+        WHAT WOULD YOU LIKE TO KNOW?
     </div>
     <div id="jumbo-small-text">
-        SOOMLA provides several open-source products.
+    Learn about GROW by reading explanations and studying from examples.
     </div>
 </div>
 

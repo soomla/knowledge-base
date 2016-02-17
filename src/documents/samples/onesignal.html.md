@@ -107,13 +107,13 @@ Follow the directions below to see a great use case for how OneSignal can be int
 
 1. Sign up and follow the instructions on the <a title="OneSignal Push Notification Service" href="https://onesignal.com" target="_blank">OneSignal</a> website to set up OneSignal multi-platform push notifications for your app.
 
-2. Add SOOMLA store: Import, drag the prefab, initialize and setup your virtual goods. Here are the <a href="/unity/store/store_gettingstarted/" target="_blank">full instructions</a>.
+2. Add SOOMLA store: Import, drag the prefab, initialize and setup your virtual goods. Here are the <a href="/soomla/unity/store/Store_GettingStarted/" target="_blank">full instructions</a>.
 
 2. Integrate SOOMLA Store.  Follow all steps in the platform specific getting started guides: <br>
-    <a href="/unity/store/store_gettingstarted/" target="_blank">Unity</a> |
-    <a href="/cocos2dx/store/store_gettingstarted/" target="_blank">Cocos2d-x</a> |
-    <a href="/ios/store/store_gettingstarted/" target="_blank">iOS</a> |
-    <a href="/android/store/store_gettingstarted/" target="_blank">Android</a> |
+    <a href="/soomla/unity/store/Store_GettingStarted/" target="_blank">Unity</a> |
+    <a href="/soomla/cocos2dx/cpp/store/Store_GettingStarted/" target="_blank">Cocos2d-x</a> |
+    <a href="/soomla/ios/store/Store_GettingStarted/" target="_blank">iOS</a> |
+    <a href="/soomla/android/store/Store_GettingStarted/" target="_blank">Android</a> |
 
 3. Add the sample code above into your game.
 

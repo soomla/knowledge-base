@@ -3,7 +3,7 @@ layout: "content"
 image: "About"
 title: "Tags Dictionary"
 text: "Games in the GROW network are described by different tags - read the full description of each one of the tags to make sure you're searching correctly."
-position: 1
+position: 4
 theme: 'platforms'
 collection: 'university_articles'
 module: 'articles'

@@ -3,7 +3,7 @@ layout: "content"
 image: "FraudProtection"
 title: "Fraud Protection"
 text: "SOOMLA's Fraud Protection service is protecting you from IAP fraudsters. This document will explain how to integrate the service into your game and how it works."
-position: 4
+position: 7
 theme: 'platforms'
 collection: 'university_articles'
 module: 'articles'
@@ -18,7 +18,7 @@ There are dozens of ways for hacking games, and they can be generally divided in
 
 * File Overwriting - Hackers search games for important files and variables containing the current game score, currency
   balance, and level progression. And change values to their benefit.
-  
+
 * Fake in-game purchases - Special hacking applications perform fake communications with the game server.
 
 IAP Fraud in mobile games is a serious issue. If you release your game without any mechanism to detect and prevent IAP fraud then you probably don't really care about your game enough to make it a good one. There are many reasons Fraud can hurt your game, for example:
@@ -63,12 +63,12 @@ Good news! Today you do not need such a server at all. SOOMLA provides a receipt
 
 The way to configure Fraud protection depends on a platform you use:
 
-* [Unity3d](/unity/grow/Grow_FraudProtection.html)
+* [Unity3d](/unity/Grow_FraudProtection.html)
 
-* [Cocos2d-x](/cocos2dx/cpp/grow/Grow_FraudProtection.html)
+* [Cocos2d-x](/cocos2dx/cpp/Grow_FraudProtection.html)
 
-* [Cocos2d-js](/cocos2dx/js/grow/Grow_FraudProtection.html)
+* [Cocos2d-js](/cocos2dx/js/Grow_FraudProtection.html)
 
-* [Android](/android/store/Grow_FraudProtection.html)
+* [Android](/soomla/android/store/Grow_FraudProtection.html)
 
-* [iOS](/ios/store/Grow_FraudProtection.html)
+* [iOS](/soomla/ios/store/Grow_FraudProtection.html)

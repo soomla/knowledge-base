@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="RUBY_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/node_modules" />
-      <excludeFolder url="file://$MODULE_DIR$/out" />
-    </content>
+    <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.5.3, RVM: ruby-1.9.3-p545 [backyard]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="execjs (v1.4.0, RVM: ruby-1.9.3-p545 [backyard]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="json (v1.8.1, RVM: ruby-1.9.3-p545 [backyard]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.9.0, RVM: ruby-1.9.3-p545 [backyard]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rake (v10.1.0, RVM: ruby-1.9.3-p545 [backyard]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.1.1, RVM: ruby-1.9.3-p545 [backyard]) [gem]" level="application" />
     <orderEntry type="library" name="knowledge-base node_modules" level="project" />
   </component>
 </module>
-

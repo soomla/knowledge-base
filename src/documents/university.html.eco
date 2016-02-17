@@ -1,6 +1,7 @@
 ---
 layout: 'knowledge-base'
-title: 'Soomla University'
+title: 'GROW University'
+theme: 'university'
 ---
 
 <div class="jumbotron" id="know-soomla">
@@ -15,7 +16,7 @@ title: 'Soomla University'
 
 <div class="nav-options">
   <div class="container">
-    <%- @partial('grid-option', {image:"/img/Level2-Articles.png",link:"/university/articles",title: "ARTICLES",text: "Did you know that more frozen bananas are sold right here on this boardwalk than anywhere in the OC?"}) %>
-    <%- @partial('grid-option', {image:"/img/Level2-Videos.png",link:"/university/videos",title: "VIDEOS",text: "Tobias is Queen Mary. I've always been deeply passionate about nature. Perhaps you remember Neuterfest? I'll never forget your wedding."}) %>
+    <%- @partial('grid-option', {image:"/img/Level2-Articles.png",link:"/university/articles",title: "ARTICLES",text: "Check out some articles and get to know GROW."}) %>
+    <%- @partial('grid-option', {image:"/img/Level2-Videos.png",link:"/university/videos",title: "VIDEOS",text: "Learn how to get GROW in your projects."}) %>
   </div>
 </div>

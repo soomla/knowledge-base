@@ -3,7 +3,7 @@ layout: "content"
 image: "Economy"
 title: "Virtual Economy"
 text: "You can update your virtual economy on the fly!"
-position: 2
+position: 5
 theme: 'platforms'
 collection: 'university_articles'
 module: 'articles'

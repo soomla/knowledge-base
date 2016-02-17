@@ -1,0 +1,25 @@
+---
+layout: 'knowledge-base'
+---
+
+<div class="jumbotron" id="know-soomla">
+    <div id="jumbo-main-text">
+        <div id="hierarchy-nav">
+          <%- @partial('nav-menu-l1', {current: 'soomla'}) %>
+          <%- @partial('nav-menu-soomla', {platform: @document.platform, theme: @document.theme}) %>
+          <%- @partial('nav-menu-platform-module', {collection:@document.collection, platform: @document.platform, module: @document.module, theme: @document.theme}) %>
+        </div>
+        WHAT WOULD YOU LIKE TO KNOW?
+    </div>
+    <div id="jumbo-small-text">
+        Learn about GROW by reading explanations and studying from examples.
+    </div>
+</div>
+
+<div class="nav-options-sm">
+  <div class="container">
+    <% for doc in @getCollection(@document.collection).toJSON(): %>
+        <%- @partial('l2-grid-option', {image: "/img/Icon-#{doc.image}.png", link:doc.url,title: doc.title,text: doc.text, subjectclass:@document.theme}) %>
+    <% end %>
+  </div>
+</div>
