@@ -1,6 +1,6 @@
 ---
 layout: "content"
-image: "Integrations"
+image: "Plugins"
 title: "Integrations"
 text: "GROW Integrations are a fast, easy and simple way of adding GROW you your games."
 position: 3
