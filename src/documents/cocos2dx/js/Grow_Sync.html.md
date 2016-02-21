@@ -29,8 +29,7 @@ With State & Economy Sync you can:
 
 ## Integration
 
-<div class="info-box">GROW's State & Economy Sync is included in [GrowSpend](/cocos2dx/js/GrowSpend_GettingStarted#SetupGrowSpend).</div>
-
+<div class="info-box">GROW's State & Economy Sync is included in [GrowUltimate](/cocos2dx/js/GrowUltimate_GettingStarted) and [GrowSpend](/cocos2dx/js/GrowSpend_GettingStarted#SetupGrowSpend).</div>
 
 1. Initialize `GrowSync` according to the instructions of your relevant integration.
 

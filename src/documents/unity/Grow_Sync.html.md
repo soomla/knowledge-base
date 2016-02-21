@@ -27,7 +27,7 @@ With State & Economy Sync you can:
 
 ## Integration
 
-1. Initialize `GrowSpend` according to the [instructions](/unity/GrowSpend_GettingStarted).
+1. Initialize `GrowUltimate` or `GrowSpend` according to the relevant instructions: [GrowUltimate](/unity/GrowUltimate_GettingStarted)|[GrowSpend](/unity/GrowSpend_GettingStarted).
 
 * Create event handler functions in order to be notified about (and handle) GROW Sync related events. See [Events](/unity/Grow_Sync/#Events) for more information.
 
