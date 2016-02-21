@@ -47,6 +47,48 @@ for that social provider.
 <div class="warning-box">Make sure to start gameplay or change local state only **after**
 [`EVENT_STATE_SYNC_FINISHED`](/cocos2dx/js/Grow_Sync#OnStateSyncFinished) event is triggered. </div>
 
+## Conflict Resolution
+
+Cross device syncing allows the player to have the same game state across all of his/her devices, this means that if the player plays on one device and reaches Level 10, this new state is saved in the server. The next time this player plays from a different device the saved state will be updated to his/her device and the game will continue from Level 10.
+
+Sometimes when users play a game on several devices there might be cases in which a conflict occurs, one game state is saved on the device and another (different) game state is saved on the server - what do we do then?
+
+<br/>
+Let’s explain by using an example:
+
+- Session starts on DEVICE A
+
+- DEVICE A unexpectedly disconnects from the internet
+
+- DEVICE A state is saved on the server, we’ll call is STATE X
+
+- Player continues to play on DEVICE A
+
+- Session starts on DEVICE B, gets STATE X
+
+- Player ends session on DEVICE B
+
+- DEVICE B state is saved on the server, we’ll call it STATE X+B (STATE X + changes done by DEVICE B)
+
+- DEVICE A’s state now is STATE X+A (STATE X + changes done by DEVICE A while there was no connection)
+
+- DEVICE A regains internet connection and tries to perform Sync
+
+<br/>
+So the server has STATE X+B and the device that’s syncing has STATE X+A. This means that STATE X is split into two conflicting states  - What do we do now? Which state will the player have?
+
+<br/>
+This is where the Conflict Resolution comes in. By default it resolves conflicts by using the state saved in the **server** as the game’s current state.
+
+<br/>
+For more advanced conflict resolution  you can use the following options:
+
+1. Take the state saved in the current device
+
+2. Custom Conflict Resolution - you can decide how you want to solve the conflict, you get both states and decide what’s best for your game and player
+
+
+
 ## Observing & Handling Events
 
 ### Subscribing
