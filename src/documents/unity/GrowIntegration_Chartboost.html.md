@@ -42,11 +42,11 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
 
 	![alt text](/img/tutorial_img/unity_grow/soomlaSettingsStoreAndHighway.png "GROW Settings")
 
-	**Copy the "Game Key" and "Environment Key"** given to you from the [dashboard](http://dashboard.soom.la) into the fields in the settings pane of the Unity Editor. At this point, you're probably testing your integration and you want to use the **Sandbox** environment key.
+	a. **Copy the "Game Key" and "Environment Key"** given to you from the [dashboard](http://dashboard.soom.la) into the fields in the settings pane of the Unity Editor. At this point, you're probably testing your integration and you want to use the **Sandbox** environment key.
 
 	<div class="info-box">The "game" and "environment" keys allow GROW to distinguish between multiple environments of your games. The dashboard pre-generates two fixed environments for your game: **Production** and **Sandbox**. When you decide to publish your game, **make sure to switch the environment key to <u>Production</u>**.  You can always generate more environments:  For example - you can choose to have a playground environment for your game's beta testers which will be isolated from your production environment and will thus prevent analytics data from being mixed between the two.  Another best practice might be to have a separate environment for each version of your game.</div>
 
-	b. Click on the **Add Prefab** button and the prefab will be added to the **current scene**.
+	b. Click on the **Integrate GROW into current scene** button and the prefab will be added to the **current scene**.
 	<div class="info-box"> Make sure that you are in your Main Scene when adding the Prefab </div>
 
 

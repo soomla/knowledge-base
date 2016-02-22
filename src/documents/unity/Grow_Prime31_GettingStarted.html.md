@@ -39,22 +39,15 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
   <img src="/img/tutorial_img/unity_grow/dashboardKeys.png" alt="Game key and Env key" style="border:0;">
 
   > The keys are on the Quickstart page on the dashboard but you can always find them in the Game Settings Screens on the `Environments` section.
-
-	Add gameKey and envKey in the info.plist editor screen so it'll be applied to your **iOS** configuration:  
-  ![alt text](/img/tutorial_img/unity_grow/info_plist_editor.png "Keys")
-
-	Also, Add gameKey and envKey in AndroidManifest.xml so it'll be applied to your **Android** configuration:  
-  ```
-	<meta-data android:name="SoomlaGameKey" android:value="[YOUR gameKey]" />
-	<meta-data android:name="SoomlaEnvKey" android:value="[YOUR envKey]" />
-	```
-
-	> **You should use the same envKey and gameKey for Android and iOS**  
 	<br>
   > You're probably testing your integration and you want to use the **Sandbox** environment key for starters.
 
   <div class="info-box">The *game* and *environment* keys allow for your game to distinguish multiple environments for the same game. The dashboard pre-generates two fixed environments for your game: **Production** and **Sandbox**. When you decide to publish your game, make sure to switch the env key to **Production**.  You can always generate more environments.  For example - you can choose to have a playground environment for your game's beta testers which will be isolated from your production environment and will thus prevent analytics data from being mixed between the two.  Another best practice is to have a separate environment for each version of your game.</div>
 
+	<br/>
+
+	Now click on the **Integrate GROW into current scene** button and the prefab will be added to the **current scene**.
+	<div class="info-box"> Make sure that you are in your Main Scene when adding the Prefab </div>
 
 ## Back to the Dashboard
 
