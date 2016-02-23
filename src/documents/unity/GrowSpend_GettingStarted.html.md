@@ -3,7 +3,7 @@ layout: "content"
 image: "Bundle"
 title: "GrowSpend"
 text: "The perfect virtual economy solution for your game. If you want Fraud Protection, cross-device balance SYNC and remote economy configurator then this integration is for you."
-position: 6
+position: 8
 theme: 'platforms'
 collection: 'unity_grow'
 module: 'grow'
