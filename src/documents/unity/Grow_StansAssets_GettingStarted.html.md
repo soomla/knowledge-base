@@ -39,19 +39,15 @@ Go to the [GROW dashboard](https://doorman.soom.la/oauth/authorize?response_type
   <img src="/img/tutorial_img/unity_grow/dashboardKeys.png" alt="Game key and Env key" style="border:0;">
 
   > You can always find the keys in the Game Settings Screens on the `environments` section.
-
-	For **Android** go to 'Window -> Stan's Assets -> Android Native -> Edit Settings' and add gameKey and envKey as shown below:  
-  ![alt text](/img/tutorial_img/unity_grow/stansassets_android_editor.png "Keys")
-
-	For **iOS** go to 'Window -> Stan's Assets -> iOS Native -> Edit Settings' and add gameKey and envKey as shown below:  
-  ![alt text](/img/tutorial_img/unity_grow/stansassets_ios_editor.png "Keys")
-
-	> **You should use the same envKey and gameKey for Android and iOS**  
 	<br>
   > You're probably testing your integration and you want to use the **Sandbox** environment key for starters.
 
   <div class="info-box">The *game* and *environment* keys allow for your game to distinguish multiple environments for the same game. The dashboard pre-generates two fixed environments for your game: **Production** and **Sandbox**. When you decide to publish your game, make sure to switch the env key to **Production**.  You can always generate more environments.  For example - you can choose to have a playground environment for your game's beta testers which will be isolated from your production environment and will thus prevent analytics data from being mixed between the two.  Another best practice is to have a separate environment for each version of your game.</div>
 
+	<br/>
+
+	Now click on the **Integrate GROW into current scene** button and the prefab will be added to the **current scene**.
+	<div class="info-box"> Make sure that you are in your Main Scene when adding the Prefab </div>
 
 ## Back to the Dashboard
 
