@@ -1,16 +1,16 @@
 ---
 layout: "content"
 image: "Plugins"
-title: "Chartboost"
-text: "Get all your Chartboost Ad Network metrics on the GROW dashboard in seconds. GROW will automatically collect information about your game's Ads performance."
-position: 7
+title: "Vungle"
+text: "Get your Ads metrics from Vungle, quickly analyze the performance of Vungle Ads in your game using this 1-step integration."
+position: 8
 theme: 'platforms'
 collection: 'unity_grow'
 module: 'grow'
 platform: 'unity'
 ---
 
-# Integrating Chartboost
+# Integrating Vungle
 
 ## Overview
 
@@ -22,7 +22,7 @@ This integration includes:
 
 - [Insights](/unity/Grow_Insights)
 
-## Integrating Grow with Chartboost
+## Integrating Grow with Vungle
 
 ### New Game & Configurations
 
@@ -32,7 +32,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
 
 	  ![alt text](/img/tutorial_img/unity_grow/addNewApp.png "Add new app")
 
- Once you created your game, you'll be redirected to the Integrations page where you can start with any of the GROW integrations. Click on **Chartboost**. You'll see the instructions screen, you can continue with that or stay here for the extended version.  
+ Once you created your game, you'll be redirected to the Integrations page where you can start with any of the GROW integrations. Click on **Vungle**. You'll see the instructions screen, you can continue with that or stay here for the extended version.  
 
 2. Download and import the unity package into your Unity project.
 
@@ -51,8 +51,8 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
 
 
 <br/>
-Now you can build and run your app in order to verify it's Active in the [GROW Dashboard](http://dashboard.soom.la/) Chartboost integration page, just refresh the page:
+Now you can build and run your app in order to verify it's Active in the [GROW Dashboard](http://dashboard.soom.la/) Vungle integration page, just refresh the page:
 
-![alt text](/img/tutorial_img/unity_grow/ActiveIntegration_Chartboost.png "Chartboost Integration")
+![alt text](/img/tutorial_img/unity_grow/ActiveIntegration_Vungle.png "Vungle Integration")
 
-That's it, you now have Chartboost integrated with GROW and you can start working with GROW Analytics and see your Ad's performance!
+That's it, you now have Vungle integrated with GROW and you can start working with GROW Analytics and see your Ad's performance!
