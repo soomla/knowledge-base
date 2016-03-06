@@ -32,18 +32,18 @@ using Soomla.Store;
 
 public class Initializer : MonoBehaviour {
 
-	void Awake () {
-		// Initialize SOOMLA Highway and Heyzap
-		GrowHighway.Initialize();
-		HeyzapAds.start("<PUBLISHER ID>", HeyzapAds.FLAG_NO_OPTIONS);
-	}
+    void Start() {
 
-	void Start(){
+        // Initialize SOOMLA Highway and Heyzap
+        GrowHighway.Initialize();
+        HeyzapAds.start("<PUBLISHER ID>", HeyzapAds.FLAG_NO_OPTIONS);
+
         // Initialize SOOMLA Store with your Store Assets
         SoomlaStore.Initialize(new YourStoreAssetsImplementation());
 
-		HZIncentivizedAd.fetch();
-	}
+        HZIncentivizedAd.fetch();
+    }
+
 
 
 	HZIncentivizedAd.AdDisplayListener listener = delegate(string adState, string adTag) {

@@ -3,7 +3,7 @@ layout: "content"
 image: "Sync"
 title: "State & Economy Sync"
 text: "Get started with GROW State & Economy Sync for Unity. Here you can find initialization instructions, event handling and usage examples."
-position: 10
+position: 12
 theme: 'platforms'
 collection: 'unity_grow'
 module: 'grow'
