@@ -3,7 +3,7 @@ layout: "content"
 image: "Bundle"
 title: "GrowUltimate"
 text: "The perfect All In One solution for your game. If you want your users to have the perfect experience in your game then this integration is for you."
-position: 7
+position: 9
 theme: 'platforms'
 collection: 'unity_grow'
 module: 'grow'
