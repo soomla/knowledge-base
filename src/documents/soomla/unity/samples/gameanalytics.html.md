@@ -187,7 +187,7 @@ public class GA_Soomla : MonoBehaviour
 
     #region InsightsEvents
 
-    private static void OnSoomlaInsightsRefreshFinished()
+    private static void OnSoomlaInsightsRefreshFinished(InsightsRefreshFinishedEvent evnt)
     {
         int payRank = GrowInsights.UserInsights.PayInsights.PayRankByGenre[Genre.<YOUR_GENRE>];
 

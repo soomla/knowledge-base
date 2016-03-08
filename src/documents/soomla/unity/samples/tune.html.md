@@ -229,7 +229,7 @@ public class TuneSoomlaInsightsScript : MonoBehaviour {
         MATBinding.MeasureSession();
 
         // Add event listeners - Make sure to set the event handlers before you initialize
-        HighwayEvents.OnInsightsInitialized += OnSoomlaInsightsInitialized;
+        HighwayEvents.OnGrowInsightsInitialized += OnSoomlaInsightsInitialized;
         HighwayEvents.OnInsightsRefreshFinished += OnSoomlaInsightsRefreshFinished;
 
         // Initialize GrowHighway
@@ -246,11 +246,11 @@ public class TuneSoomlaInsightsScript : MonoBehaviour {
         }
     }
 
-    void OnSoomlaInsightsInitialized () {
+    void OnSoomlaInsightsInitialized (GrowInsightsInitializedEvent evnt) {
         Debug.Log("Soomla insights has been initialized.");
     }
 
-    void OnSoomlaInsightsRefreshFinished (){
+    void OnSoomlaInsightsRefreshFinished (InsightsRefreshFinishedEvent evnt){
         if (GrowInsights.UserInsights.PayInsights.PayRankByGenre[Genre.Educational] > 0) {
             // Set in TUNE SDK that user is a paying user for a given genre
             // which will be sent with future events
