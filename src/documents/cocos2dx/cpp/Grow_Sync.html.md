@@ -340,10 +340,13 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	/** Set up and initialize Store and Profile**/
 	ExampleAssets *assets = ExampleAssets::create();
 
-	__Dictionary *storeParams = __Dictionary::create();
-	storeParams->setObject(__String::create("ExamplePublicKey"), "androidPublicKey");
+	soomla::CCSoomlaStoreConfigBuilder *storeConfig
+           = soomla::CCSoomlaStoreConfigBuilder::create();
+    storeConfig
+      ->setGpConfiguration(soomla::CCSoomlaStoreGpConfigBuilder::create()
+        ->setAndroidPublicKey("ExamplePublicKey");
 
-	soomla::CCSoomlaStore::initialize(assets, storeParams);
+	soomla::CCSoomlaStore::initialize(assets, storeConfig->build());
 }
 
 void AppDelegate::onGrowSyncInitialized(EventCustom *event) {

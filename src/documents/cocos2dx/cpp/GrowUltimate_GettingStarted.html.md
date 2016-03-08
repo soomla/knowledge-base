@@ -113,7 +113,7 @@ Go to the [GROW dashboard](http://dashboard.soom.la) and sign up \ login. Upon l
     YourImplementationAssets *assets = YourImplementationAssets::create();
 
     __Dictionary *storeParams = __Dictionary::create();
-    soomla::CCSoomlaStore::initialize(assets, storeParams);
+    soomla::CCSoomlaStore::initialize(assets, storeConfig->build());
 
     __Dictionary *profileParams = __Dictionary::create();
     soomla::CCSoomlaProfile::initialize(profileParams);
@@ -361,11 +361,19 @@ grow::CCGrowSync::initShared(modelSync, stateSync);
 /** Set up and initialize Store and Profile **/
 ExampleAssets *assets = ExampleAssets::create();
 
-__Dictionary *storeParams = __Dictionary::create();
-storeParams->setObject(__String::create("ExamplePublicKey"), "androidPublicKey");
+soomla::CCSoomlaStoreConfigBuilder *storeConfig
+   = soomla::CCSoomlaStoreConfigBuilder::create();
+storeConfig
+  ->setGpConfiguration(soomla::CCSoomlaStoreGpConfigBuilder::create()
+    ->setAndroidPublicKey("ExamplePublicKey");
 
-soomla::CCSoomlaStore::initialize(assets, storeParams);
+soomla::CCSoomlaStore::initialize(assets, storeConfig->build());
 
-__Dictionary *profileParams = __Dictionary::create();
-soomla::CCSoomlaProfile::initialize(profileParams);
+soomla::CCSoomlaProfileConfigBuilder *profileConfig
+  = soomla::CCSoomlaProfileConfigBuilder::create();
+profileConfig
+  ->addSocialProviderConfiguration(soomla::CCSoomlaFacebookConfigBuilder::create()
+  ->setPermissions("public_profile,user_friends"));    
+    
+soomla::CCSoomlaProfile::initialize(profileConfig->build());
 ```

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/knowledge-base.iml" filepath="$PROJECT_DIR$/.idea/knowledge-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/knowledge-base.iml" filepath="$PROJECT_DIR$/knowledge-base.iml" />
     </modules>
   </component>
 </project>

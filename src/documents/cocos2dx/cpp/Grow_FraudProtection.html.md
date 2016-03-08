@@ -29,9 +29,9 @@ automatically verified in case of network failures during the verification proce
     bool verifyOnFailure = true;
     soomla::CCSoomlaStoreConfigBuilder *storeConfig
        = soomla::CCSoomlaStoreConfigBuilder::create();
-       storeConfig
-        ->setIosConfiguration(soomla::CCSoomlaStoreIosConfigBuilder::create()
-          ->activateFraudProtection(verifyOnFailure));
+    storeConfig
+      ->setIosConfiguration(soomla::CCSoomlaStoreIosConfigBuilder::create()
+      ->activateFraudProtection(verifyOnFailure));
 	soomla::CCStoreService::initShared(assets, storeConfig->build());
 	```
 
