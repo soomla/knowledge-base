@@ -292,21 +292,21 @@ public class ExampleWindow : MonoBehaviour {
 	public static void onLoginFinished(UserProfile userProfileJson, bool autoLogin, string payload){
 		SoomlaUtils.LogDebug("TAG", "Logged in as: " + userProfileJson.toJSONObject().print());
 	}
-	public void onGrowInsightsInitialized (GrowInsightsInitializedEvent event) {
+	public void onGrowInsightsInitialized (GrowInsightsInitializedEvent evnt) {
 		Debug.Log("Grow insights has been initialized.");
 	}
-	public void onInsightsRefreshFinished (InsightsRefreshFinishedEvent event) {
+	public void onInsightsRefreshFinished (InsightsRefreshFinishedEvent evnt) {
 		if (GrowInsights.UserInsights.PayInsights.PayRankByGenre[Genre.Educational] > 3) {
 			// ... Do stuff according to your business plan ...
 		}
 	}
-	public void onGrowSyncInitialized(GrowSyncInitializedEvent event) {
+	public void onGrowSyncInitialized(GrowSyncInitializedEvent evnt) {
 		Debug.Log("GROW Sync has been initialized.");
 	}
-	public void onModelSyncFinished(ModelSyncFinishedEvent event) {
+	public void onModelSyncFinished(ModelSyncFinishedEvent evnt) {
 		Debug.Log("Model Sync has finished.");
 	}
-	public void onStateSyncFinished(StateSyncFinishedEvent event) {
+	public void onStateSyncFinished(StateSyncFinishedEvent evnt) {
 		Debug.Log("State Sync has finished.");
 	}
 
