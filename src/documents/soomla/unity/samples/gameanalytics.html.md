@@ -24,6 +24,8 @@ theme: 'samples'
 using UnityEngine;
 using Soomla.Store;
 using Soomla.Levelup;
+using Grow.Insights;
+using Grow.Highway;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -56,7 +58,7 @@ public class GA_Soomla : MonoBehaviour
         LevelUpEvents.OnGateOpened += GA_Soomla.OnGateOpened;
 
         // Register SOOMLA Insights event handlers
-        HighwayEvents.OnInsightsRefreshFinished += OnSoomlaInsightsRefreshFinished;
+        HighwayEvents.OnInsightsRefreshFinished += OnInsightsRefreshFinished;
 
         // Initialize SOOMLA Highway & Insights
         // Assumes you've setup GROW
@@ -187,7 +189,7 @@ public class GA_Soomla : MonoBehaviour
 
     #region InsightsEvents
 
-    private static void OnSoomlaInsightsRefreshFinished(InsightsRefreshFinishedEvent evnt)
+    private static void OnInsightsRefreshFinished(InsightsRefreshFinishedEvent evnt)
     {
         int payRank = GrowInsights.UserInsights.PayInsights.PayRankByGenre[Genre.<YOUR_GENRE>];
 
