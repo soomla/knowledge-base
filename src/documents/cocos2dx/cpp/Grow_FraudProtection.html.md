@@ -15,7 +15,7 @@ platform: 'cocos2dx'
 
 <div class="info-box">General information about Fraud Protection available in this [article](/university/articles/Grow_FraudProtection).</div>
 
-In order to turn on Fraud Protection in cocos2d-x, you need to enable additional params to your Store config depending on a
+In order to turn on Fraud Protection in cocos2d-x, you need to enable additional params in your Store config depending on a
 billing provider.
 
 *iOS*

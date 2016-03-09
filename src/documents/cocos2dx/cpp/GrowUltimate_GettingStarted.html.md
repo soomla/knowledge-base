@@ -365,7 +365,7 @@ soomla::CCSoomlaStoreConfigBuilder *storeConfig
    = soomla::CCSoomlaStoreConfigBuilder::create();
 storeConfig
   ->setGpConfiguration(soomla::CCSoomlaStoreGpConfigBuilder::create()
-    ->setAndroidPublicKey("ExamplePublicKey");
+    ->setAndroidPublicKey("ExamplePublicKey"));
 
 soomla::CCSoomlaStore::initialize(assets, storeConfig->build());
 
