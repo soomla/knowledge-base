@@ -48,7 +48,7 @@ This event is triggered when the GROW Insights feature is initialized and ready.
 ``` cs
 HighwayEvents.OnGrowInsightsInitialized += onGrowInsightsInitialized;
 
-public void onGrowInsightsInitialized(GrowInsightsInitializedEvent event) {
+public void onGrowInsightsInitialized(GrowInsightsInitializedEvent evnt) {
 // ... your game specific implementation here ...
 }
 ```
@@ -60,7 +60,7 @@ This event is triggered when fetching insights from the server has started.
 ``` cs
 HighwayEvents.OnInsightsRefreshStarted += onInsightsRefreshStarted;
 
-public void onInsightsRefreshStarted(InsightsRefreshStartedEvent event) {
+public void onInsightsRefreshStarted(InsightsRefreshStartedEvent evnt) {
 // ... your game specific implementation here ...
 }
 ```
@@ -72,7 +72,7 @@ This event is triggered when fetching insights from the server has finished.
 ``` cs
 HighwayEvents.OnInsightsRefreshFinished += onInsightsRefreshFinished;
 
-public void onInsightsRefreshFinished(InsightsRefreshFinishedEvent event) {
+public void onInsightsRefreshFinished(InsightsRefreshFinishedEvent evnt) {
 // ... your game specific implementation here ...
 }
 ```
@@ -84,7 +84,7 @@ This event is triggered when fetching insights from the server has failed.
 ``` cs
 HighwayEvents.OnInsightsRefreshFailed += onInsightsRefreshFailed;
 
-public void onInsightsRefreshFailed(InsightsRefreshFailedEvent event) {
+public void onInsightsRefreshFailed(InsightsRefreshFailedEvent evnt) {
 // ... your game specific implementation here ...
 }
 ```
@@ -206,11 +206,11 @@ void Start () {
 
 }
 
-void OnGrowInsightsInitialized (GrowInsightsInitializedEvent event) {
+void OnGrowInsightsInitialized (GrowInsightsInitializedEvent evnt) {
     Debug.Log("GROW Insights has been initialized.");
 }
 
-void OnInsightsRefreshFinished (InsightsRefreshFinishedEvent event) {
+void OnInsightsRefreshFinished (InsightsRefreshFinishedEvent evnt) {
     if (GrowInsights.UserInsights.PayInsights.PayRankByGenre[Genre.Educational] > 3) {
         // ... Do stuff according to your business plan ...
     }

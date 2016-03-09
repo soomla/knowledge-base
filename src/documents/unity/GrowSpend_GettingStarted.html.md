@@ -252,13 +252,13 @@ public class ExampleWindow : MonoBehaviour {
 	public void onGoodBalanceChanged(VirtualGood good, int balance, int amountAdded) {
 		SoomlaUtils.LogDebug("TAG", good.ID + " now has a balance of " + balance);
 	}
-	public void onGrowSyncInitialized(GrowSyncInitializedEvent event) {
+	public void onGrowSyncInitialized(GrowSyncInitializedEvent evnt) {
 		Debug.Log("GROW Sync has been initialized.");
 	}
-	public void onModelSyncFinished(ModelSyncFinishedEvent event) {
+	public void onModelSyncFinished(ModelSyncFinishedEvent evnt) {
 		Debug.Log("Model Sync has finished.");
 	}
-	public void onStateSyncFinished(StateSyncFinishedEvent event) {
+	public void onStateSyncFinished(StateSyncFinishedEvent evnt) {
 		Debug.Log("State Sync has finished.");
 	}
 

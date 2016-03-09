@@ -90,7 +90,7 @@ This event is triggered when the GROW Sync feature is initialized and ready.
 ``` cs
 ServicesEvents.OnGrowSyncInitialized += onGrowSyncInitialized;
 
-public void onGrowSyncInitialized(GrowSyncInitializedEvent event) {
+public void onGrowSyncInitialized(GrowSyncInitializedEvent evnt) {
     // ... your game specific implementation here ...
 }
 ```
@@ -102,7 +102,7 @@ This event is triggered when model sync has started.
 ``` cs
 ServicesEvents.OnModelSyncStarted += onModelSyncStarted;
 
-public void onModelSyncStarted(ModelSyncStartedEvent event) {
+public void onModelSyncStarted(ModelSyncStartedEvent evnt) {
     // ... your game specific implementation here ...
 }
 ```
@@ -115,8 +115,8 @@ Provides a list of modules which were synced.
 ``` cs
 ServicesEvents.OnModelSyncFinished += onModelSyncFinished;
 
-public void onModelSyncFinished(ModelSyncFinishedEvent event) {
-    IList<string> components = event.ChangedComponents;
+public void onModelSyncFinished(ModelSyncFinishedEvent evnt) {
+    IList<string> components = evnt.ChangedComponents;
     // ... your game specific implementation here ...
 }
 ```
@@ -129,9 +129,9 @@ Provides the error code and reason of the failure.
 ``` cs
 ServicesEvents.OnModelSyncFailed += onModelSyncFailed;
 
-public void onModelSyncFailed(ModelSyncFailedEvent event) {
-    ModelSyncErrorCode errorCode = event.ErrorCode;
-    string reason = event.ErrorMessage;
+public void onModelSyncFailed(ModelSyncFailedEvent evnt) {
+    ModelSyncErrorCode errorCode = evnt.ErrorCode;
+    string reason = evnt.ErrorMessage;
     // ... your game specific implementation here ...
 }
 ```
@@ -143,7 +143,7 @@ This event is triggered when state sync has started.
 ``` cs
 ServicesEvents.OnStateSyncStarted += onStateSyncStarted;
 
-public void onStateSyncStarted(StateSyncStartedEvent event) {
+public void onStateSyncStarted(StateSyncStartedEvent evnt) {
 // ... your game specific implementation here ...
 }
 ```
@@ -156,9 +156,9 @@ Provides a list of modules which had their state updated, and a list of modules 
 ``` cs
 ServicesEvents.OnStateSyncFinished += onStateSyncFinished;
 
-public void onStateSyncFinished(StateSyncFinishedEvent event) {
-    IList<string> changedComponents = event.ChangedComponents;
-    IList<string> failedComponents = event.FailedComponents;
+public void onStateSyncFinished(StateSyncFinishedEvent evnt) {
+    IList<string> changedComponents = evnt.ChangedComponents;
+    IList<string> failedComponents = evnt.FailedComponents;
     // ... your game specific implementation here ...
 }
 ```
@@ -173,9 +173,9 @@ Provides the error code and reason of failure.
 ``` cs
 ServicesEvents.OnStateSyncFailed += onStateSyncFailed;
 
-public void onStateSyncFailed(StateSyncFailedEvent event) {
-    StateSyncErrorCode errorCode = event.ErrorCode;
-    string reason = event.ErrorMessage;
+public void onStateSyncFailed(StateSyncFailedEvent evnt) {
+    StateSyncErrorCode errorCode = evnt.ErrorCode;
+    string reason = evnt.ErrorMessage;
     // ... your game specific implementation here ...
 }
 ```
@@ -187,7 +187,7 @@ This event is triggered when state reset has started.
 ``` cs
 ServicesEvents.OnStateResetStarted += onStateResetStarted;
 
-public void onStateResetStarted(StateResetStartedEvent event) {
+public void onStateResetStarted(StateResetStartedEvent evnt) {
     // ... your game specific implementation here ...
 }
 ```
@@ -199,7 +199,7 @@ This event is triggered when state reset has finished.
 ``` cs
 ServicesEvents.OnStateResetFinished += onStateResetFinished;
 
-public void onStateResetFinished(StateResetFinishedEvent event) {
+public void onStateResetFinished(StateResetFinishedEvent evnt) {
     // ... your game specific implementation here ...
 }
 ```
@@ -212,9 +212,9 @@ Provides the error code and reason of failure.
 ``` cs
 ServicesEvents.OnStateResetFailed += onStateResetFailed;
 
-public void onStateResetFailed(StateResetFailedEvent event) {
-    StateSyncErrorCode errorCode = event.ErrorCode;
-    string reason = event.ErrorMessage;
+public void onStateResetFailed(StateResetFailedEvent evnt) {
+    StateSyncErrorCode errorCode = evnt.ErrorCode;
+    string reason = evnt.ErrorMessage;
     // ... your game specific implementation here ...
 }
 ```
@@ -257,13 +257,13 @@ public class ExampleWindow : MonoBehaviour {
 	//
 	// Various event handling methods
 	//
-	public void onGrowSyncInitialized(GrowSyncInitializedEvent event) {
+	public void onGrowSyncInitialized(GrowSyncInitializedEvent evnt) {
 	    Debug.Log("GROW Sync has been initialized.");
 	}
-	public void onModelSyncFinished(ModelSyncFinishedEvent event) {
+	public void onModelSyncFinished(ModelSyncFinishedEvent evnt) {
 	    Debug.Log("Model Sync has finished.");
 	}
-	public void onStateSyncFinished(StateSyncFinishedEvent event) {
+	public void onStateSyncFinished(StateSyncFinishedEvent evnt) {
 	    Debug.Log("State Sync has finished.");
 	}
 
@@ -287,10 +287,10 @@ public class ExampleWindow : MonoBehaviour {
 		// and BEFORE initializing STORE/PROFILE
 		bool modelSync = true; // Remote Economy Management - Synchronizes your game's
                                // economy model between the client and server - enables
-                                // you to remotely manage your economy.
+                               // you to remotely manage your economy.
 
 		bool stateSync = true; // Synchronizes the users' balances data with the server
-                                // and across his other devices.
+                               // and across his other devices.
 
 		// State sync and Model sync can be enabled/disabled separately.
 		GrowSync.Initialize(modelSync, stateSync);
