@@ -3,7 +3,7 @@ layout: "content"
 image: "Plugins"
 title: "OpenIAB"
 text: "Get started with integrating GROW Analytics, Whales Report and Insights for Unity3D with OpenIAB plugin. This integration includes Highway and GrowInsights."
-position: 9
+position: 8
 theme: 'platforms'
 collection: 'unity_grow'
 module: 'grow'
