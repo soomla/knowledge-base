@@ -2,7 +2,7 @@
 title: 'Cocos2dx'
 layout: 'soomla-platform'
 theme: 'soomla'
-collection: 'soomla_cocos2djs_profile'
+collection: 'soomla_cocos2dx_profile'
 platform: 'cocos2dx'
 lang: 'cpp'
 module: 'profile'
