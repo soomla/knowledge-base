@@ -521,8 +521,6 @@ public class MainActivity extends ActionBarActivity
 
 	private void initializeGameAnalytics()
 	{
-		GAPlatform.initializeWithContext(this.getApplicationContext());
-
 		// Configure engine version
 		GameAnalytics.configureEngineVersion("android 1.0.0");
 
@@ -561,7 +559,7 @@ public class MainActivity extends ActionBarActivity
 		GameAnalytics.configureBuild("0.1.0");
 
 		// Initialize
-		GameAnalytics.initializeWithGameKey("<game_key>", "<secret_key>");
+		GameAnalytics.initializeWithGameKey(this, "<game_key>", "<secret_key>");
 	}
 }
         </code>
